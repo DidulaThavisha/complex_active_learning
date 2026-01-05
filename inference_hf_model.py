@@ -24,11 +24,13 @@ OUTPUT_FILE = Path("ballerina_grpo_X4_inference_results.json")
 MODEL_NAME = "didula-wso2/exp_23_emb_grpo_checkpoint_1000_16bit_vllm"
 NUM_GENERATIONS = 5
 THRESHOLD = 0.75  # 75% of test cases must pass
+MAX_NEW_TOKENS = 1536  # Reduced from 2048 for faster generation (can increase if needed)
 
 print(f"Input file: {INPUT_FILE}")
 print(f"Output file: {OUTPUT_FILE}")
 print(f"Model: {MODEL_NAME}")
 print(f"Generations per problem: {NUM_GENERATIONS}")
+print(f"Max new tokens: {MAX_NEW_TOKENS}")
 print(f"Test pass threshold: {THRESHOLD*100}%")
 
 # Load model and tokenizer using Unsloth (optimized for 16GB P100 GPU)
@@ -65,9 +67,22 @@ tokenizer = get_chat_template(
 # Enable fast inference optimizations (Unsloth optimizations without vLLM)
 FastLanguageModel.for_inference(model)  # Enable inference optimizations
 
+# Additional optimizations for speed
 if torch.cuda.is_available():
     print(f"Using CUDA (GPU: {torch.cuda.get_device_name(0)})")
     print(f"GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.2f} GB")
+    
+    # Compile model for faster inference (PyTorch 2.0+)
+    print("Compiling model for faster inference...")
+    try:
+        model = torch.compile(model, mode="reduce-overhead", fullgraph=False)
+        print("✅ Model compiled successfully")
+    except Exception as e:
+        print(f"⚠️  Model compilation failed (continuing without): {e}")
+    
+    # Enable cuDNN benchmarking for consistent input sizes
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 else:
     print("Using CPU")
 
@@ -321,8 +336,8 @@ def run_test_cases(code: str, test_cases: List[Dict[str, str]], threshold: float
             return False, passed, total, f"Only passed {passed}/{total} tests ({pass_rate*100:.1f}%), need {threshold*100:.0f}%", error_details
 
 
-def generate_completion(model, tokenizer, prompt: str, max_new_tokens: int = 2048) -> str:
-    """Generate a single completion using Unsloth-optimized model"""
+def generate_completions_batch(model, tokenizer, prompt: str, num_completions: int = 5, max_new_tokens: int = MAX_NEW_TOKENS) -> List[str]:
+    """Generate multiple completions in a single batch for faster inference"""
     # Format prompt with system prompt
     full_prompt = f"""{SYSTEM_PROMPT}
 
@@ -342,8 +357,11 @@ Please generate Ballerina code that solves the problem above. Make sure to:
         {"role": "user", "content": full_prompt},
     ]
     
-    # Use Unsloth's optimized generation
-    inputs = tokenizer.apply_chat_template(
+    # Get device
+    device = next(model.parameters()).device
+    
+    # Tokenize once, then repeat for batch
+    single_input = tokenizer.apply_chat_template(
         messages,
         add_generation_prompt=True,
         tokenize=True,
@@ -351,15 +369,23 @@ Please generate Ballerina code that solves the problem above. Make sure to:
         return_tensors="pt",
     )
     
-    # Move inputs to model's device (Unsloth models are already on the correct device)
-    device = next(model.parameters()).device
-    inputs = {k: v.to(device) for k, v in inputs.items()}
+    # Create batch by repeating the input
+    input_ids = single_input["input_ids"].repeat(num_completions, 1)
+    if "attention_mask" in single_input:
+        attention_mask = single_input["attention_mask"].repeat(num_completions, 1)
+    else:
+        attention_mask = torch.ones_like(input_ids)
+    
+    inputs = {
+        "input_ids": input_ids.to(device),
+        "attention_mask": attention_mask.to(device),
+    }
     
     # Use Unsloth's optimized generation with torch.inference_mode for better performance
     with torch.inference_mode():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=max_new_tokens,
+            max_new_tokens=max_new_tokens,  # Reduced from 2048 for faster generation
             do_sample=True,
             temperature=0.7,
             top_p=0.9,
@@ -367,13 +393,22 @@ Please generate Ballerina code that solves the problem above. Make sure to:
             use_cache=True,  # Enable KV cache for faster inference
         )
     
-    # Decode only the new tokens
-    generated_text = tokenizer.decode(
-        outputs[0][inputs["input_ids"].shape[-1]:],
-        skip_special_tokens=True
-    )
+    # Decode all completions
+    input_length = inputs["input_ids"].shape[1]
+    generated_texts = []
+    for i in range(num_completions):
+        # Extract only the new tokens for this completion
+        new_tokens = outputs[i][input_length:]
+        generated_text = tokenizer.decode(new_tokens, skip_special_tokens=True)
+        generated_texts.append(generated_text)
     
-    return generated_text
+    return generated_texts
+
+
+def generate_completion(model, tokenizer, prompt: str, max_new_tokens: int = MAX_NEW_TOKENS) -> str:
+    """Generate a single completion (wrapper for backward compatibility)"""
+    results = generate_completions_batch(model, tokenizer, prompt, num_completions=1, max_new_tokens=max_new_tokens)
+    return results[0]
 
 
 def process_problem(problem: Dict[str, Any], model, tokenizer, problem_idx: int) -> Dict[str, Any]:
@@ -390,18 +425,58 @@ def process_problem(problem: Dict[str, Any], model, tokenizer, problem_idx: int)
     
     generations = []
     
-    for gen_idx in range(NUM_GENERATIONS):
-        print(f"  Generating completion {gen_idx + 1}/{NUM_GENERATIONS}...")
+    # Generate all completions in a single batch for much faster inference
+    print(f"  Generating {NUM_GENERATIONS} completions in batch...")
+    
+    try:
+        # Batch generation - much faster than sequential
+        completions = generate_completions_batch(model, tokenizer, prompt, num_completions=NUM_GENERATIONS)
+        print(f"  ✅ Generated {len(completions)} completions")
         
-        try:
-            # Generate completion
-            completion = generate_completion(model, tokenizer, prompt)
+        # Process each completion
+        for gen_idx, completion in enumerate(completions):
+            print(f"  Processing completion {gen_idx + 1}/{NUM_GENERATIONS}...")
             
-            # Extract code
-            code = extract_code_from_completion(completion)
-            
-            if not code:
-                print(f"    ⚠ Could not extract code from completion")
+            try:
+                # Extract code
+                code = extract_code_from_completion(completion)
+                
+                if not code:
+                    print(f"    ⚠ Could not extract code from completion")
+                    generations.append({
+                        'completion': completion,
+                        'code': None,
+                        'passed': False,
+                        'tests_passed': 0,
+                        'tests_total': len(test_cases),
+                        'pass_rate': 0.0,
+                        'validation_msg': 'Could not extract code'
+                    })
+                    continue
+                
+                # Evaluate test cases
+                is_valid, passed, total, validation_msg, error_details = run_test_cases(
+                    code, test_cases, threshold=THRESHOLD
+                )
+                
+                pass_rate = passed / total if total > 0 else 0.0
+                
+                generations.append({
+                    'completion': completion,
+                    'code': code,
+                    'passed': is_valid,
+                    'tests_passed': passed,
+                    'tests_total': total,
+                    'pass_rate': pass_rate,
+                    'validation_msg': validation_msg,
+                    'error_details': error_details if error_details else None
+                })
+                
+                status = "✓" if is_valid else "✗"
+                print(f"    {status} {validation_msg}")
+                
+            except Exception as e:
+                print(f"    ✗ Error processing completion {gen_idx + 1}: {e}")
                 generations.append({
                     'completion': completion,
                     'code': None,
@@ -409,43 +484,58 @@ def process_problem(problem: Dict[str, Any], model, tokenizer, problem_idx: int)
                     'tests_passed': 0,
                     'tests_total': len(test_cases),
                     'pass_rate': 0.0,
-                    'validation_msg': 'Could not extract code'
+                    'validation_msg': f'Error: {str(e)}',
+                    'error_details': None
                 })
-                continue
-            
-            # Evaluate test cases
-            is_valid, passed, total, validation_msg, error_details = run_test_cases(
-                code, test_cases, threshold=THRESHOLD
-            )
-            
-            pass_rate = passed / total if total > 0 else 0.0
-            
-            generations.append({
-                'completion': completion,
-                'code': code,
-                'passed': is_valid,
-                'tests_passed': passed,
-                'tests_total': total,
-                'pass_rate': pass_rate,
-                'validation_msg': validation_msg,
-                'error_details': error_details if error_details else None
-            })
-            
-            status = "✓" if is_valid else "✗"
-            print(f"    {status} {validation_msg}")
-            
-        except Exception as e:
-            print(f"    ✗ Error generating/evaluating: {e}")
-            generations.append({
-                'completion': None,
-                'code': None,
-                'passed': False,
-                'tests_passed': 0,
-                'tests_total': len(test_cases),
-                'pass_rate': 0.0,
-                'validation_msg': f'Error: {str(e)}',
-                'error_details': None
-            })
+    
+    except Exception as e:
+        print(f"  ✗ Error in batch generation: {e}")
+        print(f"  Falling back to sequential generation...")
+        # Fallback to sequential if batch fails
+        for gen_idx in range(NUM_GENERATIONS):
+            print(f"  Generating completion {gen_idx + 1}/{NUM_GENERATIONS}...")
+            try:
+                completion = generate_completion(model, tokenizer, prompt)
+                code = extract_code_from_completion(completion)
+                
+                if not code:
+                    generations.append({
+                        'completion': completion,
+                        'code': None,
+                        'passed': False,
+                        'tests_passed': 0,
+                        'tests_total': len(test_cases),
+                        'pass_rate': 0.0,
+                        'validation_msg': 'Could not extract code'
+                    })
+                    continue
+                
+                is_valid, passed, total, validation_msg, error_details = run_test_cases(
+                    code, test_cases, threshold=THRESHOLD
+                )
+                pass_rate = passed / total if total > 0 else 0.0
+                
+                generations.append({
+                    'completion': completion,
+                    'code': code,
+                    'passed': is_valid,
+                    'tests_passed': passed,
+                    'tests_total': total,
+                    'pass_rate': pass_rate,
+                    'validation_msg': validation_msg,
+                    'error_details': error_details if error_details else None
+                })
+            except Exception as e2:
+                generations.append({
+                    'completion': None,
+                    'code': None,
+                    'passed': False,
+                    'tests_passed': 0,
+                    'tests_total': len(test_cases),
+                    'pass_rate': 0.0,
+                    'validation_msg': f'Error: {str(e2)}',
+                    'error_details': None
+                })
     
     # Count passing generations
     passing_generations = sum(1 for gen in generations if gen['passed'])
