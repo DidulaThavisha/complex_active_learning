@@ -34,18 +34,25 @@ print(f"Test pass threshold: {THRESHOLD*100}%")
 # Load model and tokenizer using Unsloth (optimized for 16GB P100 GPU)
 print("\nLoading model and tokenizer with Unsloth...")
 print("Optimizing for 16GB Nvidia P100 GPU...")
+print("Note: Using transformers backend (vLLM disabled to avoid dependency issues)")
 
 max_seq_length = 2048
 dtype = None  # Auto-detect best dtype
 load_in_4bit = True  # Use 4-bit quantization for 16GB GPU
 lora_rank = 16
 
+# Disable vLLM by setting fast_inference=False - this uses standard transformers backend
+# which is more compatible and still optimized by Unsloth
+# Also set environment variable to prevent vLLM loading
+import os
+os.environ["UNSLOTH_USE_VLLM"] = "0"  # Explicitly disable vLLM
+
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name=MODEL_NAME,
     max_seq_length=max_seq_length,
     dtype=dtype,
     load_in_4bit=load_in_4bit,
-    fast_inference=True,  # Enable fast inference optimizations
+    fast_inference=False,  # Disable vLLM, use transformers backend
     max_lora_rank=lora_rank,
 )
 
@@ -55,7 +62,7 @@ tokenizer = get_chat_template(
     chat_template="qwen-2.5",
 )
 
-# Enable fast inference optimizations
+# Enable fast inference optimizations (Unsloth optimizations without vLLM)
 FastLanguageModel.for_inference(model)  # Enable inference optimizations
 
 if torch.cuda.is_available():
