@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0450",
+  "problem_index": 450,
+  "prompt": "Title: The Golden Age\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nUnlucky year in Berland is such a year that its number *n* can be represented as *n*<==<=*x**a*<=+<=*y**b*, where *a* and *b* are non-negative integer numbers. \n\nFor example, if *x*<==<=2 and *y*<==<=3 then the years 4 and 17 are unlucky (4<==<=20<=+<=31, 17<==<=23<=+<=32<==<=24<=+<=30) and year 18 isn't unlucky as there is no such representation for it.\n\nSuch interval of years that there are no unlucky years in it is called The Golden Age.\n\nYou should write a program which will find maximum length of The Golden Age which starts no earlier than the year *l* and ends no later than the year *r*. If all years in the interval [*l*,<=*r*] are unlucky then the answer is 0.\n\nInput Specification:\nThe first line contains four integer numbers *x*, *y*, *l* and *r* (2<=≤<=*x*,<=*y*<=≤<=1018, 1<=≤<=*l*<=≤<=*r*<=≤<=1018).\n\nOutput Specification:\nPrint the maximum length of The Golden Age within the interval [*l*,<=*r*].\n\nIf all years in the interval [*l*,<=*r*] are unlucky then print 0.\n\nDemo Input:\n['2 3 1 10\\n', '3 5 10 22\\n', '2 3 3 5\\n']\n\nDemo Output:\n['1\\n', '8\\n', '0\\n']\n\nNote:\nIn the first example the unlucky years are 2, 3, 4, 5, 7, 9 and 10. So maximum length of The Golden Age is achived in the intervals [1, 1], [6, 6] and [8, 8].\n\nIn the second example the longest Golden Age is the interval [15, 22].",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:56.774751",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:57.547049",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:57.814958"
+}

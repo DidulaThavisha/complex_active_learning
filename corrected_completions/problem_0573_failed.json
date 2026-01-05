@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0573",
+  "problem_index": 573,
+  "prompt": "Title: Rational Resistance\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nMad scientist Mike is building a time machine in his spare time. To finish the work, he needs a resistor with a certain resistance value.\n\nHowever, all Mike has is lots of identical resistors with unit resistance *R*0<==<=1. Elements with other resistance can be constructed from these resistors. In this problem, we will consider the following as elements: \n 1.  one resistor; 1.  an element and one resistor plugged in sequence; 1.  an element and one resistor plugged in parallel. \nWith the consecutive connection the resistance of the new element equals *R*<==<=*R**e*<=+<=*R*0. With the parallel connection the resistance of the new element equals . In this case *R**e* equals the resistance of the element being connected.\n\nMike needs to assemble an element with a resistance equal to the fraction . Determine the smallest possible number of resistors he needs to make such an element.\n\nInput Specification:\nThe single input line contains two space-separated integers *a* and *b* (1<=≤<=*a*,<=*b*<=≤<=1018). It is guaranteed that the fraction  is irreducible. It is guaranteed that a solution always exists.\n\nOutput Specification:\nPrint a single number — the answer to the problem.\n\nPlease do not use the %lld specifier to read or write 64-bit integers in С++. It is recommended to use the cin, cout streams or the %I64d specifier.\n\nDemo Input:\n['1 1\\n', '3 2\\n', '199 200\\n']\n\nDemo Output:\n['1\\n', '3\\n', '200\\n']\n\nNote:\nIn the first sample, one resistor is enough.\n\nIn the second sample one can connect the resistors in parallel, take the resulting element and connect it to a third resistor consecutively. Then, we get an element with resistance <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/5305da389756aab6423d918a08ced468f05604df.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. We cannot make this element using two resistors.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:14.071765",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:14.338778",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:14.608265"
+}

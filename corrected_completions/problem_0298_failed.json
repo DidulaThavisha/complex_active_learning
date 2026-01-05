@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0298",
+  "problem_index": 298,
+  "prompt": "Title: Parity Game\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are fishing with polar bears Alice and Bob. While waiting for the fish to bite, the polar bears get bored. They come up with a game. First Alice and Bob each writes a 01-string (strings that only contain character \"0\" and \"1\") *a* and *b*. Then you try to turn *a* into *b* using two types of operations:\n -  Write *parity*(*a*) to the end of *a*. For example, . -  Remove the first character of *a*. For example, . You cannot perform this operation if *a* is empty. \nYou can use as many operations as you want. The problem is, is it possible to turn *a* into *b*?\n\nThe *parity* of a 01-string is 1 if there is an odd number of \"1\"s in the string, and 0 otherwise.\n\nInput Specification:\nThe first line contains the string *a* and the second line contains the string *b* (1<=≤<=|*a*|,<=|*b*|<=≤<=1000). Both strings contain only the characters \"0\" and \"1\". Here |*x*| denotes the length of the string *x*.\n\nOutput Specification:\nPrint \"YES\" (without quotes) if it is possible to turn *a* into *b*, and \"NO\" (without quotes) otherwise.\n\nDemo Input:\n['01011\\n0110\\n', '0011\\n1110\\n']\n\nDemo Output:\n['YES\\n', 'NO\\n']\n\nNote:\nIn the first sample, the steps are as follows: 01011 → 1011 → 011 → 0110",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:20.720115",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:20.991376",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:21.291714"
+}

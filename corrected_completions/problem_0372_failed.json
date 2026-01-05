@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0372",
+  "problem_index": 372,
+  "prompt": "Title: From Y to Y\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nFrom beginning till end, this message has been waiting to be conveyed.\n\nFor a given unordered multiset of *n* lowercase English letters (\"multi\" means that a letter may appear more than once), we treat all letters as strings of length 1, and repeat the following operation *n*<=-<=1 times:\n -  Remove any two elements *s* and *t* from the set, and add their concatenation *s*<=+<=*t* to the set. \nThe cost of such operation is defined to be , where *f*(*s*,<=*c*) denotes the number of times character *c* appears in string *s*.\n\nGiven a non-negative integer *k*, construct any valid non-empty set of no more than 100<=000 letters, such that the minimum accumulative cost of the whole process is exactly *k*. It can be shown that a solution always exists.\n\nInput Specification:\nThe first and only line of input contains a non-negative integer *k* (0<=≤<=*k*<=≤<=100<=000) — the required minimum cost.\n\nOutput Specification:\nOutput a non-empty string of no more than 100<=000 lowercase English letters — any multiset satisfying the requirements, concatenated to be a string.\n\nNote that the printed string doesn't need to be the final concatenated string. It only needs to represent an unordered multiset of letters.\n\nDemo Input:\n['12\\n', '3\\n']\n\nDemo Output:\n['abababab\\n', 'codeforces\\n']\n\nNote:\nFor the multiset {'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b'}, one of the ways to complete the process is as follows:\n -  {\"ab\", \"a\", \"b\", \"a\", \"b\", \"a\", \"b\"}, with a cost of 0; -  {\"aba\", \"b\", \"a\", \"b\", \"a\", \"b\"}, with a cost of 1; -  {\"abab\", \"a\", \"b\", \"a\", \"b\"}, with a cost of 1; -  {\"abab\", \"ab\", \"a\", \"b\"}, with a cost of 0; -  {\"abab\", \"aba\", \"b\"}, with a cost of 1; -  {\"abab\", \"abab\"}, with a cost of 1; -  {\"abababab\"}, with a cost of 8. \nThe total cost is 12, and it can be proved to be the minimum cost of the process.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:06.080738",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:06.417058",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:06.694136"
+}

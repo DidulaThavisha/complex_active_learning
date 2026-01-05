@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0326",
+  "problem_index": 326,
+  "prompt": "Title: An impassioned circulation of affection\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nNadeko's birthday is approaching! As she decorated the room for the party, a long garland of Dianthus-shaped paper pieces was placed on a prominent part of the wall. Brother Koyomi will like it!\n\nStill unsatisfied with the garland, Nadeko decided to polish it again. The garland has *n* pieces numbered from 1 to *n* from left to right, and the *i*-th piece has a colour *s**i*, denoted by a lowercase English letter. Nadeko will repaint at most *m* of the pieces to give each of them an arbitrary new colour (still denoted by a lowercase English letter). After this work, she finds out all subsegments of the garland containing pieces of only colour *c* — Brother Koyomi's favourite one, and takes the length of the longest among them to be the Koyomity of the garland.\n\nFor instance, let's say the garland is represented by \"kooomo\", and Brother Koyomi's favourite colour is \"o\". Among all subsegments containing pieces of \"o\" only, \"ooo\" is the longest, with a length of 3. Thus the Koyomity of this garland equals 3.\n\nBut problem arises as Nadeko is unsure about Brother Koyomi's favourite colour, and has swaying ideas on the amount of work to do. She has *q* plans on this, each of which can be expressed as a pair of an integer *m**i* and a lowercase letter *c**i*, meanings of which are explained above. You are to find out the maximum Koyomity achievable after repainting the garland according to each plan.\n\nInput Specification:\nThe first line of input contains a positive integer *n* (1<=≤<=*n*<=≤<=1<=500) — the length of the garland.\n\nThe second line contains *n* lowercase English letters *s*1*s*2... *s**n* as a string — the initial colours of paper pieces on the garland.\n\nThe third line contains a positive integer *q* (1<=≤<=*q*<=≤<=200<=000) — the number of plans Nadeko has.\n\nThe next *q* lines describe one plan each: the *i*-th among them contains an integer *m**i* (1<=≤<=*m**i*<=≤<=*n*) — the maximum amount of pieces to repaint, followed by a space, then by a lowercase English letter *c**i* — Koyomi's possible favourite colour.\n\nOutput Specification:\nOutput *q* lines: for each work plan, output one line containing an integer — the largest Koyomity achievable after repainting the garland according to it.\n\nDemo Input:\n['6\\nkoyomi\\n3\\n1 o\\n4 o\\n4 m\\n', '15\\nyamatonadeshiko\\n10\\n1 a\\n2 a\\n3 a\\n4 a\\n5 a\\n1 b\\n2 b\\n3 b\\n4 b\\n5 b\\n', '10\\naaaaaaaaaa\\n2\\n10 b\\n10 z\\n']\n\nDemo Output:\n['3\\n6\\n5\\n', '3\\n4\\n5\\n7\\n8\\n1\\n2\\n3\\n4\\n5\\n', '10\\n10\\n']\n\nNote:\nIn the first sample, there are three plans: \n -  In the first plan, at most 1 piece can be repainted. Repainting the \"y\" piece to become \"o\" results in \"kooomi\", whose Koyomity of 3 is the best achievable; -  In the second plan, at most 4 pieces can be repainted, and \"oooooo\" results in a Koyomity of 6; -  In the third plan, at most 4 pieces can be repainted, and \"mmmmmi\" and \"kmmmmm\" both result in a Koyomity of 5.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:38.473401",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:38.802460",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:39.065013"
+}

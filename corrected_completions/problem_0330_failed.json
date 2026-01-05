@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0330",
+  "problem_index": 330,
+  "prompt": "Title: New Year Book Reading\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nNew Year is coming, and Jaehyun decided to read many books during 2015, unlike this year. He has *n* books numbered by integers from 1 to *n*. The weight of the *i*-th (1<=≤<=*i*<=≤<=*n*) book is *w**i*.\n\nAs Jaehyun's house is not large enough to have a bookshelf, he keeps the *n* books by stacking them vertically. When he wants to read a certain book *x*, he follows the steps described below.\n 1.  He lifts all the books above book *x*. 1.  He pushes book *x* out of the stack. 1.  He puts down the lifted books without changing their order. 1.  After reading book *x*, he puts book *x* on the top of the stack. \n \n\nHe decided to read books for *m* days. In the *j*-th (1<=≤<=*j*<=≤<=*m*) day, he will read the book that is numbered with integer *b**j* (1<=≤<=*b**j*<=≤<=*n*). To read the book, he has to use the process described in the paragraph above. It is possible that he decides to re-read the same book several times.\n\nAfter making this plan, he realized that the total weight of books he should lift during *m* days would be too heavy. So, he decided to change the order of the stacked books before the New Year comes, and minimize the total weight. You may assume that books can be stacked in any possible order. Note that book that he is going to read on certain step isn't considered as lifted on that step. Can you help him?\n\nInput Specification:\nThe first line contains two space-separated integers *n* (2<=≤<=*n*<=≤<=500) and *m* (1<=≤<=*m*<=≤<=1000) — the number of books, and the number of days for which Jaehyun would read books.\n\nThe second line contains *n* space-separated integers *w*1,<=*w*2,<=...,<=*w**n* (1<=≤<=*w**i*<=≤<=100) — the weight of each book.\n\nThe third line contains *m* space separated integers *b*1,<=*b*2,<=...,<=*b**m* (1<=≤<=*b**j*<=≤<=*n*) — the order of books that he would read. Note that he can read the same book more than once.\n\nOutput Specification:\nPrint the minimum total weight of books he should lift, which can be achieved by rearranging the order of stacked books.\n\nDemo Input:\n['3 5\\n1 2 3\\n1 3 2 3 1\\n']\n\nDemo Output:\n['12\\n']\n\nNote:\nHere's a picture depicting the example. Each vertical column presents the stacked books.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:40.852238",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:41.142667",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:41.410589"
+}

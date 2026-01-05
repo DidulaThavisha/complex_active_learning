@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0538",
+  "problem_index": 538,
+  "prompt": "Title: Office Keys\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThere are *n* people and *k* keys on a straight line. Every person wants to get to the office which is located on the line as well. To do that, he needs to reach some point with a key, take the key and then go to the office. Once a key is taken by somebody, it couldn't be taken by anybody else.\n\nYou are to determine the minimum time needed for all *n* people to get to the office with keys. Assume that people move a unit distance per 1 second. If two people reach a key at the same time, only one of them can take the key. A person can pass through a point with a key without taking it.\n\nInput Specification:\nThe first line contains three integers *n*, *k* and *p* (1<=≤<=*n*<=≤<=1<=000, *n*<=≤<=*k*<=≤<=2<=000, 1<=≤<=*p*<=≤<=109) — the number of people, the number of keys and the office location.\n\nThe second line contains *n* distinct integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=109) — positions in which people are located initially. The positions are given in arbitrary order.\n\nThe third line contains *k* distinct integers *b*1,<=*b*2,<=...,<=*b**k* (1<=≤<=*b**j*<=≤<=109) — positions of the keys. The positions are given in arbitrary order.\n\nNote that there can't be more than one person or more than one key in the same point. A person and a key can be located in the same point.\n\nOutput Specification:\nPrint the minimum time (in seconds) needed for all *n* to reach the office with keys.\n\nDemo Input:\n['2 4 50\\n20 100\\n60 10 40 80\\n', '1 2 10\\n11\\n15 7\\n']\n\nDemo Output:\n['50\\n', '7\\n']\n\nNote:\nIn the first example the person located at point 20 should take the key located at point 40 and go with it to the office located at point 50. He spends 30 seconds. The person located at point 100 can take the key located at point 80 and go to the office with it. He spends 50 seconds. Thus, after 50 seconds everybody is in office with keys.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:53.158795",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:53.455743",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:53.733376"
+}

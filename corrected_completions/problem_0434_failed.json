@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0434",
+  "problem_index": 434,
+  "prompt": "Title: Joty and Chocolate\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLittle Joty has got a task to do. She has a line of *n* tiles indexed from 1 to *n*. She has to paint them in a strange pattern.\n\nAn unpainted tile should be painted Red if it's index is divisible by *a* and an unpainted tile should be painted Blue if it's index is divisible by *b*. So the tile with the number divisible by *a* and *b* can be either painted Red or Blue.\n\nAfter her painting is done, she will get *p* chocolates for each tile that is painted Red and *q* chocolates for each tile that is painted Blue.\n\nNote that she can paint tiles in any order she wants.\n\nGiven the required information, find the maximum number of chocolates Joty can get.\n\nInput Specification:\nThe only line contains five integers *n*, *a*, *b*, *p* and *q* (1<=≤<=*n*,<=*a*,<=*b*,<=*p*,<=*q*<=≤<=109).\n\nOutput Specification:\nPrint the only integer *s* — the maximum number of chocolates Joty can get.\n\nNote that the answer can be too large, so you should use 64-bit integer type to store it. In C++ you can use the long long integer type and in Java you can use long integer type.\n\nDemo Input:\n['5 2 3 12 15\\n', '20 2 3 3 5\\n']\n\nDemo Output:\n['39\\n', '51\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:47.027664",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:47.291102",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:47.566099"
+}

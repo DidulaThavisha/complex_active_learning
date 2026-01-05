@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0365",
+  "problem_index": 365,
+  "prompt": "Title: Plus and xor\n\nTime Limit: 0 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nBitwise exclusive OR (or bitwise addition modulo two) is a binary operation which is equivalent to applying logical exclusive OR to every pair of bits located on the same positions in binary notation of operands. In other words, a binary digit of the result is equal to 1 if and only if bits on the respective positions in the operands are different.\n\nFor example, if *X*<==<=10910<==<=11011012, *Y*<==<=4110<==<=1010012, then: \n\nWrite a program, which takes two non-negative integers *A* and *B* as an input and finds two non-negative integers *X* and *Y*, which satisfy the following conditions: \n -  *A*<==<=*X*<=+<=*Y* -  *B* <==<= *X* xor *Y*, where xor is bitwise exclusive or. -  *X* is the smallest number among all numbers for which the first two conditions are true.\n\nInput Specification:\nThe first line contains integer number *A* and the second line contains integer number *B* (0<=≤<=*A*,<=*B*<=≤<=264<=-<=1).\n\nOutput Specification:\nThe only output line should contain two integer non-negative numbers *X* and *Y*. Print the only number -1 if there is no answer.\n\nDemo Input:\n['142\\n76\\n']\n\nDemo Output:\n['33 109\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:01.847107",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:02.107812",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:02.403966"
+}

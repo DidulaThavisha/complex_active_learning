@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0593",
+  "problem_index": 593,
+  "prompt": "Title: Round Table Knights\n\nTime Limit: 0 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nThere are *n* knights sitting at the Round Table at an equal distance from each other. Each of them is either in a good or in a bad mood.\n\nMerlin, the wizard predicted to King Arthur that the next month will turn out to be particularly fortunate if the regular polygon can be found. On all vertices of the polygon knights in a good mood should be located. Otherwise, the next month will bring misfortunes.\n\nA convex polygon is regular if all its sides have same length and all his angles are equal. In this problem we consider only regular polygons with at least 3 vertices, i. e. only nondegenerated.\n\nOn a picture below some examples of such polygons are present. Green points mean knights in a good mood. Red points mean ones in a bad mood.\n\nKing Arthur knows the knights' moods. Help him find out if the next month will be fortunate or not.\n\nInput Specification:\nThe first line contains number *n*, which is the number of knights at the round table (3<=≤<=*n*<=≤<=105). The second line contains space-separated moods of all the *n* knights in the order of passing them around the table. \"1\" means that the knight is in a good mood an \"0\" means that he is in a bad mood.\n\nOutput Specification:\nPrint \"YES\" without the quotes if the following month will turn out to be lucky. Otherwise, print \"NO\".\n\nDemo Input:\n['3\\n1 1 1\\n', '6\\n1 0 1 1 1 0\\n', '6\\n1 0 0 1 0 1\\n']\n\nDemo Output:\n['YES', 'YES', 'NO']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:26.404207",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:26.687334",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:26.953658"
+}

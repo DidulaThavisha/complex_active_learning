@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0343",
+  "problem_index": 343,
+  "prompt": "Title: k-Tree\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nQuite recently a creative student Lesha had a lecture on trees. After the lecture Lesha was inspired and came up with the tree of his own which he called a *k*-tree.\n\nA *k*-tree is an infinite rooted tree where:\n -  each vertex has exactly *k* children; -  each edge has some weight; -  if we look at the edges that goes from some vertex to its children (exactly *k* edges), then their weights will equal 1,<=2,<=3,<=...,<=*k*. \nThe picture below shows a part of a 3-tree.\n\n \n\n \n\n \n\nHelp Dima find an answer to his question. As the number of ways can be rather large, print it modulo 1000000007 (109<=+<=7).\n\nInput Specification:\nA single line contains three space-separated integers: *n*, *k* and *d* (1<=≤<=*n*,<=*k*<=≤<=100; 1<=≤<=*d*<=≤<=*k*).\n\nOutput Specification:\nPrint a single integer — the answer to the problem modulo 1000000007 (109<=+<=7).\n\nDemo Input:\n['3 3 2\\n', '3 3 3\\n', '4 3 2\\n', '4 5 2\\n']\n\nDemo Output:\n['3\\n', '1\\n', '6\\n', '7\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:48.516579",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:48.789356",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:49.065822"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0513",
+  "problem_index": 513,
+  "prompt": "Title: Exponential notation\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given a positive decimal number *x*.\n\nYour task is to convert it to the \"simple exponential notation\".\n\nLet *x*<==<=*a*·10*b*, where 1<=≤<=*a*<=&lt;<=10, then in general case the \"simple exponential notation\" looks like \"aEb\". If *b* equals to zero, the part \"Eb\" should be skipped. If *a* is an integer, it should be written without decimal point. Also there should not be extra zeroes in *a* and *b*.\n\nInput Specification:\nThe only line contains the positive decimal number *x*. The length of the line will not exceed 106. Note that you are given too large number, so you can't use standard built-in data types \"float\", \"double\" and other.\n\nOutput Specification:\nPrint the only line — the \"simple exponential notation\" of the given number *x*.\n\nDemo Input:\n['16\\n', '01.23400\\n', '.100\\n', '100.\\n']\n\nDemo Output:\n['1.6E1\\n', '1.234\\n', '1E-1\\n', '1E2\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:37.690663",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:37.954850",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:38.240702"
+}

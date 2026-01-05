@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0528",
+  "problem_index": 528,
+  "prompt": "Title: Contest Balloons\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nOne tradition of ACM-ICPC contests is that a team gets a balloon for every solved problem. We assume that the submission time doesn't matter and teams are sorted only by the number of balloons they have. It means that one's place is equal to the number of teams with more balloons, increased by 1. For example, if there are seven teams with more balloons, you get the eight place. Ties are allowed.\n\nYou should know that it's important to eat before a contest. If the number of balloons of a team is greater than the weight of this team, the team starts to float in the air together with their workstation. They eventually touch the ceiling, what is strictly forbidden by the rules. The team is then disqualified and isn't considered in the standings.\n\nA contest has just finished. There are *n* teams, numbered 1 through *n*. The *i*-th team has *t**i* balloons and weight *w**i*. It's guaranteed that *t**i* doesn't exceed *w**i* so nobody floats initially.\n\nLimak is a member of the first team. He doesn't like cheating and he would never steal balloons from other teams. Instead, he can give his balloons away to other teams, possibly making them float. Limak can give away zero or more balloons of his team. Obviously, he can't give away more balloons than his team initially has.\n\nWhat is the best place Limak can get?\n\nInput Specification:\nThe first line of the standard input contains one integer *n* (2<=≤<=*n*<=≤<=300<=000) — the number of teams.\n\nThe *i*-th of *n* following lines contains two integers *t**i* and *w**i* (0<=≤<=*t**i*<=≤<=*w**i*<=≤<=1018) — respectively the number of balloons and the weight of the *i*-th team. Limak is a member of the first team.\n\nOutput Specification:\nPrint one integer denoting the best place Limak can get.\n\nDemo Input:\n['8\\n20 1000\\n32 37\\n40 1000\\n45 50\\n16 16\\n16 16\\n14 1000\\n2 1000\\n', '7\\n4 4\\n4 4\\n4 4\\n4 4\\n4 4\\n4 4\\n5 5\\n', '7\\n14000000003 1000000000000000000\\n81000000000 88000000000\\n5000000000 7000000000\\n15000000000 39000000000\\n46000000000 51000000000\\n0 1000000000\\n0 0\\n']\n\nDemo Output:\n['3\\n', '2\\n', '2\\n']\n\nNote:\nIn the first sample, Limak has 20 balloons initially. There are three teams with more balloons (32, 40 and 45 balloons), so Limak has the fourth place initially. One optimal strategy is:\n1.  Limak gives 6 balloons away to a team with 32 balloons and weight 37, which is just enough to make them fly. Unfortunately, Limak has only 14 balloons now and he would get the fifth place.1.  Limak gives 6 balloons away to a team with 45 balloons. Now they have 51 balloons and weight 50 so they fly and get disqualified.1.  Limak gives 1 balloon to each of two teams with 16 balloons initially.1.  Limak has 20 - 6 - 6 - 1 - 1 = 6 balloons.1.  There are three other teams left and their numbers of balloons are 40, 14 and 2.1.  Limak gets the third place because there are two teams with more balloons. \nIn the second sample, Limak has the second place and he can't improve it.\n\nIn the third sample, Limak has just enough balloons to get rid of teams 2, 3 and 5 (the teams with 81 000 000 000, 5 000 000 000 and 46 000 000 000 balloons respectively). With zero balloons left, he will get the second place (ex-aequo with team 6 and team 7).",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:47.004317",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:47.358223",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:47.620206"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0530",
+  "problem_index": 530,
+  "prompt": "Title: DZY Loves Sequences\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nDZY has a sequence *a*, consisting of *n* integers.\n\nWe'll call a sequence *a**i*,<=*a**i*<=+<=1,<=...,<=*a**j* (1<=≤<=*i*<=≤<=*j*<=≤<=*n*) a subsegment of the sequence *a*. The value (*j*<=-<=*i*<=+<=1) denotes the length of the subsegment.\n\nYour task is to find the longest subsegment of *a*, such that it is possible to change at most one number (change one number to any integer you want) from the subsegment to make the subsegment strictly increasing.\n\nYou only need to output the length of the subsegment you find.\n\nInput Specification:\nThe first line contains integer *n* (1<=≤<=*n*<=≤<=105). The next line contains *n* integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=109).\n\nOutput Specification:\nIn a single line print the answer to the problem — the maximum length of the required subsegment.\n\nDemo Input:\n['6\\n7 2 3 1 5 6\\n']\n\nDemo Output:\n['5\\n']\n\nNote:\nYou can choose subsegment *a*<sub class=\"lower-index\">2</sub>, *a*<sub class=\"lower-index\">3</sub>, *a*<sub class=\"lower-index\">4</sub>, *a*<sub class=\"lower-index\">5</sub>, *a*<sub class=\"lower-index\">6</sub> and change its 3rd element (that is *a*<sub class=\"lower-index\">4</sub>) to 4.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:48.184822",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:48.682007",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:49.085847"
+}

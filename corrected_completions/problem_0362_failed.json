@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0362",
+  "problem_index": 362,
+  "prompt": "Title: Pasha and Phone\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nPasha has recently bought a new phone jPager and started adding his friends' phone numbers there. Each phone number consists of exactly *n* digits.\n\nAlso Pasha has a number *k* and two sequences of length *n*<=/<=*k* (*n* is divisible by *k*) *a*1,<=*a*2,<=...,<=*a**n*<=/<=*k* and *b*1,<=*b*2,<=...,<=*b**n*<=/<=*k*. Let's split the phone number into blocks of length *k*. The first block will be formed by digits from the phone number that are on positions 1, 2,..., *k*, the second block will be formed by digits from the phone number that are on positions *k*<=+<=1, *k*<=+<=2, ..., 2·*k* and so on. Pasha considers a phone number good, if the *i*-th block doesn't start from the digit *b**i* and is divisible by *a**i* if represented as an integer. \n\nTo represent the block of length *k* as an integer, let's write it out as a sequence *c*1, *c*2,...,*c**k*. Then the integer is calculated as the result of the expression *c*1·10*k*<=-<=1<=+<=*c*2·10*k*<=-<=2<=+<=...<=+<=*c**k*.\n\nPasha asks you to calculate the number of good phone numbers of length *n*, for the given *k*, *a**i* and *b**i*. As this number can be too big, print it modulo 109<=+<=7.\n\nInput Specification:\nThe first line of the input contains two integers *n* and *k* (1<=≤<=*n*<=≤<=100<=000, 1<=≤<=*k*<=≤<=*min*(*n*,<=9)) — the length of all phone numbers and the length of each block, respectively. It is guaranteed that *n* is divisible by *k*.\n\nThe second line of the input contains *n*<=/<=*k* space-separated positive integers — sequence *a*1,<=*a*2,<=...,<=*a**n*<=/<=*k* (1<=≤<=*a**i*<=&lt;<=10*k*).\n\nThe third line of the input contains *n*<=/<=*k* space-separated positive integers — sequence *b*1,<=*b*2,<=...,<=*b**n*<=/<=*k* (0<=≤<=*b**i*<=≤<=9).\n\nOutput Specification:\nPrint a single integer — the number of good phone numbers of length *n* modulo 109<=+<=7.\n\nDemo Input:\n['6 2\\n38 56 49\\n7 3 4\\n', '8 2\\n1 22 3 44\\n5 4 3 2\\n']\n\nDemo Output:\n['8\\n', '32400\\n']\n\nNote:\nIn the first test sample good phone numbers are: 000000, 000098, 005600, 005698, 380000, 380098, 385600, 385698.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:59.903661",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:00.211053",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:00.477979"
+}

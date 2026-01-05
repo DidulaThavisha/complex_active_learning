@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0493",
+  "problem_index": 493,
+  "prompt": "Title: Zero Tree\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nA tree is a graph with *n* vertices and exactly *n*<=-<=1 edges; this graph should meet the following condition: there exists exactly one shortest (by number of edges) path between any pair of its vertices.\n\nA subtree of a tree *T* is a tree with both vertices and edges as subsets of vertices and edges of *T*.\n\nYou're given a tree with *n* vertices. Consider its vertices numbered with integers from 1 to *n*. Additionally an integer is written on every vertex of this tree. Initially the integer written on the *i*-th vertex is equal to *v**i*. In one move you can apply the following operation:\n 1.  Select the subtree of the given tree that includes the vertex with number 1. 1.  Increase (or decrease) by one all the integers which are written on the vertices of that subtree. \nCalculate the minimum number of moves that is required to make all the integers written on the vertices of the given tree equal to zero.\n\nInput Specification:\nThe first line of the input contains *n* (1<=≤<=*n*<=≤<=105). Each of the next *n*<=-<=1 lines contains two integers *a**i* and *b**i* (1<=≤<=*a**i*,<=*b**i*<=≤<=*n*; *a**i*<=≠<=*b**i*) indicating there's an edge between vertices *a**i* and *b**i*. It's guaranteed that the input graph is a tree. \n\nThe last line of the input contains a list of *n* space-separated integers *v*1,<=*v*2,<=...,<=*v**n* (|*v**i*|<=≤<=109).\n\nOutput Specification:\nPrint the minimum number of operations needed to solve the task.\n\nPlease, do not write the %lld specifier to read or write 64-bit integers in С++. It is preferred to use the cin, cout streams or the %I64d specifier.\n\nDemo Input:\n['3\\n1 2\\n1 3\\n1 -1 1\\n']\n\nDemo Output:\n['3\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:23.130721",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:23.525911",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:23.794925"
+}

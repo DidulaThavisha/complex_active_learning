@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0288",
+  "problem_index": 288,
+  "prompt": "Title: Well-known Numbers\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nNumbers *k*-bonacci (*k* is integer, *k*<=&gt;<=1) are a generalization of Fibonacci numbers and are determined as follows:\n -  *F*(*k*,<=*n*)<==<=0, for integer *n*, 1<=≤<=*n*<=&lt;<=*k*; -  *F*(*k*,<=*k*)<==<=1; -  *F*(*k*,<=*n*)<==<=*F*(*k*,<=*n*<=-<=1)<=+<=*F*(*k*,<=*n*<=-<=2)<=+<=...<=+<=*F*(*k*,<=*n*<=-<=*k*), for integer *n*, *n*<=&gt;<=*k*. \nNote that we determine the *k*-bonacci numbers, *F*(*k*,<=*n*), only for integer values of *n* and *k*.\n\nYou've got a number *s*, represent it as a sum of several (at least two) distinct *k*-bonacci numbers.\n\nInput Specification:\nThe first line contains two integers *s* and *k* (1<=≤<=*s*,<=*k*<=≤<=109; *k*<=&gt;<=1).\n\nOutput Specification:\nIn the first line print an integer *m* (*m*<=≥<=2) that shows how many numbers are in the found representation. In the second line print *m* distinct integers *a*1,<=*a*2,<=...,<=*a**m*. Each printed integer should be a *k*-bonacci number. The sum of printed integers must equal *s*.\n\nIt is guaranteed that the answer exists. If there are several possible answers, print any of them.\n\nDemo Input:\n['5 2\\n', '21 5\\n']\n\nDemo Output:\n['3\\n0 2 3\\n', '3\\n4 1 16\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:14.021088",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:14.300168",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:14.992524"
+}

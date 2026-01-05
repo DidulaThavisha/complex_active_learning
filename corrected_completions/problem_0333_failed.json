@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0333",
+  "problem_index": 333,
+  "prompt": "Title: Magnum Opus\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nSalve, mi amice.\n\nEt tu quidem de lapis philosophorum. Barba non facit philosophum. Labor omnia vincit. Non potest creatio ex nihilo. Necesse est partibus.\n\nRp:\n\n    I Aqua Fortis\n\n    I Aqua Regia\n\n    II Amalgama\n\n    VII Minium\n\n    IV Vitriol\n\nMisce in vitro et æstus, et nil admirari. Festina lente, et nulla tenaci invia est via.\n\nFac et spera,\n\nVale,\n\nNicolas Flamel\n\nInput Specification:\nThe first line of input contains several space-separated integers *a**i* (0<=≤<=*a**i*<=≤<=100).\n\nOutput Specification:\nPrint a single integer.\n\nDemo Input:\n['2 4 6 8 10\\n']\n\nDemo Output:\n['1\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:42.617068",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:42.905383",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:43.290606"
+}

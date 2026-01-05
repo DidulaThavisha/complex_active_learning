@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0551",
+  "problem_index": 551,
+  "prompt": "Title: The Elder Trolls IV: Oblivon\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nVasya plays The Elder Trolls IV: Oblivon. Oh, those creators of computer games! What they do not come up with! Absolutely unique monsters have been added to the The Elder Trolls IV: Oblivon. One of these monsters is Unkillable Slug. Why it is \"Unkillable\"? Firstly, because it can be killed with cutting weapon only, so lovers of two-handed amber hammers should find suitable knife themselves. Secondly, it is necessary to make so many cutting strokes to Unkillable Slug. Extremely many. Too many! \n\nVasya has already promoted his character to 80-th level and in order to gain level 81 he was asked to kill Unkillable Slug. The monster has a very interesting shape. It looks like a rectangular parallelepiped with size *x*<=×<=*y*<=×<=*z*, consisting of undestructable cells 1<=×<=1<=×<=1. At one stroke Vasya can cut the Slug along an imaginary grid, i.e. cut with a plane parallel to one of the parallelepiped side. Monster dies when amount of parts it is divided reaches some critical value.\n\nAll parts of monster do not fall after each cut, they remains exactly on its places. I. e. Vasya can cut several parts with one cut.\n\nVasya wants to know what the maximum number of pieces he can cut the Unkillable Slug into striking him at most *k* times.\n\nVasya's character uses absolutely thin sword with infinite length.\n\nInput Specification:\nThe first line of input contains four integer numbers *x*,<=*y*,<=*z*,<=*k* (1<=≤<=*x*,<=*y*,<=*z*<=≤<=106,<=0<=≤<=*k*<=≤<=109).\n\nOutput Specification:\nOutput the only number — the answer for the problem.\n\nPlease, do not use %lld specificator to read or write 64-bit integers in C++. It is preffered to use cout (also you may use %I64d).\n\nDemo Input:\n['2 2 2 3\\n', '2 2 2 1\\n']\n\nDemo Output:\n['8', '2']\n\nNote:\nIn the first sample Vasya make 3 pairwise perpendicular cuts. He cuts monster on two parts with the first cut, then he divides each part on two with the second cut, and finally he divides each of the 4 parts on two.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:00.731023",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:00.996441",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:01.274603"
+}

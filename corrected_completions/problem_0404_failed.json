@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0404",
+  "problem_index": 404,
+  "prompt": "Title: Riverside Curio\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nArkady decides to observe a river for *n* consecutive days. The river's water level on each day is equal to some real value.\n\nArkady goes to the riverside each day and makes a mark on the side of the channel at the height of the water level, but if it coincides with a mark made before, no new mark is created. The water does not wash the marks away. Arkady writes down the number of marks strictly above the water level each day, on the *i*-th day this value is equal to *m**i*.\n\nDefine *d**i* as the number of marks strictly under the water level on the *i*-th day. You are to find out the minimum possible sum of *d**i* over all days. There are no marks on the channel before the first day.\n\nInput Specification:\nThe first line contains a single positive integer *n* (1<=≤<=*n*<=≤<=105) — the number of days.\n\nThe second line contains *n* space-separated integers *m*1,<=*m*2,<=...,<=*m**n* (0<=≤<=*m**i*<=&lt;<=*i*) — the number of marks strictly above the water on each day.\n\nOutput Specification:\nOutput one single integer — the minimum possible sum of the number of marks strictly below the water level among all days.\n\nDemo Input:\n['6\\n0 1 0 3 0 2\\n', '5\\n0 1 2 1 2\\n', '5\\n0 1 1 2 2\\n']\n\nDemo Output:\n['6\\n', '1\\n', '0\\n']\n\nNote:\nIn the first example, the following figure shows an optimal case.\n\nNote that on day 3, a new mark should be created because if not, there cannot be 3 marks above water on day 4. The total number of marks underwater is 0 + 0 + 2 + 0 + 3 + 1 = 6.\n\nIn the second example, the following figure shows an optimal case.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:28.130560",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:28.405856",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:28.669336"
+}

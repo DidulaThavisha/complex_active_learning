@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0561",
+  "problem_index": 561,
+  "prompt": "Title: Board Game\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nPolycarp and Vasiliy love simple logical games. Today they play a game with infinite chessboard and one pawn for each player. Polycarp and Vasiliy move in turns, Polycarp starts. In each turn Polycarp can move his pawn from cell (*x*,<=*y*) to (*x*<=-<=1,<=*y*) or (*x*,<=*y*<=-<=1). Vasiliy can move his pawn from (*x*,<=*y*) to one of cells: (*x*<=-<=1,<=*y*),<=(*x*<=-<=1,<=*y*<=-<=1) and (*x*,<=*y*<=-<=1). Both players are also allowed to skip move. \n\nThere are some additional restrictions — a player is forbidden to move his pawn to a cell with negative *x*-coordinate or *y*-coordinate or to the cell containing opponent's pawn The winner is the first person to reach cell (0,<=0). \n\nYou are given the starting coordinates of both pawns. Determine who will win if both of them play optimally well.\n\nInput Specification:\nThe first line contains four integers: *x**p*,<=*y**p*,<=*x**v*,<=*y**v* (0<=≤<=*x**p*,<=*y**p*,<=*x**v*,<=*y**v*<=≤<=105) — Polycarp's and Vasiliy's starting coordinates.\n\nIt is guaranteed that in the beginning the pawns are in different cells and none of them is in the cell (0,<=0).\n\nOutput Specification:\nOutput the name of the winner: \"Polycarp\" or \"Vasiliy\".\n\nDemo Input:\n['2 1 2 2\\n', '4 7 7 4\\n']\n\nDemo Output:\n['Polycarp\\n', 'Vasiliy\\n']\n\nNote:\nIn the first sample test Polycarp starts in (2, 1) and will move to (1, 1) in the first turn. No matter what his opponent is doing, in the second turn Polycarp can move to (1, 0) and finally to (0, 0) in the third turn.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:06.536339",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:06.835505",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:07.165565"
+}

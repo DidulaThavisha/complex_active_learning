@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0580",
+  "problem_index": 580,
+  "prompt": "Title: Marina and Vasya\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nMarina loves strings of the same length and Vasya loves when there is a third string, different from them in exactly *t* characters. Help Vasya find at least one such string.\n\nMore formally, you are given two strings *s*1, *s*2 of length *n* and number *t*. Let's denote as *f*(*a*,<=*b*) the number of characters in which strings *a* and *b* are different. Then your task will be to find any string *s*3 of length *n*, such that *f*(*s*1,<=*s*3)<==<=*f*(*s*2,<=*s*3)<==<=*t*. If there is no such string, print <=-<=1.\n\nInput Specification:\nThe first line contains two integers *n* and *t* (1<=≤<=*n*<=≤<=105, 0<=≤<=*t*<=≤<=*n*).\n\nThe second line contains string *s*1 of length *n*, consisting of lowercase English letters.\n\nThe third line contain string *s*2 of length *n*, consisting of lowercase English letters.\n\nOutput Specification:\nPrint a string of length *n*, differing from string *s*1 and from *s*2 in exactly *t* characters. Your string should consist only from lowercase English letters. If such string doesn't exist, print -1.\n\nDemo Input:\n['3 2\\nabc\\nxyc\\n', '1 0\\nc\\nb\\n']\n\nDemo Output:\n['ayd', '-1\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:18.090727",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:18.362120",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:18.631874"
+}

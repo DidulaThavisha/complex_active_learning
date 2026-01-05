@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0483",
+  "problem_index": 483,
+  "prompt": "Title: Sum of Nestings\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nRecall that the bracket sequence is considered regular if it is possible to insert symbols '+' and '1' into it so that the result is a correct arithmetic expression. For example, a sequence \"(()())\" is regular, because we can get correct arithmetic expression insering symbols '+' and '1': \"((1+1)+(1+1))\". Also the following sequences are regular: \"()()()\", \"(())\" and \"()\". The following sequences are not regular bracket sequences: \")(\", \"(()\" and \"())(()\".\n\nIn this problem you are given two integers *n* and *k*. Your task is to construct a regular bracket sequence consisting of round brackets with length 2·*n* with total sum of nesting of all opening brackets equals to exactly *k*. The nesting of a single opening bracket equals to the number of pairs of brackets in which current opening bracket is embedded.\n\nFor example, in the sequence \"()(())\" the nesting of first opening bracket equals to 0, the nesting of the second opening bracket equals to 0 and the nesting of the third opening bracket equal to 1. So the total sum of nestings equals to 1.\n\nInput Specification:\nThe first line contains two integers *n* and *k* (1<=≤<=*n*<=≤<=3·105, 0<=≤<=*k*<=≤<=1018) — the number of opening brackets and needed total nesting.\n\nOutput Specification:\nPrint the required regular bracket sequence consisting of round brackets.\n\nIf there is no solution print \"Impossible\" (without quotes).\n\nDemo Input:\n['3 1\\n', '4 6\\n', '2 5\\n']\n\nDemo Output:\n['()(())', '(((())))', 'Impossible\\n']\n\nNote:\nThe first example is examined in the statement.\n\nIn the second example the answer is \"(((())))\". The nesting of the first opening bracket is 0, the nesting of the second is 1, the nesting of the third is 2, the nesting of fourth is 3. So the total sum of nestings equals to 0 + 1 + 2 + 3 = 6.\n\nIn the third it is impossible to construct a regular bracket sequence, because the maximum possible total sum of nestings for two opening brackets equals to 1. This total sum of nestings is obtained for the sequence \"(())\".",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:17.343793",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:17.614309",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:17.880166"
+}

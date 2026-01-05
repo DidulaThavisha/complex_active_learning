@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0358",
+  "problem_index": 358,
+  "prompt": "Title: Vasiliy's Multiset\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nAuthor has gone out of the stories about Vasiliy, so here is just a formal task description.\n\nYou are given *q* queries and a multiset *A*, initially containing only integer 0. There are three types of queries:\n 1.  \"+ x\" — add integer *x* to multiset *A*.1.  \"- x\" — erase one occurrence of integer *x* from multiset *A*. It's guaranteed that at least one *x* is present in the multiset *A* before this query.1.  \"? x\" — you are given integer *x* and need to compute the value , i.e. the maximum value of bitwise exclusive OR (also know as XOR) of integer *x* and some integer *y* from the multiset *A*.\nMultiset is a set, where equal elements are allowed.\n\nInput Specification:\nThe first line of the input contains a single integer *q* (1<=≤<=*q*<=≤<=200<=000) — the number of queries Vasiliy has to perform.\n\nEach of the following *q* lines of the input contains one of three characters '+', '-' or '?' and an integer *x**i* (1<=≤<=*x**i*<=≤<=109). It's guaranteed that there is at least one query of the third type.\n\nNote, that the integer 0 will always be present in the set *A*.\n\nOutput Specification:\nFor each query of the type '?' print one integer — the maximum value of bitwise exclusive OR (XOR) of integer *x**i* and some integer from the multiset *A*.\n\nDemo Input:\n['10\\n+ 8\\n+ 9\\n+ 11\\n+ 6\\n+ 1\\n? 3\\n- 8\\n? 3\\n? 8\\n? 11\\n']\n\nDemo Output:\n['11\\n10\\n14\\n13\\n']\n\nNote:\nAfter first five operations multiset *A* contains integers 0, 8, 9, 11, 6 and 1.\n\nThe answer for the sixth query is integer <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9e2f3d4f1a7c134a5695ba1d548df2b4f9292206.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> — maximum among integers <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6cb1b5a0f9bbad177b1de700e918187c8fb3e972.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7644536d2010111824755b5dd2b6043340b2bf4d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/9a437d1611f6c2ae5cd9a275a6ab2df61296988e.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/4e3eeab99fa495ecdcd103c68de47dd72943016f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> and <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/97b73b0f3e59862ed9f80fa83527d97e0ed0a084.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:57.153977",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:57.537956",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:57.815195"
+}

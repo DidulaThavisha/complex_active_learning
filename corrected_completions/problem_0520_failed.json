@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0520",
+  "problem_index": 520,
+  "prompt": "Title: Frames\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nThroughout Igor K.'s life he has had many situations worthy of attention. We remember the story with the virus, the story of his mathematical career and of course, his famous programming achievements. However, one does not always adopt new hobbies, one can quit something as well.\n\nThis time Igor K. got disappointed in one of his hobbies: editing and voicing videos. Moreover, he got disappointed in it so much, that he decided to destroy his secret archive for good. \n\nIgor K. use Pindows XR operation system which represents files and folders by small icons. At that, *m* icons can fit in a horizontal row in any window.\n\nIgor K.'s computer contains *n* folders in the D: disk's root catalog. The folders are numbered from 1 to *n* in the order from the left to the right and from top to bottom (see the images). At that the folders with secret videos have numbers from *a* to *b* inclusive. Igor K. wants to delete them forever, at that making as few frame selections as possible, and then pressing Shift+Delete exactly once. What is the minimum number of times Igor K. will have to select the folder in order to select folders from *a* to *b* and only them? Let us note that if some selected folder is selected repeatedly, then it is deselected. Each selection possesses the shape of some rectangle with sides parallel to the screen's borders.\n\nInput Specification:\nThe only line contains four integers *n*, *m*, *a*, *b* (1<=≤<=*n*,<=*m*<=≤<=109, 1<=≤<=*a*<=≤<=*b*<=≤<=*n*). They are the number of folders in Igor K.'s computer, the width of a window and the numbers of the first and the last folders that need to be deleted.\n\nOutput Specification:\nPrint a single number: the least possible number of times Igor K. will have to select the folders using frames to select only the folders with numbers from *a* to *b*.\n\nDemo Input:\n['11 4 3 9\\n', '20 5 2 20\\n']\n\nDemo Output:\n['3\\n', '2\\n']\n\nNote:\nThe images below illustrate statement tests.\n\nThe first test:\n\n<img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/a0e4ba690dd16e3c68210a28afd82020b23fb605.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\n\nIn this test we can select folders 3 and 4 with out first selection, folders 5, 6, 7, 8 with our second selection and folder 9 with our third, last selection.\n\nThe second test:\n\n<img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/289e2666a3d8b3dfe5b22ff3d88976df711640f7.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\n\nIn this test we can first select all folders in the first row (2, 3, 4, 5), then — all other ones.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:41.684926",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:41.972920",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:42.266023"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0578",
+  "problem_index": 578,
+  "prompt": "Title: Andryusha and Colored Balloons\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nAndryusha goes through a park each day. The squares and paths between them look boring to Andryusha, so he decided to decorate them.\n\nThe park consists of *n* squares connected with (*n*<=-<=1) bidirectional paths in such a way that any square is reachable from any other using these paths. Andryusha decided to hang a colored balloon at each of the squares. The baloons' colors are described by positive integers, starting from 1. In order to make the park varicolored, Andryusha wants to choose the colors in a special way. More precisely, he wants to use such colors that if *a*, *b* and *c* are distinct squares that *a* and *b* have a direct path between them, and *b* and *c* have a direct path between them, then balloon colors on these three squares are distinct.\n\nAndryusha wants to use as little different colors as possible. Help him to choose the colors!\n\nInput Specification:\nThe first line contains single integer *n* (3<=≤<=*n*<=≤<=2·105) — the number of squares in the park.\n\nEach of the next (*n*<=-<=1) lines contains two integers *x* and *y* (1<=≤<=*x*,<=*y*<=≤<=*n*) — the indices of two squares directly connected by a path.\n\nIt is guaranteed that any square is reachable from any other using the paths.\n\nOutput Specification:\nIn the first line print single integer *k* — the minimum number of colors Andryusha has to use.\n\nIn the second line print *n* integers, the *i*-th of them should be equal to the balloon color on the *i*-th square. Each of these numbers should be within range from 1 to *k*.\n\nDemo Input:\n['3\\n2 3\\n1 3\\n', '5\\n2 3\\n5 3\\n4 3\\n1 3\\n', '5\\n2 1\\n3 2\\n4 3\\n5 4\\n']\n\nDemo Output:\n['3\\n1 3 2 ', '5\\n1 3 2 5 4 ', '3\\n1 2 3 1 2 ']\n\nNote:\nIn the first sample the park consists of three squares: 1 → 3 → 2. Thus, the balloon colors have to be distinct.\n\nIn the second example there are following triples of consequently connected squares: \n -  1 → 3 → 2 -  1 → 3 → 4 -  1 → 3 → 5 -  2 → 3 → 4 -  2 → 3 → 5 -  4 → 3 → 5 \nIn the third example there are following triples: \n -  1 → 2 → 3 -  2 → 3 → 4 -  3 → 4 → 5",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:16.955191",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:17.239795",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:17.501044"
+}

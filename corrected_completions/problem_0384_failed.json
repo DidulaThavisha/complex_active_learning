@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0384",
+  "problem_index": 384,
+  "prompt": "Title: Pashmak and Parmida's problem\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nParmida is a clever girl and she wants to participate in Olympiads this year. Of course she wants her partner to be clever too (although he's not)! Parmida has prepared the following test problem for Pashmak.\n\nThere is a sequence *a* that consists of *n* integers *a*1,<=*a*2,<=...,<=*a**n*. Let's denote *f*(*l*,<=*r*,<=*x*) the number of indices *k* such that: *l*<=≤<=*k*<=≤<=*r* and *a**k*<==<=*x*. His task is to calculate the number of pairs of indicies *i*,<=*j* (1<=≤<=*i*<=&lt;<=*j*<=≤<=*n*) such that *f*(1,<=*i*,<=*a**i*)<=&gt;<=*f*(*j*,<=*n*,<=*a**j*).\n\nHelp Pashmak with the test.\n\nInput Specification:\nThe first line of the input contains an integer *n* (1<=≤<=*n*<=≤<=106). The second line contains *n* space-separated integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=109).\n\nOutput Specification:\nPrint a single integer — the answer to the problem.\n\nDemo Input:\n['7\\n1 2 1 1 2 2 1\\n', '3\\n1 1 1\\n', '5\\n1 2 3 4 5\\n']\n\nDemo Output:\n['8\\n', '1\\n', '0\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:13.821492",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:14.309767",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:14.597955"
+}

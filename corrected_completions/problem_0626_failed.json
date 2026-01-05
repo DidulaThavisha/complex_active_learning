@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0626",
+  "problem_index": 626,
+  "prompt": "Title: Zebras\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nOleg writes down the history of the days he lived. For each day he decides if it was good or bad. Oleg calls a non-empty sequence of days a zebra, if it starts with a bad day, ends with a bad day, and good and bad days are alternating in it. Let us denote bad days as 0 and good days as 1. Then, for example, sequences of days 0, 010, 01010 are zebras, while sequences 1, 0110, 0101 are not.\n\nOleg tells you the story of days he lived in chronological order in form of string consisting of 0 and 1. Now you are interested if it is possible to divide Oleg's life history into several subsequences, each of which is a zebra, and the way it can be done. Each day must belong to exactly one of the subsequences. For each of the subsequences, days forming it must be ordered chronologically. Note that subsequence does not have to be a group of consecutive days.\n\nInput Specification:\nIn the only line of input data there is a non-empty string *s* consisting of characters 0 and 1, which describes the history of Oleg's life. Its length (denoted as |*s*|) does not exceed 200<=000 characters.\n\nOutput Specification:\nIf there is a way to divide history into zebra subsequences, in the first line of output you should print an integer *k* (1<=≤<=*k*<=≤<=|*s*|), the resulting number of subsequences. In the *i*-th of following *k* lines first print the integer *l**i* (1<=≤<=*l**i*<=≤<=|*s*|), which is the length of the *i*-th subsequence, and then *l**i* indices of days forming the subsequence. Indices must follow in ascending order. Days are numbered starting from 1. Each index from 1 to *n* must belong to exactly one subsequence. If there is no way to divide day history into zebra subsequences, print -1.\n\nSubsequences may be printed in any order. If there are several solutions, you may print any of them. You do not have to minimize nor maximize the value of *k*.\n\nDemo Input:\n['0010100\\n', '111\\n']\n\nDemo Output:\n['3\\n3 1 3 4\\n3 2 5 6\\n1 7\\n', '-1\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:46.262820",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:46.532047",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:46.798372"
+}

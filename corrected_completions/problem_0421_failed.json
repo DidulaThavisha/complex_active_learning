@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0421",
+  "problem_index": 421,
+  "prompt": "Title: Cave Painting\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nImp is watching a documentary about cave painting.\n\nSome numbers, carved in chaotic order, immediately attracted his attention. Imp rapidly proposed a guess that they are the remainders of division of a number *n* by all integers *i* from 1 to *k*. Unfortunately, there are too many integers to analyze for Imp.\n\nImp wants you to check whether all these remainders are distinct. Formally, he wants to check, if all , 1<=≤<=*i*<=≤<=*k*, are distinct, i. e. there is no such pair (*i*,<=*j*) that: \n -  1<=≤<=*i*<=&lt;<=*j*<=≤<=*k*, -  , where  is the remainder of division *x* by *y*.\n\nInput Specification:\nThe only line contains two integers *n*, *k* (1<=≤<=*n*,<=*k*<=≤<=1018).\n\nOutput Specification:\nPrint \"Yes\", if all the remainders are distinct, and \"No\" otherwise.\n\nYou can print each letter in arbitrary case (lower or upper).\n\nDemo Input:\n['4 4\\n', '5 3\\n']\n\nDemo Output:\n['No\\n', 'Yes\\n']\n\nNote:\nIn the first sample remainders modulo 1 and 4 coincide.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:39.010080",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:39.306247",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:39.582598"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0560",
+  "problem_index": 560,
+  "prompt": "Title: Spreadsheet\n\nTime Limit: 10 seconds\n\nMemory Limit: 64 megabytes\n\nProblem Description:\nIn the popular spreadsheets systems (for example, in Excel) the following numeration of columns is used. The first column has number A, the second — number B, etc. till column 26 that is marked by Z. Then there are two-letter numbers: column 27 has number AA, 28 — AB, column 52 is marked by AZ. After ZZ there follow three-letter numbers, etc.\n\nThe rows are marked by integer numbers starting with 1. The cell name is the concatenation of the column and the row numbers. For example, BC23 is the name for the cell that is in column 55, row 23. \n\nSometimes another numeration system is used: RXCY, where X and Y are integer numbers, showing the column and the row numbers respectfully. For instance, R23C55 is the cell from the previous example.\n\nYour task is to write a program that reads the given sequence of cell coordinates and produce each item written according to the rules of another numeration system.\n\nInput Specification:\nThe first line of the input contains integer number *n* (1<=≤<=*n*<=≤<=105), the number of coordinates in the test. Then there follow *n* lines, each of them contains coordinates. All the coordinates are correct, there are no cells with the column and/or the row numbers larger than 106 .\n\nOutput Specification:\nWrite *n* lines, each line should contain a cell coordinates in the other numeration system.\n\nDemo Input:\n['2\\nR23C55\\nBC23\\n']\n\nDemo Output:\n['BC23\\nR23C55\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:05.818790",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:06.232986",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:06.535803"
+}

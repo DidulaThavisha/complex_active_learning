@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0342",
+  "problem_index": 342,
+  "prompt": "Title: Mike and gcd problem\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nMike has a sequence *A*<==<=[*a*1,<=*a*2,<=...,<=*a**n*] of length *n*. He considers the sequence *B*<==<=[*b*1,<=*b*2,<=...,<=*b**n*] beautiful if the *gcd* of all its elements is bigger than 1, i.e. . \n\nMike wants to change his sequence in order to make it beautiful. In one move he can choose an index *i* (1<=≤<=*i*<=&lt;<=*n*), delete numbers *a**i*,<=*a**i*<=+<=1 and put numbers *a**i*<=-<=*a**i*<=+<=1,<=*a**i*<=+<=*a**i*<=+<=1 in their place instead, in this order. He wants perform as few operations as possible. Find the minimal number of operations to make sequence *A* beautiful if it's possible, or tell him that it is impossible to do so.\n\n is the biggest non-negative number *d* such that *d* divides *b**i* for every *i* (1<=≤<=*i*<=≤<=*n*).\n\nInput Specification:\nThe first line contains a single integer *n* (2<=≤<=*n*<=≤<=100<=000) — length of sequence *A*.\n\nThe second line contains *n* space-separated integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=109) — elements of sequence *A*.\n\nOutput Specification:\nOutput on the first line \"YES\" (without quotes) if it is possible to make sequence *A* beautiful by performing operations described above, and \"NO\" (without quotes) otherwise.\n\nIf the answer was \"YES\", output the minimal number of moves needed to make sequence *A* beautiful.\n\nDemo Input:\n['2\\n1 1\\n', '3\\n6 2 4\\n', '2\\n1 3\\n']\n\nDemo Output:\n['YES\\n1\\n', 'YES\\n0\\n', 'YES\\n1\\n']\n\nNote:\nIn the first example you can simply make one move to obtain sequence [0, 2] with <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6ddb490b8e898198d30c56c6edce2cf15e6f998a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.\n\nIn the second example the *gcd* of the sequence is already greater than 1.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:47.914421",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:48.185182",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:48.516019"
+}

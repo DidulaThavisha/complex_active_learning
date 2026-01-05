@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0389",
+  "problem_index": 389,
+  "prompt": "Title: Flea\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nIt is known that fleas in Berland can jump only vertically and horizontally, and the length of the jump is always equal to *s* centimeters. A flea has found herself at the center of some cell of the checked board of the size *n*<=×<=*m* centimeters (each cell is 1<=×<=1 centimeters). She can jump as she wishes for an arbitrary number of times, she can even visit a cell more than once. The only restriction is that she cannot jump out of the board.\n\nThe flea can count the amount of cells that she can reach from the starting position (*x*,<=*y*). Let's denote this amount by *d**x*,<=*y*. Your task is to find the number of such starting positions (*x*,<=*y*), which have the maximum possible value of *d**x*,<=*y*.\n\nInput Specification:\nThe first line contains three integers *n*, *m*, *s* (1<=≤<=*n*,<=*m*,<=*s*<=≤<=106) — length of the board, width of the board and length of the flea's jump.\n\nOutput Specification:\nOutput the only integer — the number of the required starting positions of the flea.\n\nDemo Input:\n['2 3 1000000\\n', '3 3 2\\n']\n\nDemo Output:\n['6\\n', '4\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:17.161290",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:17.427507",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:17.747988"
+}

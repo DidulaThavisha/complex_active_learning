@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0588",
+  "problem_index": 588,
+  "prompt": "Title: Squares\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given an infinite checkered field. You should get from a square (*x*1; *y*1) to a square (*x*2; *y*2). Using the shortest path is not necessary. You can move on the field squares in four directions. That is, when you are positioned in any square, you can move to any other side-neighboring one. \n\nA square (*x*; *y*) is considered bad, if at least one of the two conditions is fulfilled:\n-  |*x*<=+<=*y*|<=≡<=0 (*mod* 2*a*),-  |*x*<=-<=*y*|<=≡<=0 (*mod* 2*b*).\nYour task is to find the minimum number of bad cells one will have to visit on the way from (*x*1; *y*1) to (*x*2; *y*2).\n\nInput Specification:\nThe only line contains integers *a*, *b*, *x*1, *y*1, *x*2 and *y*2 — the parameters of the bad squares, the coordinates of the initial and the final squares correspondingly (2<=≤<=*a*,<=*b*<=≤<=109 and |*x*1|,|*y*1|,|*x*2|,|*y*2|<=≤<=109). It is guaranteed that the initial and the final square aren't bad.\n\nOutput Specification:\nPrint a single number — the minimum number of bad cells that one will have to visit in order to travel from square (*x*1; *y*1) to square (*x*2; *y*2).\n\nDemo Input:\n['2 2 1 0 0 1\\n', '2 2 10 11 0 1\\n', '2 4 3 -1 3 7\\n']\n\nDemo Output:\n['1\\n', '5\\n', '2\\n']\n\nNote:\nIn the third sample one of the possible paths in (3;-1)-&gt;(3;0)-&gt;(3;1)-&gt;(3;2)-&gt;(4;2)-&gt;(4;3)-&gt;(4;4)-&gt;(4;5)-&gt;(4;6)-&gt;(4;7)-&gt;(3;7). Squares (3;1) and (4;4) are bad.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:23.430405",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:23.696044",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:23.978203"
+}

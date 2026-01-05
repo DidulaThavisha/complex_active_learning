@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0327",
+  "problem_index": 327,
+  "prompt": "Title: Robbers' watch\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nRobbers, who attacked the Gerda's cab, are very successful in covering from the kingdom police. To make the goal of catching them even harder, they use their own watches.\n\nFirst, as they know that kingdom police is bad at math, robbers use the positional numeral system with base 7. Second, they divide one day in *n* hours, and each hour in *m* minutes. Personal watches of each robber are divided in two parts: first of them has the smallest possible number of places that is necessary to display any integer from 0 to *n*<=-<=1, while the second has the smallest possible number of places that is necessary to display any integer from 0 to *m*<=-<=1. Finally, if some value of hours or minutes can be displayed using less number of places in base 7 than this watches have, the required number of zeroes is added at the beginning of notation.\n\nNote that to display number 0 section of the watches is required to have at least one place.\n\nLittle robber wants to know the number of moments of time (particular values of hours and minutes), such that all digits displayed on the watches are distinct. Help her calculate this number.\n\nInput Specification:\nThe first line of the input contains two integers, given in the decimal notation, *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=109) — the number of hours in one day and the number of minutes in one hour, respectively.\n\nOutput Specification:\nPrint one integer in decimal notation — the number of different pairs of hour and minute, such that all digits displayed on the watches are distinct.\n\nDemo Input:\n['2 3\\n', '8 2\\n']\n\nDemo Output:\n['4\\n', '5\\n']\n\nNote:\nIn the first sample, possible pairs are: (0: 1), (0: 2), (1: 0), (1: 2).\n\nIn the second sample, possible pairs are: (02: 1), (03: 1), (04: 1), (05: 1), (06: 1).",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:39.066517",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:39.364884",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:39.623957"
+}

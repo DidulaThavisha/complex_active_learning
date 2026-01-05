@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0414",
+  "problem_index": 414,
+  "prompt": "Title: Python Indentation\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nIn Python, code blocks don't have explicit begin/end or curly braces to mark beginning and end of the block. Instead, code blocks are defined by indentation.\n\nWe will consider an extremely simplified subset of Python with only two types of statements.\n\nSimple statements are written in a single line, one per line. An example of a simple statement is assignment.\n\nFor statements are compound statements: they contain one or several other statements. For statement consists of a header written in a separate line which starts with \"for\" prefix, and loop body. Loop body is a block of statements indented one level further than the header of the loop. Loop body can contain both types of statements. Loop body can't be empty.\n\nYou are given a sequence of statements without indentation. Find the number of ways in which the statements can be indented to form a valid Python program.\n\nInput Specification:\nThe first line contains a single integer *N* (1<=≤<=*N*<=≤<=5000) — the number of commands in the program. *N* lines of the program follow, each line describing a single command. Each command is either \"f\" (denoting \"for statement\") or \"s\" (\"simple statement\"). It is guaranteed that the last line is a simple statement.\n\nOutput Specification:\nOutput one line containing an integer - the number of ways the given sequence of statements can be indented modulo 109<=+<=7.\n\nDemo Input:\n['4\\ns\\nf\\nf\\ns\\n', '4\\nf\\ns\\nf\\ns\\n']\n\nDemo Output:\n['1\\n', '2\\n']\n\nNote:\nIn the first test case, there is only one way to indent the program: the second for statement must be part of the body of the first one.\n\nIn the second test case, there are two ways to indent the program: the second for statement can either be part of the first one's body or a separate statement following the first one.\n\nor",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:34.155813",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:34.477805",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:34.775790"
+}

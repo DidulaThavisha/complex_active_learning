@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0306",
+  "problem_index": 306,
+  "prompt": "Title: Sequence of points\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nYou are given the following points with integer coordinates on the plane: *M*0,<=*A*0,<=*A*1,<=...,<=*A**n*<=-<=1, where *n* is odd number. Now we define the following infinite sequence of points *M**i*: *M**i* is symmetric to *M**i*<=-<=1 according  (for every natural number *i*). Here point *B* is symmetric to *A* according *M*, if *M* is the center of the line segment *AB*. Given index *j* find the point *M**j*.\n\nInput Specification:\nOn the first line you will be given an integer *n* (1<=≤<=*n*<=≤<=105), which will be odd, and *j* (1<=≤<=*j*<=≤<=1018), where *j* is the index of the desired point. The next line contains two space separated integers, the coordinates of *M*0. After that *n* lines follow, where the *i*-th line contain the space separated integer coordinates of the point *A**i*<=-<=1. The absolute values of all input coordinates will not be greater then 1000.\n\nOutput Specification:\nOn a single line output the coordinates of *M**j*, space separated.\n\nDemo Input:\n['3 4\\n0 0\\n1 1\\n2 3\\n-5 3\\n', '3 1\\n5 5\\n1000 1000\\n-1000 1000\\n3 100\\n']\n\nDemo Output:\n['14 0\\n', '1995 1995\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:25.391558",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:25.669187",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:26.155894"
+}

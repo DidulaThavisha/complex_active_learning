@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0412",
+  "problem_index": 412,
+  "prompt": "Title: Constellation\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nA star map in Berland is a checked field *n*<=×<=*m* squares. In each square there is or there is not a star. The favourite constellation of all Berland's astronomers is the constellation of the Cross. This constellation can be formed by any 5 stars so, that for some integer *x* (radius of the constellation) the following is true: \n -  the 2nd is on the same vertical line as the 1st, but *x* squares up -  the 3rd is on the same vertical line as the 1st, but *x* squares down -  the 4th is on the same horizontal line as the 1st, but *x* squares left -  the 5th is on the same horizontal line as the 1st, but *x* squares right \nSuch constellations can be very numerous, that's why they are numbered with integers from 1 on the following principle: when two constellations are compared, the one with a smaller radius gets a smaller index; if their radii are equal — the one, whose central star if higher than the central star of the other one; if their central stars are at the same level — the one, whose central star is to the left of the central star of the other one.\n\nYour task is to find the constellation with index *k* by the given Berland's star map.\n\nInput Specification:\nThe first line contains three integers *n*, *m* and *k* (1<=≤<=*n*,<=*m*<=≤<=300,<=1<=≤<=*k*<=≤<=3·107) — height and width of the map and index of the required constellation respectively. The upper-left corner has coordinates (1,<=1), and the lower-right — (*n*,<=*m*). Then there follow *n* lines, *m* characters each — description of the map. *j*-th character in *i*-th line is «*», if there is a star in the corresponding square, and «.» if this square is empty.\n\nOutput Specification:\nIf the number of the constellations is less than *k*, output -1. Otherwise output 5 lines, two integers each — coordinates of the required constellation. Output the stars in the following order: central, upper, lower, left, right.\n\nDemo Input:\n['5 6 1\\n....*.\\n...***\\n....*.\\n..*...\\n.***..\\n', '5 6 2\\n....*.\\n...***\\n....*.\\n..*...\\n.***..\\n', '7 7 2\\n...*...\\n.......\\n...*...\\n*.***.*\\n...*...\\n.......\\n...*...\\n']\n\nDemo Output:\n['2 5\\n1 5\\n3 5\\n2 4\\n2 6\\n', '-1\\n', '4 4\\n1 4\\n7 4\\n4 1\\n4 7\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:32.909266",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:33.190792",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:33.481156"
+}

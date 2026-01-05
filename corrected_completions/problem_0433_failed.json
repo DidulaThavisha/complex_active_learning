@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0433",
+  "problem_index": 433,
+  "prompt": "Title: Exams\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nVasiliy has an exam period which will continue for *n* days. He has to pass exams on *m* subjects. Subjects are numbered from 1 to *m*.\n\nAbout every day we know exam for which one of *m* subjects can be passed on that day. Perhaps, some day you can't pass any exam. It is not allowed to pass more than one exam on any day. \n\nOn each day Vasiliy can either pass the exam of that day (it takes the whole day) or prepare all day for some exam or have a rest. \n\nAbout each subject Vasiliy know a number *a**i* — the number of days he should prepare to pass the exam number *i*. Vasiliy can switch subjects while preparing for exams, it is not necessary to prepare continuously during *a**i* days for the exam number *i*. He can mix the order of preparation for exams in any way.\n\nYour task is to determine the minimum number of days in which Vasiliy can pass all exams, or determine that it is impossible. Each exam should be passed exactly one time.\n\nInput Specification:\nThe first line contains two integers *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=105) — the number of days in the exam period and the number of subjects. \n\nThe second line contains *n* integers *d*1,<=*d*2,<=...,<=*d**n* (0<=≤<=*d**i*<=≤<=*m*), where *d**i* is the number of subject, the exam of which can be passed on the day number *i*. If *d**i* equals 0, it is not allowed to pass any exams on the day number *i*. \n\nThe third line contains *m* positive integers *a*1,<=*a*2,<=...,<=*a**m* (1<=≤<=*a**i*<=≤<=105), where *a**i* is the number of days that are needed to prepare before passing the exam on the subject *i*.\n\nOutput Specification:\nPrint one integer — the minimum number of days in which Vasiliy can pass all exams. If it is impossible, print -1.\n\nDemo Input:\n['7 2\\n0 1 0 2 1 0 2\\n2 1\\n', '10 3\\n0 0 1 2 3 0 2 0 1 2\\n1 1 4\\n', '5 1\\n1 1 1 1 1\\n5\\n']\n\nDemo Output:\n['5\\n', '9\\n', '-1\\n']\n\nNote:\nIn the first example Vasiliy can behave as follows. On the first and the second day he can prepare for the exam number 1 and pass it on the fifth day, prepare for the exam number 2 on the third day and pass it on the fourth day.\n\nIn the second example Vasiliy should prepare for the exam number 3 during the first four days and pass it on the fifth day. Then on the sixth day he should prepare for the exam number 2 and then pass it on the seventh day. After that he needs to prepare for the exam number 1 on the eighth day and pass it on the ninth day. \n\nIn the third example Vasiliy can't pass the only exam because he hasn't anough time to prepare for it.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:46.486453",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:46.762083",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:47.027254"
+}

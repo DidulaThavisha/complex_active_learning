@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0564",
+  "problem_index": 564,
+  "prompt": "Title: 1-2-3\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nIlya is working for the company that constructs robots. Ilya writes programs for entertainment robots, and his current project is \"Bob\", a new-generation game robot. Ilya's boss wants to know his progress so far. Especially he is interested if Bob is better at playing different games than the previous model, \"Alice\". \n\nSo now Ilya wants to compare his robots' performance in a simple game called \"1-2-3\". This game is similar to the \"Rock-Paper-Scissors\" game: both robots secretly choose a number from the set {1,<=2,<=3} and say it at the same moment. If both robots choose the same number, then it's a draw and noone gets any points. But if chosen numbers are different, then one of the robots gets a point: 3 beats 2, 2 beats 1 and 1 beats 3. \n\nBoth robots' programs make them choose their numbers in such a way that their choice in (*i*<=+<=1)-th game depends only on the numbers chosen by them in *i*-th game. \n\nIlya knows that the robots will play *k* games, Alice will choose number *a* in the first game, and Bob will choose *b* in the first game. He also knows both robots' programs and can tell what each robot will choose depending on their choices in previous game. Ilya doesn't want to wait until robots play all *k* games, so he asks you to predict the number of points they will have after the final game.\n\nInput Specification:\nThe first line contains three numbers *k*, *a*, *b* (1<=≤<=*k*<=≤<=1018, 1<=≤<=*a*,<=*b*<=≤<=3). \n\nThen 3 lines follow, *i*-th of them containing 3 numbers *A**i*,<=1, *A**i*,<=2, *A**i*,<=3, where *A**i*,<=*j* represents Alice's choice in the game if Alice chose *i* in previous game and Bob chose *j* (1<=≤<=*A**i*,<=*j*<=≤<=3). \n\nThen 3 lines follow, *i*-th of them containing 3 numbers *B**i*,<=1, *B**i*,<=2, *B**i*,<=3, where *B**i*,<=*j* represents Bob's choice in the game if Alice chose *i* in previous game and Bob chose *j* (1<=≤<=*B**i*,<=*j*<=≤<=3).\n\nOutput Specification:\nPrint two numbers. First of them has to be equal to the number of points Alice will have, and second of them must be Bob's score after *k* games.\n\nDemo Input:\n['10 2 1\\n1 1 1\\n1 1 1\\n1 1 1\\n2 2 2\\n2 2 2\\n2 2 2\\n', '8 1 1\\n2 2 1\\n3 3 1\\n3 1 3\\n1 1 1\\n2 1 1\\n1 2 3\\n', '5 1 1\\n1 2 2\\n2 2 2\\n2 2 2\\n1 2 2\\n2 2 2\\n2 2 2\\n']\n\nDemo Output:\n['1 9\\n', '5 2\\n', '0 0\\n']\n\nNote:\nIn the second example game goes like this:\n\n<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1e21b6e200707470571d69c9946ace6b56f5279b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\n\nThe fourth and the seventh game are won by Bob, the first game is draw and the rest are won by Alice.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:08.394252",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:08.692480",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:08.956802"
+}

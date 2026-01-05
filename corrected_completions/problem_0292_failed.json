@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0292",
+  "problem_index": 292,
+  "prompt": "Title: Watering Flowers\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nA flowerbed has many flowers and two fountains.\n\nYou can adjust the water pressure and set any values *r*1(*r*1<=≥<=0) and *r*2(*r*2<=≥<=0), giving the distances at which the water is spread from the first and second fountain respectively. You have to set such *r*1 and *r*2 that all the flowers are watered, that is, for each flower, the distance between the flower and the first fountain doesn't exceed *r*1, or the distance to the second fountain doesn't exceed *r*2. It's OK if some flowers are watered by both fountains.\n\nYou need to decrease the amount of water you need, that is set such *r*1 and *r*2 that all the flowers are watered and the *r*12<=+<=*r*22 is minimum possible. Find this minimum value.\n\nInput Specification:\nThe first line of the input contains integers *n*, *x*1, *y*1, *x*2, *y*2 (1<=≤<=*n*<=≤<=2000, <=-<=107<=≤<=*x*1,<=*y*1,<=*x*2,<=*y*2<=≤<=107) — the number of flowers, the coordinates of the first and the second fountain.\n\nNext follow *n* lines. The *i*-th of these lines contains integers *x**i* and *y**i* (<=-<=107<=≤<=*x**i*,<=*y**i*<=≤<=107) — the coordinates of the *i*-th flower.\n\nIt is guaranteed that all *n*<=+<=2 points in the input are distinct.\n\nOutput Specification:\nPrint the minimum possible value *r*12<=+<=*r*22. Note, that in this problem optimal answer is always integer.\n\nDemo Input:\n['2 -1 0 5 3\\n0 2\\n5 2\\n', '4 0 0 5 0\\n9 4\\n8 3\\n-1 0\\n1 4\\n']\n\nDemo Output:\n['6\\n', '33\\n']\n\nNote:\nThe first sample is (*r*<sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup> = 5, *r*<sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup> = 1): <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/15e780f508832a19b14698dd8eb54b4c0dd131bf.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> The second sample is (*r*<sub class=\"lower-index\">1</sub><sup class=\"upper-index\">2</sup> = 1, *r*<sub class=\"lower-index\">2</sub><sup class=\"upper-index\">2</sup> = 32): <img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/da4dc31002cc9b37092d64035ab56ad8544c0d7b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:16.784422",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:17.070220",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:17.344317"
+}

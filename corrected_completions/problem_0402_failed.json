@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0402",
+  "problem_index": 402,
+  "prompt": "Title: Spider's Web\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nPaw the Spider is making a web. Web-making is a real art, Paw has been learning to do it his whole life. Let's consider the structure of the web.\n\nThere are *n* main threads going from the center of the web. All main threads are located in one plane and divide it into *n* equal infinite sectors. The sectors are indexed from 1 to *n* in the clockwise direction. Sectors *i* and *i*<=+<=1 are adjacent for every *i*, 1<=≤<=*i*<=&lt;<=*n*. In addition, sectors 1 and *n* are also adjacent.\n\nSome sectors have bridge threads. Each bridge connects the two main threads that make up this sector. The points at which the bridge is attached to the main threads will be called attachment points. Both attachment points of a bridge are at the same distance from the center of the web. At each attachment point exactly one bridge is attached. The bridges are adjacent if they are in the same sector, and there are no other bridges between them.\n\nA cell of the web is a trapezoid, which is located in one of the sectors and is bounded by two main threads and two adjacent bridges. You can see that the sides of the cell may have the attachment points of bridges from adjacent sectors. If the number of attachment points on one side of the cell is not equal to the number of attachment points on the other side, it creates an imbalance of pulling forces on this cell and this may eventually destroy the entire web. We'll call such a cell unstable. The perfect web does not contain unstable cells.\n\nUnstable cells are marked red in the figure. Stable cells are marked green.\n\nPaw the Spider isn't a skillful webmaker yet, he is only learning to make perfect webs. Help Paw to determine the number of unstable cells in the web he has just spun.\n\nInput Specification:\nThe first line contains integer *n* (3<=≤<=*n*<=≤<=1000) — the number of main threads.\n\nThe *i*-th of following *n* lines describe the bridges located in the *i*-th sector: first it contains integer *k**i* (1<=≤<=*k**i*<=≤<=105) equal to the number of bridges in the given sector. Then follow *k**i* different integers *p**ij* (1<=≤<=*p**ij*<=≤<=105; 1<=≤<=*j*<=≤<=*k**i*). Number *p**ij* equals the distance from the attachment points of the *j*-th bridge of the *i*-th sector to the center of the web.\n\nIt is guaranteed that any two bridges between adjacent sectors are attached at a different distance from the center of the web. It is guaranteed that the total number of the bridges doesn't exceed 105.\n\nOutput Specification:\nPrint a single integer — the number of unstable cells in Paw the Spider's web.\n\nDemo Input:\n['7\\n3 1 6 7\\n4 3 5 2 9\\n2 8 1\\n4 3 7 6 4\\n3 2 5 9\\n3 6 3 8\\n3 4 2 9\\n']\n\nDemo Output:\n['6']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:26.415852",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:26.722568",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:27.542426"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0387",
+  "problem_index": 387,
+  "prompt": "Title: Gerald's Hexagon\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nGerald got a very curious hexagon for his birthday. The boy found out that all the angles of the hexagon are equal to . Then he measured the length of its sides, and found that each of them is equal to an integer number of centimeters. There the properties of the hexagon ended and Gerald decided to draw on it.\n\nHe painted a few lines, parallel to the sides of the hexagon. The lines split the hexagon into regular triangles with sides of 1 centimeter. Now Gerald wonders how many triangles he has got. But there were so many of them that Gerald lost the track of his counting. Help the boy count the triangles.\n\nInput Specification:\nThe first and the single line of the input contains 6 space-separated integers *a*1,<=*a*2,<=*a*3,<=*a*4,<=*a*5 and *a*6 (1<=≤<=*a**i*<=≤<=1000) — the lengths of the sides of the hexagons in centimeters in the clockwise order. It is guaranteed that the hexagon with the indicated properties and the exactly such sides exists.\n\nOutput Specification:\nPrint a single integer — the number of triangles with the sides of one 1 centimeter, into which the hexagon is split.\n\nDemo Input:\n['1 1 1 1 1 1\\n', '1 2 1 2 1 2\\n']\n\nDemo Output:\n['6\\n', '13\\n']\n\nNote:\nThis is what Gerald's hexagon looks like in the first sample:\n\n<img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/84d193e27b02c38eb1eadc536602a2ec0b9f9519.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\n\nAnd that's what it looks like in the second sample:\n\n<img class=\"tex-graphics\" src=\"https://espresso.codeforces.com/e29076a96da8ca864654cc6195654d9bf07d31ce.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:15.969281",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:16.280359",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:16.560262"
+}

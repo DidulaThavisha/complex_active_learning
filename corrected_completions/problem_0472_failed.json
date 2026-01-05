@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0472",
+  "problem_index": 472,
+  "prompt": "Title: Modular Equations\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLast week, Hamed learned about a new type of equations in his math class called Modular Equations. Lets define *i* modulo *j* as the remainder of division of *i* by *j* and denote it by . A Modular Equation, as Hamed's teacher described, is an equation of the form  in which *a* and *b* are two non-negative integers and *x* is a variable. We call a positive integer *x* for which  a solution of our equation.\n\nHamed didn't pay much attention to the class since he was watching a movie. He only managed to understand the definitions of these equations.\n\nNow he wants to write his math exercises but since he has no idea how to do that, he asked you for help. He has told you all he knows about Modular Equations and asked you to write a program which given two numbers *a* and *b* determines how many answers the Modular Equation  has.\n\nInput Specification:\nIn the only line of the input two space-separated integers *a* and *b* (0<=≤<=*a*,<=*b*<=≤<=109) are given.\n\nOutput Specification:\nIf there is an infinite number of answers to our equation, print \"infinity\" (without the quotes). Otherwise print the number of solutions of the Modular Equation .\n\nDemo Input:\n['21 5\\n', '9435152 272\\n', '10 10\\n']\n\nDemo Output:\n['2\\n', '282\\n', 'infinity\\n']\n\nNote:\nIn the first sample the answers of the Modular Equation are 8 and 16 since <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/6f5ff39ebd209bf990adaf91f4b82f9687097224.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:10.042033",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:10.298907",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:10.584929"
+}

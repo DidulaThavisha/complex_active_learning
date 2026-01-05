@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0485",
+  "problem_index": 485,
+  "prompt": "Title: Longest k-Good Segment\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThe array *a* with *n* integers is given. Let's call the sequence of one or more consecutive elements in *a* segment. Also let's call the segment k-good if it contains no more than *k* different values.\n\nFind any longest k-good segment.\n\nAs the input/output can reach huge size it is recommended to use fast input/output methods: for example, prefer to use scanf/printf instead of cin/cout in C++, prefer to use BufferedReader/PrintWriter instead of Scanner/System.out in Java.\n\nInput Specification:\nThe first line contains two integers *n*,<=*k* (1<=≤<=*k*<=≤<=*n*<=≤<=5·105) — the number of elements in *a* and the parameter *k*.\n\nThe second line contains *n* integers *a**i* (0<=≤<=*a**i*<=≤<=106) — the elements of the array *a*.\n\nOutput Specification:\nPrint two integers *l*,<=*r* (1<=≤<=*l*<=≤<=*r*<=≤<=*n*) — the index of the left and the index of the right ends of some k-good longest segment. If there are several longest segments you can print any of them. The elements in *a* are numbered from 1 to *n* from left to right.\n\nDemo Input:\n['5 5\\n1 2 3 4 5\\n', '9 3\\n6 5 1 2 3 2 1 4 5\\n', '3 1\\n1 2 3\\n']\n\nDemo Output:\n['1 5\\n', '3 7\\n', '1 1\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:18.450310",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:18.745130",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:19.012997"
+}

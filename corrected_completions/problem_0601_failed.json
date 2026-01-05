@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0601",
+  "problem_index": 601,
+  "prompt": "Title: New Reform\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nBerland has *n* cities connected by *m* bidirectional roads. No road connects a city to itself, and each pair of cities is connected by no more than one road. It is not guaranteed that you can get from any city to any other one, using only the existing roads.\n\nThe President of Berland decided to make changes to the road system and instructed the Ministry of Transport to make this reform. Now, each road should be unidirectional (only lead from one city to another).\n\nIn order not to cause great resentment among residents, the reform needs to be conducted so that there can be as few separate cities as possible. A city is considered separate, if no road leads into it, while it is allowed to have roads leading from this city.\n\nHelp the Ministry of Transport to find the minimum possible number of separate cities after the reform.\n\nInput Specification:\nThe first line of the input contains two positive integers, *n* and *m* — the number of the cities and the number of roads in Berland (2<=≤<=*n*<=≤<=100<=000, 1<=≤<=*m*<=≤<=100<=000). \n\nNext *m* lines contain the descriptions of the roads: the *i*-th road is determined by two distinct integers *x**i*,<=*y**i* (1<=≤<=*x**i*,<=*y**i*<=≤<=*n*, *x**i*<=≠<=*y**i*), where *x**i* and *y**i* are the numbers of the cities connected by the *i*-th road.\n\nIt is guaranteed that there is no more than one road between each pair of cities, but it is not guaranteed that from any city you can get to any other one, using only roads.\n\nOutput Specification:\nPrint a single integer — the minimum number of separated cities after the reform.\n\nDemo Input:\n['4 3\\n2 1\\n1 3\\n4 3\\n', '5 5\\n2 1\\n1 3\\n2 3\\n2 5\\n4 3\\n', '6 5\\n1 2\\n2 3\\n4 5\\n4 6\\n5 6\\n']\n\nDemo Output:\n['1\\n', '0\\n', '1\\n']\n\nNote:\nIn the first sample the following road orientation is allowed: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/04481aced8a9d501ae5d785ab654c542ff5497a1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0d220a75a508edc0d540dbaec5e198345049b66f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.\n\nThe second sample: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/030fc9181b578c2d906254d38dc56da5554323eb.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/29f71c065c3536e88b54429c734103ad3604f68b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/a6011a68d6de05246ad6ba8aa24a5c5c71cd450a.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0d220a75a508edc0d540dbaec5e198345049b66f.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.\n\nThe third sample: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/e5b18c46402af724bd3841d549d5d6f52fc16253.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/29f71c065c3536e88b54429c734103ad3604f68b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/7113d83514735a488d7b85262585381d26986195.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/98300067e46d036076e429b208db829296ebca9d.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>, <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/146f3f3d208399fbab4d1d8c2800f07bf7b463e5.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:31.548977",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:31.823872",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:32.088590"
+}

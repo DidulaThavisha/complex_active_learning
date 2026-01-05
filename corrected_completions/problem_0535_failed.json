@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0535",
+  "problem_index": 535,
+  "prompt": "Title: Vasya and Types\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nProgrammer Vasya is studying a new programming language &amp;K*. The &amp;K* language resembles the languages of the C family in its syntax. However, it is more powerful, which is why the rules of the actual C-like languages are unapplicable to it. To fully understand the statement, please read the language's description below carefully and follow it and not the similar rules in real programming languages.\n\nThere is a very powerful system of pointers on &amp;K* — you can add an asterisk to the right of the existing type *X* — that will result in new type *X*<=*<=. That is called pointer-definition operation. Also, there is the operation that does the opposite — to any type of *X*, which is a pointer, you can add an ampersand — that will result in a type &amp;*X*, to which refers *X*. That is called a dereference operation.\n\nThe &amp;K* language has only two basic data types — void and errtype. Also, the language has operators typedef and typeof.\n-  The operator \"typedef *A* *B*\" defines a new data type *B*, which is equivalent to *A*. *A* can have asterisks and ampersands, and *B* cannot have them. For example, the operator typedef void** ptptvoid will create a new type ptptvoid, that can be used as void**.-  The operator \"typeof *A*\" returns type of *A*, brought to void, that is, returns the type void**...*, equivalent to it with the necessary number of asterisks (the number can possibly be zero). That is, having defined the ptptvoid type, as shown above, the typeof ptptvoid operator will return void**.\nAn attempt of dereferencing of the void type will lead to an error: to a special data type errtype. For errtype the following equation holds true: errtype*<==<=&amp;errtype<==<=errtype. An attempt to use the data type that hasn't been defined before that will also lead to the errtype.\n\nUsing typedef, we can define one type several times. Of all the definitions only the last one is valid. However, all the types that have been defined earlier using this type do not change.\n\nLet us also note that the dereference operation has the lower priority that the pointer operation, in other words &amp;*T*<=*<= is always equal to *T*.\n\nNote, that the operators are executed consecutively one by one. If we have two operators \"typedef &amp;void a\" and \"typedef a* b\", then at first a becomes errtype, and after that b becomes errtype* = errtype, but not &amp;void* = void (see sample 2).\n\nVasya does not yet fully understand this powerful technology, that's why he asked you to help him. Write a program that analyzes these operators.\n\nInput Specification:\nThe first line contains an integer *n* (1<=≤<=*n*<=≤<=100) — the number of operators. Then follow *n* lines with operators. Each operator is of one of two types: either \"typedef *A* *B*\", or \"typeof *A*\". In the first case the *B* type differs from void and errtype types, and besides, doesn't have any asterisks and ampersands.\n\nAll the data type names are non-empty lines of no more than 20 lowercase Latin letters. The number of asterisks and ampersands separately in one type in any operator does not exceed 10, however if we bring some types to void with several asterisks, their number may exceed 10.\n\nOutput Specification:\nFor every typeof operator print on the single line the answer to that operator — the type that the given operator returned.\n\nDemo Input:\n['5\\ntypedef void* ptv\\ntypeof ptv\\ntypedef &amp;&amp;ptv node\\ntypeof node\\ntypeof &amp;ptv\\n', '17\\ntypedef void* b\\ntypedef b* c\\ntypeof b\\ntypeof c\\ntypedef &amp;b b\\ntypeof b\\ntypeof c\\ntypedef &amp;&amp;b* c\\ntypeof c\\ntypedef &amp;b* c\\ntypeof c\\ntypedef &amp;void b\\ntypeof b\\ntypedef b******* c\\ntypeof c\\ntypedef &amp;&amp;b* c\\ntypeof c\\n']\n\nDemo Output:\n['void*\\nerrtype\\nvoid\\n', 'void*\\nvoid**\\nvoid\\nvoid**\\nerrtype\\nvoid\\nerrtype\\nerrtype\\nerrtype\\n']\n\nNote:\nLet's look at the second sample.\n\nAfter the first two queries typedef the b type is equivalent to void*, and с — to void**.\n\nThe next query typedef redefines b — it is now equal to &amp;b = &amp;void* = void. At that, the с type doesn't change.\n\nAfter that the с type is defined as &amp;&amp;b* = &amp;&amp;void* = &amp;void = errtype. It doesn't influence the b type, that's why the next typedef defines c as &amp;void* = void.\n\nThen the b type is again redefined as &amp;void = errtype. \n\nPlease note that the c type in the next query is defined exactly as errtype******* = errtype, and not &amp;void******* = void******. The same happens in the last typedef.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:51.470275",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:51.737159",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:51.997390"
+}

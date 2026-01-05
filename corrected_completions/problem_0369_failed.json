@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0369",
+  "problem_index": 369,
+  "prompt": "Title: Bill Total Value\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nVasily exited from a store and now he wants to recheck the total price of all purchases in his bill. The bill is a string in which the names of the purchases and their prices are printed in a row without any spaces. Check has the format \"*name*1*price*1*name*2*price*2...*name**n**price**n*\", where *name**i* (name of the *i*-th purchase) is a non-empty string of length not more than 10, consisting of lowercase English letters, and *price**i* (the price of the *i*-th purchase) is a non-empty string, consisting of digits and dots (decimal points). It is possible that purchases with equal names have different prices.\n\nThe price of each purchase is written in the following format. If the price is an integer number of dollars then cents are not written.\n\nOtherwise, after the number of dollars a dot (decimal point) is written followed by cents in a two-digit format (if number of cents is between 1 and 9 inclusively, there is a leading zero).\n\nAlso, every three digits (from less significant to the most) in dollars are separated by dot (decimal point). No extra leading zeroes are allowed. The price always starts with a digit and ends with a digit.\n\nFor example:\n -  \"234\", \"1.544\", \"149.431.10\", \"0.99\" and \"123.05\" are valid prices, -  \".333\", \"3.33.11\", \"12.00\", \".33\", \"0.1234\" and \"1.2\" are not valid. \nWrite a program that will find the total price of all purchases in the given bill.\n\nInput Specification:\nThe only line of the input contains a non-empty string *s* with length not greater than 1000 — the content of the bill.\n\nIt is guaranteed that the bill meets the format described above. It is guaranteed that each price in the bill is not less than one cent and not greater than 106 dollars.\n\nOutput Specification:\nPrint the total price exactly in the same format as prices given in the input.\n\nDemo Input:\n['chipsy48.32televizor12.390\\n', 'a1b2c3.38\\n', 'aa0.01t0.03\\n']\n\nDemo Output:\n['12.438.32\\n', '6.38\\n', '0.04\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:04.299165",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:04.588699",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:04.908433"
+}

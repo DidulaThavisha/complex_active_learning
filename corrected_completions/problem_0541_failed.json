@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0541",
+  "problem_index": 541,
+  "prompt": "Title: Rebus\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given a rebus of form ? + ? - ? + ? = n, consisting of only question marks, separated by arithmetic operation '+' and '-', equality and positive integer *n*. The goal is to replace each question mark with some positive integer from 1 to *n*, such that equality holds.\n\nInput Specification:\nThe only line of the input contains a rebus. It's guaranteed that it contains no more than 100 question marks, integer *n* is positive and doesn't exceed 1<=000<=000, all letters and integers are separated by spaces, arithmetic operations are located only between question marks.\n\nOutput Specification:\nThe first line of the output should contain \"Possible\" (without quotes) if rebus has a solution and \"Impossible\" (without quotes) otherwise.\n\nIf the answer exists, the second line should contain any valid rebus with question marks replaced by integers from 1 to *n*. Follow the format given in the samples.\n\nDemo Input:\n['? + ? - ? + ? + ? = 42\\n', '? - ? = 1\\n', '? = 1000000\\n']\n\nDemo Output:\n['Possible\\n9 + 13 - 39 + 28 + 31 = 42\\n', 'Impossible\\n', 'Possible\\n1000000 = 1000000\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:54.843010",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:55.135468",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:55.395294"
+}

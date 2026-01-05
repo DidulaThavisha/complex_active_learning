@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0586",
+  "problem_index": 586,
+  "prompt": "Title: Fox And Names\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nFox Ciel is going to publish a paper on FOCS (Foxes Operated Computer Systems, pronounce: \"Fox\"). She heard a rumor: the authors list on the paper is always sorted in the lexicographical order. \n\nAfter checking some examples, she found out that sometimes it wasn't true. On some papers authors' names weren't sorted in lexicographical order in normal sense. But it was always true that after some modification of the order of letters in alphabet, the order of authors becomes lexicographical!\n\nShe wants to know, if there exists an order of letters in Latin alphabet such that the names on the paper she is submitting are following in the lexicographical order. If so, you should find out any such order.\n\nLexicographical order is defined in following way. When we compare *s* and *t*, first we find the leftmost position with differing characters: *s**i*<=≠<=*t**i*. If there is no such position (i. e. *s* is a prefix of *t* or vice versa) the shortest string is less. Otherwise, we compare characters *s**i* and *t**i* according to their order in alphabet.\n\nInput Specification:\nThe first line contains an integer *n* (1<=≤<=*n*<=≤<=100): number of names.\n\nEach of the following *n* lines contain one string *name**i* (1<=≤<=|*name**i*|<=≤<=100), the *i*-th name. Each name contains only lowercase Latin letters. All names are different.\n\nOutput Specification:\nIf there exists such order of letters that the given names are sorted lexicographically, output any such order as a permutation of characters 'a'–'z' (i. e. first output the first letter of the modified alphabet, then the second, and so on).\n\nOtherwise output a single word \"Impossible\" (without quotes).\n\nDemo Input:\n['3\\nrivest\\nshamir\\nadleman\\n', '10\\ntourist\\npetr\\nwjmzbmr\\nyeputons\\nvepifanov\\nscottwu\\noooooooooooooooo\\nsubscriber\\nrowdark\\ntankengineer\\n', '10\\npetr\\negor\\nendagorion\\nfeferivan\\nilovetanyaromanova\\nkostka\\ndmitriyh\\nmaratsnowbear\\nbredorjaguarturnik\\ncgyforever\\n', '7\\ncar\\ncare\\ncareful\\ncarefully\\nbecarefuldontforgetsomething\\notherwiseyouwillbehacked\\ngoodluck\\n']\n\nDemo Output:\n['bcdefghijklmnopqrsatuvwxyz\\n', 'Impossible\\n', 'aghjlnopefikdmbcqrstuvwxyz\\n', 'acbdefhijklmnogpqrstuvwxyz\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:22.233062",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:22.540367",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 4,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:22.868050"
+}

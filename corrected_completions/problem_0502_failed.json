@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0502",
+  "problem_index": 502,
+  "prompt": "Title: Matrix\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou have a string of decimal digits *s*. Let's define *b**ij*<==<=*s**i*·*s**j*. Find in matrix *b* the number of such rectangles that the sum *b**ij* for all cells (*i*,<=*j*) that are the elements of the rectangle equals *a* in each rectangle.\n\nA rectangle in a matrix is a group of four integers (*x*,<=*y*,<=*z*,<=*t*) (*x*<=≤<=*y*,<=*z*<=≤<=*t*). The elements of the rectangle are all cells (*i*,<=*j*) such that *x*<=≤<=*i*<=≤<=*y*,<=*z*<=≤<=*j*<=≤<=*t*.\n\nInput Specification:\nThe first line contains integer *a* (0<=≤<=*a*<=≤<=109), the second line contains a string of decimal integers *s* (1<=≤<=|*s*|<=≤<=4000).\n\nOutput Specification:\nPrint a single integer — the answer to a problem.\n\nPlease, do not write the %lld specifier to read or write 64-bit integers in С++. It is preferred to use the cin, cout streams or the %I64d specifier.\n\nDemo Input:\n['10\\n12345\\n', '16\\n439873893693495623498263984765\\n']\n\nDemo Output:\n['6\\n', '40\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:29.841368",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:30.108198",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:30.387864"
+}

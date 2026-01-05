@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0558",
+  "problem_index": 558,
+  "prompt": "Title: Party\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\n*n* people came to a party. Then those, who had no friends among people at the party, left. Then those, who had exactly 1 friend among those who stayed, left as well. Then those, who had exactly 2,<=3,<=...,<=*n*<=-<=1 friends among those who stayed by the moment of their leaving, did the same.\n\nWhat is the maximum amount of people that could stay at the party in the end?\n\nInput Specification:\nThe first input line contains one number *t* — amount of tests (1<=≤<=*t*<=≤<=105). Each of the following *t* lines contains one integer number *n* (1<=≤<=*n*<=≤<=105).\n\nOutput Specification:\nFor each test output in a separate line one number — the maximum amount of people that could stay in the end.\n\nDemo Input:\n['1\\n3\\n']\n\nDemo Output:\n['1\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:04.667547",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:04.940311",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:05.232235"
+}

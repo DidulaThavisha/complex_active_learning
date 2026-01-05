@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0325",
+  "problem_index": 325,
+  "prompt": "Title: Jumping Jack\n\nTime Limit: 1 seconds\n\nMemory Limit: 64 megabytes\n\nProblem Description:\nJack is working on his jumping skills recently. Currently he's located at point zero of the number line. He would like to get to the point *x*. In order to train, he has decided that he'll first jump by only one unit, and each subsequent jump will be exactly one longer than the previous one. He can go either left or right with each jump. He wonders how many jumps he needs to reach *x*.\n\nInput Specification:\nThe input data consists of only one integer *x* (<=-<=109<=≤<=*x*<=≤<=109).\n\nOutput Specification:\nOutput the minimal number of jumps that Jack requires to reach *x*.\n\nDemo Input:\n['2\\n', '6\\n', '0\\n']\n\nDemo Output:\n['3\\n', '3\\n', '0\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:37.933036",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:38.189101",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:38.471981"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0447",
+  "problem_index": 447,
+  "prompt": "Title: Primal Sport\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nAlice and Bob begin their day with a quick game. They first choose a starting number *X*0<=≥<=3 and try to reach one million by the process described below. \n\nAlice goes first and then they take alternating turns. In the *i*-th turn, the player whose turn it is selects a prime number smaller than the current number, and announces the smallest multiple of this prime number that is not smaller than the current number.\n\nFormally, he or she selects a prime *p*<=&lt;<=*X**i*<=-<=1 and then finds the minimum *X**i*<=≥<=*X**i*<=-<=1 such that *p* divides *X**i*. Note that if the selected prime *p* already divides *X**i*<=-<=1, then the number does not change.\n\nEve has witnessed the state of the game after two turns. Given *X*2, help her determine what is the smallest possible starting number *X*0. Note that the players don't necessarily play optimally. You should consider all possible game evolutions.\n\nInput Specification:\nThe input contains a single integer *X*2 (4<=≤<=*X*2<=≤<=106). It is guaranteed that the integer *X*2 is composite, that is, is not prime.\n\nOutput Specification:\nOutput a single integer — the minimum possible *X*0.\n\nDemo Input:\n['14\\n', '20\\n', '8192\\n']\n\nDemo Output:\n['6\\n', '15\\n', '8191\\n']\n\nNote:\nIn the first test, the smallest possible starting number is *X*<sub class=\"lower-index\">0</sub> = 6. One possible course of the game is as follows: \n -  Alice picks prime 5 and announces *X*<sub class=\"lower-index\">1</sub> = 10 -  Bob picks prime 7 and announces *X*<sub class=\"lower-index\">2</sub> = 14. \nIn the second case, let *X*<sub class=\"lower-index\">0</sub> = 15. \n -  Alice picks prime 2 and announces *X*<sub class=\"lower-index\">1</sub> = 16 -  Bob picks prime 5 and announces *X*<sub class=\"lower-index\">2</sub> = 20.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:54.847274",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:55.196009",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:55.468098"
+}

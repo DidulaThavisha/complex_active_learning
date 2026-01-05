@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0317",
+  "problem_index": 317,
+  "prompt": "Title: Rectangle Puzzle II\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given a rectangle grid. That grid's size is *n*<=×<=*m*. Let's denote the coordinate system on the grid. So, each point on the grid will have coordinates — a pair of integers (*x*,<=*y*) (0<=≤<=*x*<=≤<=*n*,<=0<=≤<=*y*<=≤<=*m*).\n\nYour task is to find a maximum sub-rectangle on the grid (*x*1,<=*y*1,<=*x*2,<=*y*2) so that it contains the given point (*x*,<=*y*), and its length-width ratio is exactly (*a*,<=*b*). In other words the following conditions must hold: 0<=≤<=*x*1<=≤<=*x*<=≤<=*x*2<=≤<=*n*, 0<=≤<=*y*1<=≤<=*y*<=≤<=*y*2<=≤<=*m*, .\n\nThe sides of this sub-rectangle should be parallel to the axes. And values *x*1,<=*y*1,<=*x*2,<=*y*2 should be integers.\n\nIf there are multiple solutions, find the rectangle which is closest to (*x*,<=*y*). Here \"closest\" means the Euclid distance between (*x*,<=*y*) and the center of the rectangle is as small as possible. If there are still multiple solutions, find the lexicographically minimum one. Here \"lexicographically minimum\" means that we should consider the sub-rectangle as sequence of integers (*x*1,<=*y*1,<=*x*2,<=*y*2), so we can choose the lexicographically minimum one.\n\nInput Specification:\nThe first line contains six integers *n*,<=*m*,<=*x*,<=*y*,<=*a*,<=*b* (1<=≤<=*n*,<=*m*<=≤<=109,<=0<=≤<=*x*<=≤<=*n*,<=0<=≤<=*y*<=≤<=*m*,<=1<=≤<=*a*<=≤<=*n*,<=1<=≤<=*b*<=≤<=*m*).\n\nOutput Specification:\nPrint four integers *x*1,<=*y*1,<=*x*2,<=*y*2, which represent the founded sub-rectangle whose left-bottom point is (*x*1,<=*y*1) and right-up point is (*x*2,<=*y*2).\n\nDemo Input:\n['9 9 5 5 2 1\\n', '100 100 52 50 46 56\\n']\n\nDemo Output:\n['1 3 9 7\\n', '17 8 86 92\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:33.067405",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:33.395412",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:33.673670"
+}

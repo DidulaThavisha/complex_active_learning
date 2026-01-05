@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0355",
+  "problem_index": 355,
+  "prompt": "Title: Yet Another Array Queries Problem\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given an array *a* of size *n*, and *q* queries to it. There are queries of two types: \n -  1 *l**i* *r**i* — perform a cyclic shift of the segment [*l**i*,<=*r**i*] to the right. That is, for every *x* such that *l**i*<=≤<=*x*<=&lt;<=*r**i* new value of *a**x*<=+<=1 becomes equal to old value of *a**x*, and new value of *a**l**i* becomes equal to old value of *a**r**i*; -  2 *l**i* *r**i* — reverse the segment [*l**i*,<=*r**i*]. \nThere are *m* important indices in the array *b*1, *b*2, ..., *b**m*. For each *i* such that 1<=≤<=*i*<=≤<=*m* you have to output the number that will have index *b**i* in the array after all queries are performed.\n\nInput Specification:\nThe first line contains three integer numbers *n*, *q* and *m* (1<=≤<=*n*,<=*q*<=≤<=2·105, 1<=≤<=*m*<=≤<=100). \n\nThe second line contains *n* integer numbers *a*1, *a*2, ..., *a**n* (1<=≤<=*a**i*<=≤<=109). \n\nThen *q* lines follow. *i*-th of them contains three integer numbers *t**i*, *l**i*, *r**i*, where *t**i* is the type of *i*-th query, and [*l**i*,<=*r**i*] is the segment where this query is performed (1<=≤<=*t**i*<=≤<=2, 1<=≤<=*l**i*<=≤<=*r**i*<=≤<=*n*). \n\nThe last line contains *m* integer numbers *b*1, *b*2, ..., *b**m* (1<=≤<=*b**i*<=≤<=*n*) — important indices of the array.\n\nOutput Specification:\nPrint *m* numbers, *i*-th of which is equal to the number at index *b**i* after all queries are done.\n\nDemo Input:\n['6 3 5\\n1 2 3 4 5 6\\n2 1 3\\n2 3 6\\n1 1 6\\n2 2 1 5 3\\n']\n\nDemo Output:\n['3 3 1 5 2 \\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:55.387581",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:55.697582",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:55.976050"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0351",
+  "problem_index": 351,
+  "prompt": "Title: George and Job\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThe new ITone 6 has been released recently and George got really keen to buy it. Unfortunately, he didn't have enough money, so George was going to work as a programmer. Now he faced the following problem at the work.\n\nGiven a sequence of *n* integers *p*1,<=*p*2,<=...,<=*p**n*. You are to choose *k* pairs of integers:\n\n \n\nin such a way that the value of sum  is maximal possible. Help George to cope with the task.\n\nInput Specification:\nThe first line contains three integers *n*, *m* and *k* (1<=≤<=(*m*<=×<=*k*)<=≤<=*n*<=≤<=5000). The second line contains *n* integers *p*1,<=*p*2,<=...,<=*p**n* (0<=≤<=*p**i*<=≤<=109).\n\nOutput Specification:\nPrint an integer in a single line — the maximum possible value of sum.\n\nDemo Input:\n['5 2 1\\n1 2 3 4 5\\n', '7 1 3\\n2 10 7 18 5 33 0\\n']\n\nDemo Output:\n['9\\n', '61\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:53.064824",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:53.378250",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:53.657198"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0549",
+  "problem_index": 549,
+  "prompt": "Title: Colliders\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nBy 2312 there were *n* Large Hadron Colliders in the inhabited part of the universe. Each of them corresponded to a single natural number from 1 to *n*. However, scientists did not know what activating several colliders simultaneously could cause, so the colliders were deactivated.\n\nIn 2312 there was a startling discovery: a collider's activity is safe if and only if all numbers of activated colliders are pairwise relatively prime to each other (two numbers are relatively prime if their greatest common divisor equals 1)! If two colliders with relatively nonprime numbers are activated, it will cause a global collapse.\n\nUpon learning this, physicists rushed to turn the colliders on and off and carry out all sorts of experiments. To make sure than the scientists' quickness doesn't end with big trouble, the Large Hadron Colliders' Large Remote Control was created. You are commissioned to write the software for the remote (well, you do not expect anybody to operate it manually, do you?).\n\nInitially, all colliders are deactivated. Your program receives multiple requests of the form \"activate/deactivate the *i*-th collider\". The program should handle requests in the order of receiving them. The program should print the processed results in the format described below.\n\nTo the request of \"+ i\" (that is, to activate the *i*-th collider), the program should print exactly one of the following responses: \n -  \"Success\" if the activation was successful. -  \"Already on\", if the *i*-th collider was already activated before the request. -  \"Conflict with j\", if there is a conflict with the *j*-th collider (that is, the *j*-th collider is on, and numbers *i* and *j* are not relatively prime). In this case, the *i*-th collider shouldn't be activated. If a conflict occurs with several colliders simultaneously, you should print the number of any of them. \nThe request of \"- i\" (that is, to deactivate the *i*-th collider), should receive one of the following responses from the program: \n -  \"Success\", if the deactivation was successful. -  \"Already off\", if the *i*-th collider was already deactivated before the request. \nYou don't need to print quotes in the output of the responses to the requests.\n\nInput Specification:\nThe first line contains two space-separated integers *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=105) — the number of colliders and the number of requests, correspondingly.\n\nNext *m* lines contain numbers of requests, one per line, in the form of either \"+ i\" (without the quotes) — activate the *i*-th collider, or \"- i\" (without the quotes) — deactivate the *i*-th collider (1<=≤<=*i*<=≤<=*n*).\n\nOutput Specification:\nPrint *m* lines — the results of executing requests in the above given format. The requests should be processed in the order, in which they are given in the input. Don't forget that the responses to the requests should be printed without quotes.\n\nDemo Input:\n['10 10\\n+ 6\\n+ 10\\n+ 5\\n- 10\\n- 5\\n- 6\\n+ 10\\n+ 3\\n+ 6\\n+ 3\\n']\n\nDemo Output:\n['Success\\nConflict with 6\\nSuccess\\nAlready off\\nSuccess\\nSuccess\\nSuccess\\nSuccess\\nConflict with 10\\nAlready on\\n']\n\nNote:\nNote that in the sample the colliders don't turn on after the second and ninth requests. The ninth request could also receive response \"Conflict with 3\".",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:59.292864",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:59.627369",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:00.088268"
+}

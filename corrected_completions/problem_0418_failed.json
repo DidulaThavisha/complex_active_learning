@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0418",
+  "problem_index": 418,
+  "prompt": "Title: Add Points\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThere are *n* points on a straight line, and the *i*-th point among them is located at *x**i*. All these coordinates are distinct.\n\nDetermine the number *m* — the smallest number of points you should add on the line to make the distances between all neighboring points equal.\n\nInput Specification:\nThe first line contains a single integer *n* (3<=≤<=*n*<=≤<=100<=000) — the number of points.\n\nThe second line contains a sequence of integers *x*1,<=*x*2,<=...,<=*x**n* (<=-<=109<=≤<=*x**i*<=≤<=109) — the coordinates of the points. All these coordinates are distinct. The points can be given in an arbitrary order.\n\nOutput Specification:\nPrint a single integer *m* — the smallest number of points you should add on the line to make the distances between all neighboring points equal.\n\nDemo Input:\n['3\\n-5 10 5\\n', '6\\n100 200 400 300 600 500\\n', '4\\n10 9 0 -1\\n']\n\nDemo Output:\n['1\\n', '0\\n', '8\\n']\n\nNote:\nIn the first example you can add one point with coordinate 0.\n\nIn the second example the distances between all neighboring points are already equal, so you shouldn't add anything.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:37.309307",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:37.614869",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:37.894115"
+}

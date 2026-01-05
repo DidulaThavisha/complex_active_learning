@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0410",
+  "problem_index": 410,
+  "prompt": "Title: Memory and De-Evolution\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nMemory is now interested in the de-evolution of objects, specifically triangles. He starts with an equilateral triangle of side length *x*, and he wishes to perform operations to obtain an equilateral triangle of side length *y*.\n\nIn a single second, he can modify the length of a single side of the current triangle such that it remains a non-degenerate triangle (triangle of positive area). At any moment of time, the length of each side should be integer.\n\nWhat is the minimum number of seconds required for Memory to obtain the equilateral triangle of side length *y*?\n\nInput Specification:\nThe first and only line contains two integers *x* and *y* (3<=≤<=*y*<=&lt;<=*x*<=≤<=100<=000) — the starting and ending equilateral triangle side lengths respectively.\n\nOutput Specification:\nPrint a single integer — the minimum number of seconds required for Memory to obtain the equilateral triangle of side length *y* if he starts with the equilateral triangle of side length *x*.\n\nDemo Input:\n['6 3\\n', '8 5\\n', '22 4\\n']\n\nDemo Output:\n['4\\n', '3\\n', '6\\n']\n\nNote:\nIn the first sample test, Memory starts with an equilateral triangle of side length 6 and wants one of side length 3. Denote a triangle with sides *a*, *b*, and *c* as (*a*, *b*, *c*). Then, Memory can do <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/18af21f738bad490df83097a90e1f2879a4b21c6.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.\n\nIn the second sample test, Memory can do <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/bcfd51d1b2d764a1cf5fbc255cc02e6f5aaed3b1.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.\n\nIn the third sample test, Memory can do: <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/0969b7d413854c1e7528991d926bef1f7ffba008.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>\n\n<img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/63e9e66b882c03e4c73e93ad92204dc255329309.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:31.665269",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:32.048766",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:32.353285"
+}

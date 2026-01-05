@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0477",
+  "problem_index": 477,
+  "prompt": "Title: Ladder\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou've got an array, consisting of *n* integers *a*1,<=*a*2,<=...,<=*a**n*. Also, you've got *m* queries, the *i*-th query is described by two integers *l**i*,<=*r**i*. Numbers *l**i*,<=*r**i* define a subsegment of the original array, that is, the sequence of numbers *a**l**i*,<=*a**l**i*<=+<=1,<=*a**l**i*<=+<=2,<=...,<=*a**r**i*. For each query you should check whether the corresponding segment is a ladder. \n\nA ladder is a sequence of integers *b*1,<=*b*2,<=...,<=*b**k*, such that it first doesn't decrease, then doesn't increase. In other words, there is such integer *x* (1<=≤<=*x*<=≤<=*k*), that the following inequation fulfills: *b*1<=≤<=*b*2<=≤<=...<=≤<=*b**x*<=≥<=*b**x*<=+<=1<=≥<=*b**x*<=+<=2...<=≥<=*b**k*. Note that the non-decreasing and the non-increasing sequences are also considered ladders.\n\nInput Specification:\nThe first line contains two integers *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=105) — the number of array elements and the number of queries. The second line contains the sequence of integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=109), where number *a**i* stands for the *i*-th array element.\n\nThe following *m* lines contain the description of the queries. The *i*-th line contains the description of the *i*-th query, consisting of two integers *l**i*, *r**i* (1<=≤<=*l**i*<=≤<=*r**i*<=≤<=*n*) — the boundaries of the subsegment of the initial array.\n\nThe numbers in the lines are separated by single spaces.\n\nOutput Specification:\nPrint *m* lines, in the *i*-th line print word \"Yes\" (without the quotes), if the subsegment that corresponds to the *i*-th query is the ladder, or word \"No\" (without the quotes) otherwise.\n\nDemo Input:\n['8 6\\n1 2 1 3 3 5 2 1\\n1 3\\n2 3\\n2 4\\n8 8\\n1 4\\n5 8\\n']\n\nDemo Output:\n['Yes\\nYes\\nNo\\nYes\\nNo\\nYes\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:13.465913",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:13.875714",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:14.178391"
+}

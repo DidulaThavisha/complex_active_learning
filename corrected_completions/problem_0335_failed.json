@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0335",
+  "problem_index": 335,
+  "prompt": "Title: The Meaningless Game\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nSlastyona and her loyal dog Pushok are playing a meaningless game that is indeed very interesting.\n\nThe game consists of multiple rounds. Its rules are very simple: in each round, a natural number *k* is chosen. Then, the one who says (or barks) it faster than the other wins the round. After that, the winner's score is multiplied by *k*2, and the loser's score is multiplied by *k*. In the beginning of the game, both Slastyona and Pushok have scores equal to one.\n\nUnfortunately, Slastyona had lost her notepad where the history of all *n* games was recorded. She managed to recall the final results for each games, though, but all of her memories of them are vague. Help Slastyona verify their correctness, or, to put it another way, for each given pair of scores determine whether it was possible for a game to finish with such result or not.\n\nInput Specification:\nIn the first string, the number of games *n* (1<=≤<=*n*<=≤<=350000) is given.\n\nEach game is represented by a pair of scores *a*, *b* (1<=≤<=*a*,<=*b*<=≤<=109) – the results of Slastyona and Pushok, correspondingly.\n\nOutput Specification:\nFor each pair of scores, answer \"Yes\" if it's possible for a game to finish with given score, and \"No\" otherwise.\n\nYou can output each letter in arbitrary case (upper or lower).\n\nDemo Input:\n['6\\n2 4\\n75 45\\n8 8\\n16 16\\n247 994\\n1000000000 1000000\\n']\n\nDemo Output:\n['Yes\\nYes\\nYes\\nNo\\nNo\\nYes\\n']\n\nNote:\nFirst game might have been consisted of one round, in which the number 2 would have been chosen and Pushok would have won.\n\nThe second game needs exactly two rounds to finish with such result: in the first one, Slastyona would have said the number 5, and in the second one, Pushok would have barked the number 3.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:43.912599",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:44.244046",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:44.514040"
+}

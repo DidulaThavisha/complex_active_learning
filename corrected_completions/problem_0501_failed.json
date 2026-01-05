@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0501",
+  "problem_index": 501,
+  "prompt": "Title: Table Decorations\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou have *r* red, *g* green and *b* blue balloons. To decorate a single table for the banquet you need exactly three balloons. Three balloons attached to some table shouldn't have the same color. What maximum number *t* of tables can be decorated if we know number of balloons of each color?\n\nYour task is to write a program that for given values *r*, *g* and *b* will find the maximum number *t* of tables, that can be decorated in the required manner.\n\nInput Specification:\nThe single line contains three integers *r*, *g* and *b* (0<=≤<=*r*,<=*g*,<=*b*<=≤<=2·109) — the number of red, green and blue baloons respectively. The numbers are separated by exactly one space.\n\nOutput Specification:\nPrint a single integer *t* — the maximum number of tables that can be decorated in the required manner.\n\nDemo Input:\n['5 4 3\\n', '1 1 1\\n', '2 3 3\\n']\n\nDemo Output:\n['4\\n', '1\\n', '2\\n']\n\nNote:\nIn the first sample you can decorate the tables with the following balloon sets: \"rgg\", \"gbb\", \"brr\", \"rrg\", where \"r\", \"g\" and \"b\" represent the red, green and blue balls, respectively.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:29.289886",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:29.570806",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:29.840963"
+}

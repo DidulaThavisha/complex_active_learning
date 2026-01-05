@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0529",
+  "problem_index": 529,
+  "prompt": "Title: Constructing Tests\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLet's denote a *m*-free matrix as a binary (that is, consisting of only 1's and 0's) matrix such that every square submatrix of size *m*<=×<=*m* of this matrix contains at least one zero. \n\nConsider the following problem:\n\nYou are given two integers *n* and *m*. You have to construct an *m*-free square matrix of size *n*<=×<=*n* such that the number of 1's in this matrix is maximum possible. Print the maximum possible number of 1's in such matrix.\n\nYou don't have to solve this problem. Instead, you have to construct a few tests for it.\n\nYou will be given *t* numbers *x*1, *x*2, ..., *x**t*. For every , find two integers *n**i* and *m**i* (*n**i*<=≥<=*m**i*) such that the answer for the aforementioned problem is exactly *x**i* if we set *n*<==<=*n**i* and *m*<==<=*m**i*.\n\nInput Specification:\nThe first line contains one integer *t* (1<=≤<=*t*<=≤<=100) — the number of tests you have to construct.\n\nThen *t* lines follow, *i*-th line containing one integer *x**i* (0<=≤<=*x**i*<=≤<=109).\n\nNote that in hacks you have to set *t*<==<=1.\n\nOutput Specification:\nFor each test you have to construct, output two positive numbers *n**i* and *m**i* (1<=≤<=*m**i*<=≤<=*n**i*<=≤<=109) such that the maximum number of 1's in a *m**i*-free *n**i*<=×<=*n**i* matrix is exactly *x**i*. If there are multiple solutions, you may output any of them; and if this is impossible to construct a test, output a single integer <=-<=1.\n\nDemo Input:\n['3\\n21\\n0\\n1\\n']\n\nDemo Output:\n['5 2\\n1 1\\n-1\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:47.620756",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:47.927585",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:48.184429"
+}

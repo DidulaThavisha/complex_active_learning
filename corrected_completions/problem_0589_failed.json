@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0589",
+  "problem_index": 589,
+  "prompt": "Title: \"Or\" Game\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given *n* numbers *a*1,<=*a*2,<=...,<=*a**n*. You can perform at most *k* operations. For each operation you can multiply one of the numbers by *x*. We want to make  as large as possible, where  denotes the bitwise OR. \n\nFind the maximum possible value of  after performing at most *k* operations optimally.\n\nInput Specification:\nThe first line contains three integers *n*, *k* and *x* (1<=≤<=*n*<=≤<=200<=000, 1<=≤<=*k*<=≤<=10, 2<=≤<=*x*<=≤<=8).\n\nThe second line contains *n* integers *a*1,<=*a*2,<=...,<=*a**n* (0<=≤<=*a**i*<=≤<=109).\n\nOutput Specification:\nOutput the maximum value of a bitwise OR of sequence elements after performing operations.\n\nDemo Input:\n['3 1 2\\n1 1 1\\n', '4 2 3\\n1 2 4 8\\n']\n\nDemo Output:\n['3\\n', '79\\n']\n\nNote:\nFor the first sample, any possible choice of doing one operation will result the same three numbers 1, 1, 2 so the result is <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/1ee73b671ed4bc53f2f96ed1a85fd98388e1712b.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>. \n\nFor the second sample if we multiply 8 by 3 two times we'll get 72. In this case the numbers will become 1, 2, 4, 72 so the OR value will be 79 and is the largest possible result.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:23.979532",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:24.245538",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:24.557316"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0519",
+  "problem_index": 519,
+  "prompt": "Title: Maximum Subsequence\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given an array *a* consisting of *n* integers, and additionally an integer *m*. You have to choose some sequence of indices *b*1,<=*b*2,<=...,<=*b**k* (1<=≤<=*b*1<=&lt;<=*b*2<=&lt;<=...<=&lt;<=*b**k*<=≤<=*n*) in such a way that the value of  is maximized. Chosen sequence can be empty.\n\nPrint the maximum possible value of .\n\nInput Specification:\nThe first line contains two integers *n* and *m* (1<=≤<=*n*<=≤<=35, 1<=≤<=*m*<=≤<=109).\n\nThe second line contains *n* integers *a*1, *a*2, ..., *a**n* (1<=≤<=*a**i*<=≤<=109).\n\nOutput Specification:\nPrint the maximum possible value of .\n\nDemo Input:\n['4 4\\n5 2 4 1\\n', '3 20\\n199 41 299\\n']\n\nDemo Output:\n['3\\n', '19\\n']\n\nNote:\nIn the first example you can choose a sequence *b* = {1, 2}, so the sum <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/c856546022c2feee13d02a4ec9cd1d361ab3a756.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/> is equal to 7 (and that's 3 after taking it modulo 4).\n\nIn the second example you can choose a sequence *b* = {3}.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:41.095672",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:41.396833",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:41.684511"
+}

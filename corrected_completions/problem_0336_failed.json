@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0336",
+  "problem_index": 336,
+  "prompt": "Title: Enduring Exodus\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nIn an attempt to escape the Mischievous Mess Makers' antics, Farmer John has abandoned his farm and is traveling to the other side of Bovinia. During the journey, he and his *k* cows have decided to stay at the luxurious Grand Moo-dapest Hotel. The hotel consists of *n* rooms located in a row, some of which are occupied.\n\nFarmer John wants to book a set of *k*<=+<=1 currently unoccupied rooms for him and his cows. He wants his cows to stay as safe as possible, so he wishes to minimize the maximum distance from his room to the room of his cow. The distance between rooms *i* and *j* is defined as |*j*<=-<=*i*|. Help Farmer John protect his cows by calculating this minimum possible distance.\n\nInput Specification:\nThe first line of the input contains two integers *n* and *k* (1<=≤<=*k*<=&lt;<=*n*<=≤<=100<=000) — the number of rooms in the hotel and the number of cows travelling with Farmer John.\n\nThe second line contains a string of length *n* describing the rooms. The *i*-th character of the string will be '0' if the *i*-th room is free, and '1' if the *i*-th room is occupied. It is guaranteed that at least *k*<=+<=1 characters of this string are '0', so there exists at least one possible choice of *k*<=+<=1 rooms for Farmer John and his cows to stay in.\n\nOutput Specification:\nPrint the minimum possible distance between Farmer John's room and his farthest cow.\n\nDemo Input:\n['7 2\\n0100100\\n', '5 1\\n01010\\n', '3 2\\n000\\n']\n\nDemo Output:\n['2\\n', '2\\n', '1\\n']\n\nNote:\nIn the first sample, Farmer John can book room 3 for himself, and rooms 1 and 4 for his cows. The distance to the farthest cow is 2. Note that it is impossible to make this distance 1, as there is no block of three consecutive unoccupied rooms.\n\nIn the second sample, Farmer John can book room 1 for himself and room 3 for his single cow. The distance between him and his cow is 2.\n\nIn the third sample, Farmer John books all three available rooms, taking the middle room for himself so that both cows are next to him. His distance from the farthest cow is 1.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:44.514450",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:44.832779",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:45.110023"
+}

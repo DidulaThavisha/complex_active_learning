@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0394",
+  "problem_index": 394,
+  "prompt": "Title: Ivan and Powers of Two\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nIvan has got an array of *n* non-negative integers *a*1,<=*a*2,<=...,<=*a**n*. Ivan knows that the array is sorted in the non-decreasing order. \n\nIvan wrote out integers 2*a*1,<=2*a*2,<=...,<=2*a**n* on a piece of paper. Now he wonders, what minimum number of integers of form 2*b* (*b*<=≥<=0) need to be added to the piece of paper so that the sum of all integers written on the paper equalled 2*v*<=-<=1 for some integer *v* (*v*<=≥<=0). \n\nHelp Ivan, find the required quantity of numbers.\n\nInput Specification:\nThe first line contains integer *n* (1<=≤<=*n*<=≤<=105). The second input line contains *n* space-separated integers *a*1,<=*a*2,<=...,<=*a**n* (0<=≤<=*a**i*<=≤<=2·109). It is guaranteed that *a*1<=≤<=*a*2<=≤<=...<=≤<=*a**n*.\n\nOutput Specification:\nPrint a single integer — the answer to the problem.\n\nDemo Input:\n['4\\n0 1 1 1\\n', '1\\n3\\n']\n\nDemo Output:\n['0\\n', '3\\n']\n\nNote:\nIn the first sample you do not need to add anything, the sum of numbers already equals 2<sup class=\"upper-index\">3</sup> - 1 = 7.\n\nIn the second sample you need to add numbers 2<sup class=\"upper-index\">0</sup>, 2<sup class=\"upper-index\">1</sup>, 2<sup class=\"upper-index\">2</sup>.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:20.533092",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:20.814235",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:21.128474"
+}

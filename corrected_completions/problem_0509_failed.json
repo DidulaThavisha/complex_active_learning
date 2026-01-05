@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0509",
+  "problem_index": 509,
+  "prompt": "Title: Dome\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\n\n\nInput Specification:\nThe input contains a single floating-point number *x* with exactly 6 decimal places (0<=&lt;<=*x*<=&lt;<=5).\n\nOutput Specification:\nOutput two integers separated by a single space. Each integer should be between 1 and 10, inclusive. If several solutions exist, output any of them. Solution will exist for all tests.\n\nDemo Input:\n['1.200000\\n', '2.572479\\n', '4.024922\\n']\n\nDemo Output:\n['3 2\\n', '10 3\\n', '9 9\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:34.643617",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:34.908269",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:35.218635"
+}

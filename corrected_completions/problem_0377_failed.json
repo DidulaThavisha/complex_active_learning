@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0377",
+  "problem_index": 377,
+  "prompt": "Title: Playing with Permutations\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLittle Petya likes permutations a lot. Recently his mom has presented him permutation *q*1,<=*q*2,<=...,<=*q**n* of length *n*.\n\nA permutation *a* of length *n* is a sequence of integers *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=*n*), all integers there are distinct. \n\nThere is only one thing Petya likes more than permutations: playing with little Masha. As it turns out, Masha also has a permutation of length *n*. Petya decided to get the same permutation, whatever the cost may be. For that, he devised a game with the following rules:\n -  Before the beginning of the game Petya writes permutation 1,<=2,<=...,<=*n* on the blackboard. After that Petya makes exactly *k* moves, which are described below. -  During a move Petya tosses a coin. If the coin shows heads, he performs point 1, if the coin shows tails, he performs point 2.  Let's assume that the board contains permutation *p*1,<=*p*2,<=...,<=*p**n* at the given moment. Then Petya removes the written permutation *p* from the board and writes another one instead: *p**q*1,<=*p**q*2,<=...,<=*p**q**n*. In other words, Petya applies permutation *q* (which he has got from his mother) to permutation *p*. -  All actions are similar to point 1, except that Petya writes permutation *t* on the board, such that: *t**q**i*<==<=*p**i* for all *i* from 1 to *n*. In other words, Petya applies a permutation that is inverse to *q* to permutation *p*. \nWe know that after the *k*-th move the board contained Masha's permutation *s*1,<=*s*2,<=...,<=*s**n*. Besides, we know that throughout the game process Masha's permutation never occurred on the board before the *k*-th move. Note that the game has exactly *k* moves, that is, throughout the game the coin was tossed exactly *k* times.\n\nYour task is to determine whether the described situation is possible or else state that Petya was mistaken somewhere. See samples and notes to them for a better understanding.\n\nInput Specification:\nThe first line contains two integers *n* and *k* (1<=≤<=*n*,<=*k*<=≤<=100). The second line contains *n* space-separated integers *q*1,<=*q*2,<=...,<=*q**n* (1<=≤<=*q**i*<=≤<=*n*) — the permutation that Petya's got as a present. The third line contains Masha's permutation *s*, in the similar format.\n\nIt is guaranteed that the given sequences *q* and *s* are correct permutations.\n\nOutput Specification:\nIf the situation that is described in the statement is possible, print \"YES\" (without the quotes), otherwise print \"NO\" (without the quotes).\n\nDemo Input:\n['4 1\\n2 3 4 1\\n1 2 3 4\\n', '4 1\\n4 3 1 2\\n3 4 2 1\\n', '4 3\\n4 3 1 2\\n3 4 2 1\\n', '4 2\\n4 3 1 2\\n2 1 4 3\\n', '4 1\\n4 3 1 2\\n2 1 4 3\\n']\n\nDemo Output:\n['NO\\n', 'YES\\n', 'YES\\n', 'YES\\n', 'NO\\n']\n\nNote:\nIn the first sample Masha's permutation coincides with the permutation that was written on the board before the beginning of the game. Consequently, that violates the condition that Masha's permutation never occurred on the board before *k* moves were performed.\n\nIn the second sample the described situation is possible, in case if after we toss a coin, we get tails.\n\nIn the third sample the possible coin tossing sequence is: heads-tails-tails.\n\nIn the fourth sample the possible coin tossing sequence is: heads-heads.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:09.441052",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 5,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:09.717843",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 5,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:09.996422"
+}

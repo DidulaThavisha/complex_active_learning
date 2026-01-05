@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0460",
+  "problem_index": 460,
+  "prompt": "Title: I'm Feeling Lucky!\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou have one chip and one chance to play roulette. Are you feeling lucky?\n\nInput Specification:\nnone\n\nOutput Specification:\nPrint your bet. Your chip must be placed entirely within some square (not on an edge or a corner shared by adjacent squares).\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:03.079849",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 0,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:03.342951",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 0,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:03.691803"
+}

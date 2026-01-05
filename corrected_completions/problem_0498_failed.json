@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0498",
+  "problem_index": 498,
+  "prompt": "Title: Clear Symmetry\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nConsider some square matrix *A* with side *n* consisting of zeros and ones. There are *n* rows numbered from 1 to *n* from top to bottom and *n* columns numbered from 1 to *n* from left to right in this matrix. We'll denote the element of the matrix which is located at the intersection of the *i*-row and the *j*-th column as *A**i*,<=*j*.\n\nLet's call matrix *A* clear if no two cells containing ones have a common side.\n\nLet's call matrix *A* symmetrical if it matches the matrices formed from it by a horizontal and/or a vertical reflection. Formally, for each pair (*i*,<=*j*) (1<=≤<=*i*,<=*j*<=≤<=*n*) both of the following conditions must be met: *A**i*,<=*j*<==<=*A**n*<=-<=*i*<=+<=1,<=*j* and *A**i*,<=*j*<==<=*A**i*,<=*n*<=-<=*j*<=+<=1.\n\nLet's define the sharpness of matrix *A* as the number of ones in it.\n\nGiven integer *x*, your task is to find the smallest positive integer *n* such that there exists a clear symmetrical matrix *A* with side *n* and sharpness *x*.\n\nInput Specification:\nThe only line contains a single integer *x* (1<=≤<=*x*<=≤<=100) — the required sharpness of the matrix.\n\nOutput Specification:\nPrint a single number — the sought value of *n*.\n\nDemo Input:\n['4\\n', '9\\n']\n\nDemo Output:\n['3\\n', '5\\n']\n\nNote:\nThe figure below shows the matrices that correspond to the samples:",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:27.456684",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:27.862486",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:28.130372"
+}

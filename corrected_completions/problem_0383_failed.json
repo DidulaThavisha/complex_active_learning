@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0383",
+  "problem_index": 383,
+  "prompt": "Title: A polyline\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\n\n\nInput Specification:\nThe input contains two integers *a*,<=*b* (1<=≤<=*a*<=≤<=10,<=0<=≤<=*b*<=≤<=22·*a*<=-<=1) separated by a single space.\n\nOutput Specification:\nOutput two integers separated by a single space.\n\nDemo Input:\n['1 0\\n', '2 15\\n', '4 160\\n']\n\nDemo Output:\n['0 0\\n', '3 0\\n', '12 12\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:13.206011",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:13.478836",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:13.821079"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0346",
+  "problem_index": 346,
+  "prompt": "Title: Line\n\nTime Limit: 1 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nA line on the plane is described by an equation *Ax*<=+<=*By*<=+<=*C*<==<=0. You are to find any point on this line, whose coordinates are integer numbers from <=-<=5·1018 to 5·1018 inclusive, or to find out that such points do not exist.\n\nInput Specification:\nThe first line contains three integers *A*, *B* and *C* (<=-<=2·109<=≤<=*A*,<=*B*,<=*C*<=≤<=2·109) — corresponding coefficients of the line equation. It is guaranteed that *A*2<=+<=*B*2<=&gt;<=0.\n\nOutput Specification:\nIf the required point exists, output its coordinates, otherwise output -1.\n\nDemo Input:\n['2 5 3\\n']\n\nDemo Output:\n['6 -3\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:50.168462",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:50.475850",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:50.779276"
+}

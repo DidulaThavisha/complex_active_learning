@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0532",
+  "problem_index": 532,
+  "prompt": "Title: Luba And The Ticket\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLuba has a ticket consisting of 6 digits. In one move she can choose digit in any position and replace it with arbitrary digit. She wants to know the minimum number of digits she needs to replace in order to make the ticket lucky.\n\nThe ticket is considered lucky if the sum of first three digits equals to the sum of last three digits.\n\nInput Specification:\nYou are given a string consisting of 6 characters (all characters are digits from 0 to 9) — this string denotes Luba's ticket. The ticket can start with the digit 0.\n\nOutput Specification:\nPrint one number — the minimum possible number of digits Luba needs to replace to make the ticket lucky.\n\nDemo Input:\n['000000\\n', '123456\\n', '111000\\n']\n\nDemo Output:\n['0\\n', '2\\n', '1\\n']\n\nNote:\nIn the first example the ticket is already lucky, so the answer is 0.\n\nIn the second example Luba can replace 4 and 5 with zeroes, and the ticket will become lucky. It's easy to see that at least two replacements are required.\n\nIn the third example Luba can replace any zero with 3. It's easy to see that at least one replacement is required.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:49.641213",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:49.900271",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:50.282624"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0531",
+  "problem_index": 531,
+  "prompt": "Title: Chloe and pleasant prizes\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nGenerous sponsors of the olympiad in which Chloe and Vladik took part allowed all the participants to choose a prize for them on their own. Christmas is coming, so sponsors decided to decorate the Christmas tree with their prizes. \n\nThey took *n* prizes for the contestants and wrote on each of them a unique id (integer from 1 to *n*). A gift *i* is characterized by integer *a**i* — pleasantness of the gift. The pleasantness of the gift can be positive, negative or zero. Sponsors placed the gift 1 on the top of the tree. All the other gifts hung on a rope tied to some other gift so that each gift hung on the first gift, possibly with a sequence of ropes and another gifts. Formally, the gifts formed a rooted tree with *n* vertices.\n\nThe prize-giving procedure goes in the following way: the participants come to the tree one after another, choose any of the remaining gifts and cut the rope this prize hang on. Note that all the ropes which were used to hang other prizes on the chosen one are not cut. So the contestant gets the chosen gift as well as the all the gifts that hang on it, possibly with a sequence of ropes and another gifts.\n\nOur friends, Chloe and Vladik, shared the first place on the olympiad and they will choose prizes at the same time! To keep themselves from fighting, they decided to choose two different gifts so that the sets of the gifts that hang on them with a sequence of ropes and another gifts don't intersect. In other words, there shouldn't be any gift that hang both on the gift chosen by Chloe and on the gift chosen by Vladik. From all of the possible variants they will choose such pair of prizes that the sum of pleasantness of all the gifts that they will take after cutting the ropes is as large as possible.\n\nPrint the maximum sum of pleasantness that Vladik and Chloe can get. If it is impossible for them to choose the gifts without fighting, print Impossible.\n\nInput Specification:\nThe first line contains a single integer *n* (1<=≤<=*n*<=≤<=2·105) — the number of gifts.\n\nThe next line contains *n* integers *a*1,<=*a*2,<=...,<=*a**n* (<=-<=109<=≤<=*a**i*<=≤<=109) — the pleasantness of the gifts.\n\nThe next (*n*<=-<=1) lines contain two numbers each. The *i*-th of these lines contains integers *u**i* and *v**i* (1<=≤<=*u**i*,<=*v**i*<=≤<=*n*, *u**i*<=≠<=*v**i*) — the description of the tree's edges. It means that gifts with numbers *u**i* and *v**i* are connected to each other with a rope. The gifts' ids in the description of the ropes can be given in arbirtary order: *v**i* hangs on *u**i* or *u**i* hangs on *v**i*. \n\nIt is guaranteed that all the gifts hang on the first gift, possibly with a sequence of ropes and another gifts.\n\nOutput Specification:\nIf it is possible for Chloe and Vladik to choose prizes without fighting, print single integer — the maximum possible sum of pleasantness they can get together.\n\nOtherwise print Impossible.\n\nDemo Input:\n['8\\n0 5 -1 4 3 2 6 5\\n1 2\\n2 4\\n2 5\\n1 3\\n3 6\\n6 7\\n6 8\\n', '4\\n1 -5 1 1\\n1 2\\n1 4\\n2 3\\n', '1\\n-1\\n']\n\nDemo Output:\n['25', '2', 'Impossible']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:49.087797",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:49.367788",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:49.640712"
+}

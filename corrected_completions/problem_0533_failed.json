@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0533",
+  "problem_index": 533,
+  "prompt": "Title: Little Elephant and Array\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThe Little Elephant loves playing with arrays. He has array *a*, consisting of *n* positive integers, indexed from 1 to *n*. Let's denote the number with index *i* as *a**i*. \n\nAdditionally the Little Elephant has *m* queries to the array, each query is characterised by a pair of integers *l**j* and *r**j* (1<=≤<=*l**j*<=≤<=*r**j*<=≤<=*n*). For each query *l**j*,<=*r**j* the Little Elephant has to count, how many numbers *x* exist, such that number *x* occurs exactly *x* times among numbers *a**l**j*,<=*a**l**j*<=+<=1,<=...,<=*a**r**j*.\n\nHelp the Little Elephant to count the answers to all queries.\n\nInput Specification:\nThe first line contains two space-separated integers *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=105) — the size of array *a* and the number of queries to it. The next line contains *n* space-separated positive integers *a*1, *a*2, ..., *a**n* (1<=≤<=*a**i*<=≤<=109). Next *m* lines contain descriptions of queries, one per line. The *j*-th of these lines contains the description of the *j*-th query as two space-separated integers *l**j* and *r**j* (1<=≤<=*l**j*<=≤<=*r**j*<=≤<=*n*).\n\nOutput Specification:\nIn *m* lines print *m* integers — the answers to the queries. The *j*-th line should contain the answer to the *j*-th query.\n\nDemo Input:\n['7 2\\n3 1 2 2 3 3 7\\n1 7\\n3 4\\n']\n\nDemo Output:\n['3\\n1\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:50.283128",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:50.552619",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:50.820368"
+}

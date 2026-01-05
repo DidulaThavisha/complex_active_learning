@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0374",
+  "problem_index": 374,
+  "prompt": "Title: Jerry's Protest\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nAndrew and Jerry are playing a game with Harry as the scorekeeper. The game consists of three rounds. In each round, Andrew and Jerry draw randomly without replacement from a jar containing *n* balls, each labeled with a distinct positive integer. Without looking, they hand their balls to Harry, who awards the point to the player with the larger number and returns the balls to the jar. The winner of the game is the one who wins at least two of the three rounds.\n\nAndrew wins rounds 1 and 2 while Jerry wins round 3, so Andrew wins the game. However, Jerry is unhappy with this system, claiming that he will often lose the match despite having the higher overall total. What is the probability that the sum of the three balls Jerry drew is strictly higher than the sum of the three balls Andrew drew?\n\nInput Specification:\nThe first line of input contains a single integer *n* (2<=≤<=*n*<=≤<=2000) — the number of balls in the jar.\n\nThe second line contains *n* integers *a**i* (1<=≤<=*a**i*<=≤<=5000) — the number written on the *i*th ball. It is guaranteed that no two balls have the same number.\n\nOutput Specification:\nPrint a single real value — the probability that Jerry has a higher total, given that Andrew wins the first two rounds and Jerry wins the third. Your answer will be considered correct if its absolute or relative error does not exceed 10<=-<=6. \n\nNamely: let's assume that your answer is *a*, and the answer of the jury is *b*. The checker program will consider your answer correct, if .\n\nDemo Input:\n['2\\n1 2\\n', '3\\n1 2 10\\n']\n\nDemo Output:\n['0.0000000000\\n', '0.0740740741\\n']\n\nNote:\nIn the first case, there are only two balls. In the first two rounds, Andrew must have drawn the 2 and Jerry must have drawn the 1, and vice versa in the final round. Thus, Andrew's sum is 5 and Jerry's sum is 4, so Jerry never has a higher total.\n\nIn the second case, each game could've had three outcomes — 10 - 2, 10 - 1, or 2 - 1. Jerry has a higher total if and only if Andrew won 2 - 1 in both of the first two rounds, and Jerry drew the 10 in the last round. This has probability <img align=\"middle\" class=\"tex-formula\" src=\"https://espresso.codeforces.com/3c0ec296285f607c66d594132fb91e5e5f2bb007.png\" style=\"max-width: 100.0%;max-height: 100.0%;\"/>.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:07.240484",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:07.513266",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:08.228199"
+}

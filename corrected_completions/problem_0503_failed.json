@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0503",
+  "problem_index": 503,
+  "prompt": "Title: Programming Language\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nRecently, Valery have come across an entirely new programming language. Most of all the language attracted him with template functions and procedures. Let us remind you that templates are tools of a language, designed to encode generic algorithms, without reference to some parameters (e.g., data types, buffer sizes, default values).\n\nValery decided to examine template procedures in this language in more detail. The description of a template procedure consists of the procedure name and the list of its parameter types. The generic type T parameters can be used as parameters of template procedures.\n\nA procedure call consists of a procedure name and a list of variable parameters. Let's call a procedure suitable for this call if the following conditions are fulfilled: \n -  its name equals to the name of the called procedure; -  the number of its parameters equals to the number of parameters of the procedure call; -  the types of variables in the procedure call match the corresponding types of its parameters. The variable type matches the type of a parameter if the parameter has a generic type T or the type of the variable and the parameter are the same. \nYou are given a description of some set of template procedures. You are also given a list of variables used in the program, as well as direct procedure calls that use the described variables. For each call you need to count the number of procedures that are suitable for this call.\n\nInput Specification:\nThe first line contains a single integer *n* (1<=≤<=*n*<=≤<=1000) — the number of template procedures. The next *n* lines contain the description of the procedures specified in the following format:\n\n\"void procedureName (type_1, type_2, ..., type_t)\" (1<=≤<=*t*<=≤<=5), where void is the keyword, procedureName is the procedure name, type_i is the type of the next parameter. Types of language parameters can be \"int\", \"string\", \"double\", and the keyword \"T\", which denotes the generic type.\n\nThe next line contains a single integer *m* (1<=≤<=*m*<=≤<=1000) — the number of used variables. Next *m* lines specify the description of the variables in the following format:\n\n\"type variableName\", where type is the type of variable that can take values \"int\", \"string\", \"double\", variableName — the name of the variable.\n\nThe next line contains a single integer *k* (1<=≤<=*k*<=≤<=1000) — the number of procedure calls. Next *k* lines specify the procedure calls in the following format:\n\n\"procedureName (var_1, var_2, ..., var_t)\" (1<=≤<=*t*<=≤<=5), where procedureName is the name of the procedure, var_i is the name of a variable.\n\nThe lines describing the variables, template procedures and their calls may contain spaces at the beginning of the line and at the end of the line, before and after the brackets and commas. Spaces may be before and after keyword void. The length of each input line does not exceed 100 characters. The names of variables and procedures are non-empty strings of lowercase English letters and numbers with lengths of not more than 10 characters. Note that this is the only condition at the names. Only the specified variables are used in procedure calls. The names of the variables are distinct. No two procedures are the same. Two procedures are the same, if they have identical names and identical ordered sets of types of their parameters.\n\nOutput Specification:\nOn each of *k* lines print a single number, where the *i*-th number stands for the number of suitable template procedures for the *i*-th call.\n\nDemo Input:\n['4\\nvoid f(int,T)\\nvoid  f(T, T)\\n void foo123   ( int,  double,  string,string  ) \\n  void  p(T,double)\\n3\\nint a\\n string    s\\ndouble x123 \\n5\\nf(a,  a)\\n  f(s,a   )\\nfoo   (a,s,s)\\n f  (  s  ,x123)\\nproc(a)\\n', '6\\nvoid f(string,double,int)\\nvoid f(int)\\n   void f  ( T  )\\nvoid procedure(int,double)\\nvoid f  (T, double,int)   \\nvoid f(string, T,T)\\n4\\n int a\\n int x\\nstring  t\\ndouble  val  \\n5\\nf(t, a, a)\\nf(t,val,a)\\nf(val,a, val)\\n solve300(val, val)\\nf  (x)\\n']\n\nDemo Output:\n['2\\n1\\n0\\n1\\n0\\n', '1\\n3\\n0\\n0\\n2\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:30.388740",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:30.663287",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:30.955174"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0583",
+  "problem_index": 583,
+  "prompt": "Title: Codeforces World Finals\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nThe king Copa often has been reported about the Codeforces site, which is rapidly getting more and more popular among the brightest minds of the humanity, who are using it for training and competing. Recently Copa understood that to conquer the world he needs to organize the world Codeforces tournament. He hopes that after it the brightest minds will become his subordinates, and the toughest part of conquering the world will be completed.\n\nThe final round of the Codeforces World Finals 20YY is scheduled for *DD*.*MM*.*YY*, where *DD* is the day of the round, *MM* is the month and *YY* are the last two digits of the year. Bob is lucky to be the first finalist form Berland. But there is one problem: according to the rules of the competition, all participants must be at least 18 years old at the moment of the finals. Bob was born on *BD*.*BM*.*BY*. This date is recorded in his passport, the copy of which he has already mailed to the organizers. But Bob learned that in different countries the way, in which the dates are written, differs. For example, in the US the month is written first, then the day and finally the year. Bob wonders if it is possible to rearrange the numbers in his date of birth so that he will be at least 18 years old on the day *DD*.*MM*.*YY*. He can always tell that in his motherland dates are written differently. Help him.\n\nAccording to another strange rule, eligible participant must be born in the same century as the date of the finals. If the day of the finals is participant's 18-th birthday, he is allowed to participate. \n\nAs we are considering only the years from 2001 to 2099 for the year of the finals, use the following rule: the year is leap if it's number is divisible by four.\n\nInput Specification:\nThe first line contains the date *DD*.*MM*.*YY*, the second line contains the date *BD*.*BM*.*BY*. It is guaranteed that both dates are correct, and *YY* and *BY* are always in [01;99].\n\nIt could be that by passport Bob was born after the finals. In this case, he can still change the order of numbers in date.\n\nOutput Specification:\nIf it is possible to rearrange the numbers in the date of birth so that Bob will be at least 18 years old on the *DD*.*MM*.*YY*, output YES. In the other case, output NO. \n\nEach number contains exactly two digits and stands for day, month or year in a date. Note that it is permitted to rearrange only numbers, not digits.\n\nDemo Input:\n['01.01.98\\n01.01.80\\n', '20.10.20\\n10.02.30\\n', '28.02.74\\n28.02.64\\n']\n\nDemo Output:\n['YES\\n', 'NO\\n', 'NO\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:19.756600",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:20.655694",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:20.923201"
+}

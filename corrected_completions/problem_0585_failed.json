@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0585",
+  "problem_index": 585,
+  "prompt": "Title: A Twisty Movement\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nA dragon symbolizes wisdom, power and wealth. On Lunar New Year's Day, people model a dragon with bamboo strips and clothes, raise them with rods, and hold the rods high and low to resemble a flying dragon.\n\nA performer holding the rod low is represented by a 1, while one holding it high is represented by a 2. Thus, the line of performers can be represented by a sequence *a*1,<=*a*2,<=...,<=*a**n*.\n\nLittle Tommy is among them. He would like to choose an interval [*l*,<=*r*] (1<=≤<=*l*<=≤<=*r*<=≤<=*n*), then reverse *a**l*,<=*a**l*<=+<=1,<=...,<=*a**r* so that the length of the longest non-decreasing subsequence of the new sequence is maximum.\n\nA non-decreasing subsequence is a sequence of indices *p*1,<=*p*2,<=...,<=*p**k*, such that *p*1<=&lt;<=*p*2<=&lt;<=...<=&lt;<=*p**k* and *a**p*1<=≤<=*a**p*2<=≤<=...<=≤<=*a**p**k*. The length of the subsequence is *k*.\n\nInput Specification:\nThe first line contains an integer *n* (1<=≤<=*n*<=≤<=2000), denoting the length of the original sequence.\n\nThe second line contains *n* space-separated integers, describing the original sequence *a*1,<=*a*2,<=...,<=*a**n* (1<=≤<=*a**i*<=≤<=2,<=*i*<==<=1,<=2,<=...,<=*n*).\n\nOutput Specification:\nPrint a single integer, which means the maximum possible length of the longest non-decreasing subsequence of the new sequence.\n\nDemo Input:\n['4\\n1 2 1 2\\n', '10\\n1 1 2 2 2 1 1 2 2 1\\n']\n\nDemo Output:\n['4\\n', '9\\n']\n\nNote:\nIn the first example, after reversing [2, 3], the array will become [1, 1, 2, 2], where the length of the longest non-decreasing subsequence is 4.\n\nIn the second example, after reversing [3, 7], the array will become [1, 1, 1, 1, 2, 2, 2, 2, 2, 1], where the length of the longest non-decreasing subsequence is 9.",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:21.616282",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:21.924683",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:22.232601"
+}

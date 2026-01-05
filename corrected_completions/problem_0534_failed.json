@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0534",
+  "problem_index": 534,
+  "prompt": "Title: Permutation Game\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\n*n* children are standing in a circle and playing a game. Children's numbers in clockwise order form a permutation *a*1,<=*a*2,<=...,<=*a**n* of length *n*. It is an integer sequence such that each integer from 1 to *n* appears exactly once in it.\n\nThe game consists of *m* steps. On each step the current leader with index *i* counts out *a**i* people in clockwise order, starting from the next person. The last one to be pointed at by the leader becomes the new leader.\n\nYou are given numbers *l*1,<=*l*2,<=...,<=*l**m* — indices of leaders in the beginning of each step. Child with number *l*1 is the first leader in the game. \n\nWrite a program which will restore a possible permutation *a*1,<=*a*2,<=...,<=*a**n*. If there are multiple solutions then print any of them. If there is no solution then print -1.\n\nInput Specification:\nThe first line contains two integer numbers *n*, *m* (1<=≤<=*n*,<=*m*<=≤<=100).\n\nThe second line contains *m* integer numbers *l*1,<=*l*2,<=...,<=*l**m* (1<=≤<=*l**i*<=≤<=*n*) — indices of leaders in the beginning of each step.\n\nOutput Specification:\nPrint such permutation of *n* numbers *a*1,<=*a*2,<=...,<=*a**n* that leaders in the game will be exactly *l*1,<=*l*2,<=...,<=*l**m* if all the rules are followed. If there are multiple solutions print any of them. \n\nIf there is no permutation which satisfies all described conditions print -1.\n\nDemo Input:\n['4 5\\n2 3 1 4 4\\n', '3 3\\n3 1 2\\n']\n\nDemo Output:\n['3 1 2 4 \\n', '-1\\n']\n\nNote:\nLet's follow leadership in the first example: \n -  Child 2 starts. -  Leadership goes from 2 to 2 + *a*<sub class=\"lower-index\">2</sub> = 3. -  Leadership goes from 3 to 3 + *a*<sub class=\"lower-index\">3</sub> = 5. As it's greater than 4, it's going in a circle to 1. -  Leadership goes from 1 to 1 + *a*<sub class=\"lower-index\">1</sub> = 4. -  Leadership goes from 4 to 4 + *a*<sub class=\"lower-index\">4</sub> = 8. Thus in circle it still remains at 4.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:50.820838",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:51.202821",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:51.469911"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0442",
+  "problem_index": 442,
+  "prompt": "Title: Nephren gives a riddle\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\n\n\nNephren is playing a game with little leprechauns.\n\nShe gives them an infinite array of strings, *f*0... ∞.\n\n*f*0 is \"What are you doing at the end of the world? Are you busy? Will you save us?\".\n\nShe wants to let more people know about it, so she defines *f**i*<==<= \"What are you doing while sending \"*f**i*<=-<=1\"? Are you busy? Will you send \"*f**i*<=-<=1\"?\" for all *i*<=≥<=1.\n\nFor example, *f*1 is\n\n\"What are you doing while sending \"What are you doing at the end of the world? Are you busy? Will you save us?\"? Are you busy? Will you send \"What are you doing at the end of the world? Are you busy? Will you save us?\"?\". Note that the quotes in the very beginning and in the very end are for clarity and are not a part of *f*1.\n\nIt can be seen that the characters in *f**i* are letters, question marks, (possibly) quotation marks and spaces.\n\nNephren will ask the little leprechauns *q* times. Each time she will let them find the *k*-th character of *f**n*. The characters are indexed starting from 1. If *f**n* consists of less than *k* characters, output '.' (without quotes).\n\nCan you answer her queries?\n\nInput Specification:\nThe first line contains one integer *q* (1<=≤<=*q*<=≤<=10) — the number of Nephren's questions.\n\nEach of the next *q* lines describes Nephren's question and contains two integers *n* and *k* (0<=≤<=*n*<=≤<=105,<=1<=≤<=*k*<=≤<=1018).\n\nOutput Specification:\nOne line containing *q* characters. The *i*-th character in it should be the answer for the *i*-th query.\n\nDemo Input:\n['3\\n1 1\\n1 2\\n1 111111111111\\n', '5\\n0 69\\n1 194\\n1 139\\n0 47\\n1 66\\n', '10\\n4 1825\\n3 75\\n3 530\\n4 1829\\n4 1651\\n3 187\\n4 584\\n4 255\\n4 774\\n2 474\\n']\n\nDemo Output:\n['Wh.', 'abdef', 'Areyoubusy']\n\nNote:\nFor the first two examples, refer to *f*<sub class=\"lower-index\">0</sub> and *f*<sub class=\"lower-index\">1</sub> given in the legend.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:51.876851",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:52.220232",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:52.528012"
+}

@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0542",
+  "problem_index": 542,
+  "prompt": "Title: Is This a Zebra?\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nA camera you have accidentally left in a desert has taken an interesting photo. The photo has a resolution of *n* pixels width, and each column of this photo is all white or all black. Thus, we can represent the photo as a sequence of *n* zeros and ones, where 0 means that the corresponding column is all white, and 1 means that the corresponding column is black.\n\nYou think that this photo can contain a zebra. In this case the whole photo should consist of several (possibly, only one) alternating black and white stripes of equal width. For example, the photo [0,<=0,<=0,<=1,<=1,<=1,<=0,<=0,<=0] can be a photo of zebra, while the photo [0,<=0,<=0,<=1,<=1,<=1,<=1] can not, because the width of the black stripe is 3, while the width of the white stripe is 4. Can the given photo be a photo of zebra or not?\n\nInput Specification:\nThe first line contains a single integer *n* (1<=≤<=*n*<=≤<=100<=000) — the width of the photo.\n\nThe second line contains a sequence of integers *a*1,<=*a*2,<=...,<=*a**n* (0<=≤<=*a**i*<=≤<=1) — the description of the photo. If *a**i* is zero, the *i*-th column is all black. If *a**i* is one, then the *i*-th column is all white.\n\nOutput Specification:\nIf the photo can be a photo of zebra, print \"YES\" (without quotes). Otherwise, print \"NO\".\n\nYou can print each letter in any case (upper or lower).\n\nDemo Input:\n['9\\n0 0 0 1 1 1 0 0 0\\n', '7\\n0 0 0 1 1 1 1\\n', '5\\n1 1 1 1 1\\n', '8\\n1 1 1 0 0 0 1 1\\n', '9\\n1 1 0 1 1 0 1 1 0\\n']\n\nDemo Output:\n['YES\\n', 'NO\\n', 'YES\\n', 'NO\\n', 'NO\\n']\n\nNote:\nThe first two examples are described in the statements.\n\nIn the third example all pixels are white, so the photo can be a photo of zebra.\n\nIn the fourth example the width of the first stripe is equal to three (white color), the width of the second stripe is equal to three (black), and the width of the third stripe is equal to two (white). Thus, not all stripes have equal length, so this photo is not a photo of zebra.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:55.395723",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 5,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:55.668760",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 5,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:55.948558"
+}

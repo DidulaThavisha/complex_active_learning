@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0599",
+  "problem_index": 599,
+  "prompt": "Title: Ciel and Flowers\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nFox Ciel has some flowers: *r* red flowers, *g* green flowers and *b* blue flowers. She wants to use these flowers to make several bouquets. There are 4 types of bouquets:\n -  To make a \"red bouquet\", it needs 3 red flowers. -  To make a \"green bouquet\", it needs 3 green flowers. -  To make a \"blue bouquet\", it needs 3 blue flowers. -  To make a \"mixing bouquet\", it needs 1 red, 1 green and 1 blue flower. \nHelp Fox Ciel to find the maximal number of bouquets she can make.\n\nInput Specification:\nThe first line contains three integers *r*, *g* and *b* (0<=≤<=*r*,<=*g*,<=*b*<=≤<=109) — the number of red, green and blue flowers.\n\nOutput Specification:\nPrint the maximal number of bouquets Fox Ciel can make.\n\nDemo Input:\n['3 6 9\\n', '4 4 4\\n', '0 0 0\\n']\n\nDemo Output:\n['6\\n', '4\\n', '0\\n']\n\nNote:\nIn test case 1, we can make 1 red bouquet, 2 green bouquets and 3 blue bouquets.\n\nIn test case 2, we can make 1 red, 1 green, 1 blue and 1 mixing bouquet.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:29.810924",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:30.717499",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:30.993158"
+}

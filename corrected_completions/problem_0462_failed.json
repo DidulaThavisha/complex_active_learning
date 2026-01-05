@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0462",
+  "problem_index": 462,
+  "prompt": "Title: Bits\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nLet's denote as  the number of bits set ('1' bits) in the binary representation of the non-negative integer *x*.\n\nYou are given multiple queries consisting of pairs of integers *l* and *r*. For each query, find the *x*, such that *l*<=≤<=*x*<=≤<=*r*, and  is maximum possible. If there are multiple such numbers find the smallest of them.\n\nInput Specification:\nThe first line contains integer *n* — the number of queries (1<=≤<=*n*<=≤<=10000).\n\nEach of the following *n* lines contain two integers *l**i*,<=*r**i* — the arguments for the corresponding query (0<=≤<=*l**i*<=≤<=*r**i*<=≤<=1018).\n\nOutput Specification:\nFor each query print the answer in a separate line.\n\nDemo Input:\n['3\\n1 2\\n2 4\\n1 10\\n']\n\nDemo Output:\n['1\\n3\\n7\\n']\n\nNote:\nThe binary representations of numbers from 1 to 10 are listed below:\n\n1<sub class=\"lower-index\">10</sub> = 1<sub class=\"lower-index\">2</sub>\n\n2<sub class=\"lower-index\">10</sub> = 10<sub class=\"lower-index\">2</sub>\n\n3<sub class=\"lower-index\">10</sub> = 11<sub class=\"lower-index\">2</sub>\n\n4<sub class=\"lower-index\">10</sub> = 100<sub class=\"lower-index\">2</sub>\n\n5<sub class=\"lower-index\">10</sub> = 101<sub class=\"lower-index\">2</sub>\n\n6<sub class=\"lower-index\">10</sub> = 110<sub class=\"lower-index\">2</sub>\n\n7<sub class=\"lower-index\">10</sub> = 111<sub class=\"lower-index\">2</sub>\n\n8<sub class=\"lower-index\">10</sub> = 1000<sub class=\"lower-index\">2</sub>\n\n9<sub class=\"lower-index\">10</sub> = 1001<sub class=\"lower-index\">2</sub>\n\n10<sub class=\"lower-index\">10</sub> = 1010<sub class=\"lower-index\">2</sub>",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:04.219455",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:04.506683",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:04.786691"
+}

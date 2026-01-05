@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0319",
+  "problem_index": 319,
+  "prompt": "Title: Phillip and Trains\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThe mobile application store has a new game called \"Subway Roller\".\n\nThe protagonist of the game Philip is located in one end of the tunnel and wants to get out of the other one. The tunnel is a rectangular field consisting of three rows and *n* columns. At the beginning of the game the hero is in some cell of the leftmost column. Some number of trains rides towards the hero. Each train consists of two or more neighbouring cells in some row of the field.\n\nAll trains are moving from right to left at a speed of two cells per second, and the hero runs from left to right at the speed of one cell per second. For simplicity, the game is implemented so that the hero and the trains move in turns. First, the hero moves one cell to the right, then one square up or down, or stays idle. Then all the trains move twice simultaneously one cell to the left. Thus, in one move, Philip definitely makes a move to the right and can move up or down. If at any point, Philip is in the same cell with a train, he loses. If the train reaches the left column, it continues to move as before, leaving the tunnel.\n\nYour task is to answer the question whether there is a sequence of movements of Philip, such that he would be able to get to the rightmost column.\n\nInput Specification:\nEach test contains from one to ten sets of the input data. The first line of the test contains a single integer *t* (1<=≤<=*t*<=≤<=10 for pretests and tests or *t*<==<=1 for hacks; see the Notes section for details) — the number of sets.\n\nThen follows the description of *t* sets of the input data. \n\nThe first line of the description of each set contains two integers *n*,<=*k* (2<=≤<=*n*<=≤<=100,<=1<=≤<=*k*<=≤<=26) — the number of columns on the field and the number of trains. Each of the following three lines contains the sequence of *n* character, representing the row of the field where the game is on. Philip's initial position is marked as 's', he is in the leftmost column. Each of the *k* trains is marked by some sequence of identical uppercase letters of the English alphabet, located in one line. Distinct trains are represented by distinct letters. Character '.' represents an empty cell, that is, the cell that doesn't contain either Philip or the trains.\n\nOutput Specification:\nFor each set of the input data print on a single line word YES, if it is possible to win the game and word NO otherwise.\n\nDemo Input:\n['2\\n16 4\\n...AAAAA........\\ns.BBB......CCCCC\\n........DDDDD...\\n16 4\\n...AAAAA........\\ns.BBB....CCCCC..\\n.......DDDDD....\\n', '2\\n10 4\\ns.ZZ......\\n.....AAABB\\n.YYYYYY...\\n10 4\\ns.ZZ......\\n....AAAABB\\n.YYYYYY...\\n']\n\nDemo Output:\n['YES\\nNO\\n', 'YES\\nNO\\n']\n\nNote:\nIn the first set of the input of the first sample Philip must first go forward and go down to the third row of the field, then go only forward, then go forward and climb to the second row, go forward again and go up to the first row. After that way no train blocks Philip's path, so he can go straight to the end of the tunnel.\n\nNote that in this problem the challenges are restricted to tests that contain only one testset.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T09:59:34.603077",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T09:59:34.888435",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T09:59:35.156392"
+}

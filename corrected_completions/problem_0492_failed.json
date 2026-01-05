@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0492",
+  "problem_index": 492,
+  "prompt": "Title: Schedule\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nAt the beginning of the new semester there is new schedule in the Berland State University. According to this schedule, *n* groups have lessons at the room 31. For each group the starting time of the lesson and the finishing time of the lesson are known. It has turned out that it is impossible to hold all lessons, because for some groups periods of their lessons intersect. If at some moment of time one groups finishes it's lesson, and the other group starts the lesson, their lessons don't intersect.\n\nThe dean wants to cancel the lesson in one group so that no two time periods of lessons of the remaining groups intersect. You are to find all ways to do that.\n\nInput Specification:\nThe first line contains integer *n* (1<=≤<=*n*<=≤<=5000) — amount of groups, which have lessons in the room 31. Then *n* lines follow, each of them contains two integers *l**i* *r**i* (1<=≤<=*l**i*<=&lt;<=*r**i*<=≤<=106) — starting and finishing times of lesson of the *i*-th group. It is possible that initially no two lessons intersect (see sample 1).\n\nOutput Specification:\nOutput integer *k* — amount of ways to cancel the lesson in exactly one group so that no two time periods of lessons of the remaining groups intersect. In the second line output *k* numbers — indexes of groups, where it is possible to cancel the lesson. Groups are numbered starting from 1 in the order that they were given in the input. Output the numbers in increasing order.\n\nDemo Input:\n['3\\n3 10\\n20 30\\n1 3\\n', '4\\n3 10\\n20 30\\n1 3\\n1 39\\n', '3\\n1 5\\n2 6\\n3 7\\n']\n\nDemo Output:\n['3\\n1 2 3 ', '1\\n4 ', '0\\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:22.567117",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:22.854770",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:23.130292"
+}

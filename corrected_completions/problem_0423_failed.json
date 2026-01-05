@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0423",
+  "problem_index": 423,
+  "prompt": "Title: Mysterious Present\n\nTime Limit: 1 seconds\n\nMemory Limit: 64 megabytes\n\nProblem Description:\nPeter decided to wish happy birthday to his friend from Australia and send him a card. To make his present more mysterious, he decided to make a chain. Chain here is such a sequence of envelopes *A*<==<={*a*1,<=<=*a*2,<=<=...,<=<=*a**n*}, where the width and the height of the *i*-th envelope is strictly higher than the width and the height of the (*i*<=<=-<=<=1)-th envelope respectively. Chain size is the number of envelopes in the chain. \n\nPeter wants to make the chain of the maximum size from the envelopes he has, the chain should be such, that he'll be able to put a card into it. The card fits into the chain if its width and height is lower than the width and the height of the smallest envelope in the chain respectively. It's forbidden to turn the card and the envelopes. \n\nPeter has very many envelopes and very little time, this hard task is entrusted to you.\n\nInput Specification:\nThe first line contains integers *n*, *w*, *h* (1<=<=≤<=*n*<=≤<=5000, 1<=≤<=*w*,<=<=*h*<=<=≤<=106) — amount of envelopes Peter has, the card width and height respectively. Then there follow *n* lines, each of them contains two integer numbers *w**i* and *h**i* — width and height of the *i*-th envelope (1<=≤<=*w**i*,<=<=*h**i*<=≤<=106).\n\nOutput Specification:\nIn the first line print the maximum chain size. In the second line print the numbers of the envelopes (separated by space), forming the required chain, starting with the number of the smallest envelope. Remember, please, that the card should fit into the smallest envelope. If the chain of maximum size is not unique, print any of the answers.\n\nIf the card does not fit into any of the envelopes, print number 0 in the single line.\n\nDemo Input:\n['2 1 1\\n2 2\\n2 2\\n', '3 3 3\\n5 4\\n12 11\\n9 8\\n']\n\nDemo Output:\n['1\\n1 \\n', '3\\n1 3 2 \\n']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:40.242340",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:40.502265",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:41.163510"
+}

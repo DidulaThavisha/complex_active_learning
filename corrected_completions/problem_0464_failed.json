@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0464",
+  "problem_index": 464,
+  "prompt": "Title: ucyhf\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nqd ucyhf yi q fhycu dkcruh mxeiu huluhiu yi q tyvvuhudj fhycu dkcruh. oekh jqia yi je vydt jxu djx ucyhf.\n\nInput Specification:\njxu ydfkj sediyiji ev q iydwbu ydjuwuh *d* (1<=≤<=*d*<=≤<=11184) — jxu edu-rqiut ydtun ev jxu ucyhf je vydt.\n\nOutput Specification:\nekjfkj q iydwbu dkcruh.\n\nDemo Input:\n['1\\n']\n\nDemo Output:\n['13\\n']\n\nNote:\nnone",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:05.387633",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:05.680452",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:05.958516"
+}

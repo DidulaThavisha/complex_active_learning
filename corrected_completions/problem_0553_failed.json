@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0553",
+  "problem_index": 553,
+  "prompt": "Title: Greenhouse Effect\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nEmuskald is an avid horticulturist and owns the world's longest greenhouse — it is effectively infinite in length.\n\nOver the years Emuskald has cultivated *n* plants in his greenhouse, of *m* different plant species numbered from 1 to *m*. His greenhouse is very narrow and can be viewed as an infinite line, with each plant occupying a single point on that line.\n\nEmuskald has discovered that each species thrives at a different temperature, so he wants to arrange *m*<=-<=1 borders that would divide the greenhouse into *m* sections numbered from 1 to *m* from left to right with each section housing a single species. He is free to place the borders, but in the end all of the *i*-th species plants must reside in *i*-th section from the left.\n\nOf course, it is not always possible to place the borders in such way, so Emuskald needs to replant some of his plants. He can remove each plant from its position and place it anywhere in the greenhouse (at any real coordinate) with no plant already in it. Since replanting is a lot of stress for the plants, help Emuskald find the minimum number of plants he has to replant to be able to place the borders.\n\nInput Specification:\nThe first line of input contains two space-separated integers *n* and *m* (1<=≤<=*n*,<=*m*<=≤<=5000, *n*<=≥<=*m*), the number of plants and the number of different species. Each of the following *n* lines contain two space-separated numbers: one integer number *s**i* (1<=≤<=*s**i*<=≤<=*m*), and one real number *x**i* (0<=≤<=*x**i*<=≤<=109), the species and position of the *i*-th plant. Each *x**i* will contain no more than 6 digits after the decimal point.\n\nIt is guaranteed that all *x**i* are different; there is at least one plant of each species; the plants are given in order \"from left to the right\", that is in the ascending order of their *x**i* coordinates (*x**i*<=&lt;<=*x**i*<=+<=1,<=1<=≤<=*i*<=&lt;<=*n*).\n\nOutput Specification:\nOutput a single integer — the minimum number of plants to be replanted.\n\nDemo Input:\n['3 2\\n2 1\\n1 2.0\\n1 3.100\\n', '3 3\\n1 5.0\\n2 5.5\\n3 6.0\\n', '6 3\\n1 14.284235\\n2 17.921382\\n1 20.328172\\n3 20.842331\\n1 25.790145\\n1 27.204125\\n']\n\nDemo Output:\n['1\\n', '0\\n', '2\\n']\n\nNote:\nIn the first test case, Emuskald can replant the first plant to the right of the last plant, so the answer is 1.\n\nIn the second test case, the species are already in the correct order, so no replanting is needed.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:01.815205",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:02.084078",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:02.366266"
+}

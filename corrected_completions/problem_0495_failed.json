@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0495",
+  "problem_index": 495,
+  "prompt": "Title: Vessels\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nThere is a system of *n* vessels arranged one above the other as shown in the figure below. Assume that the vessels are numbered from 1 to *n*, in the order from the highest to the lowest, the volume of the *i*-th vessel is *a**i* liters.\n\nInitially, all the vessels are empty. In some vessels water is poured. All the water that overflows from the *i*-th vessel goes to the (*i*<=+<=1)-th one. The liquid that overflows from the *n*-th vessel spills on the floor.\n\nYour task is to simulate pouring water into the vessels. To do this, you will need to handle two types of queries:\n 1.  Add *x**i* liters of water to the *p**i*-th vessel; 1.  Print the number of liters of water in the *k**i*-th vessel. \nWhen you reply to the second request you can assume that all the water poured up to this point, has already overflown between the vessels.\n\nInput Specification:\nThe first line contains integer *n* — the number of vessels (1<=≤<=*n*<=≤<=2·105). The second line contains *n* integers *a*1,<=*a*2,<=...,<=*a**n* — the vessels' capacities (1<=≤<=*a**i*<=≤<=109). The vessels' capacities do not necessarily increase from the top vessels to the bottom ones (see the second sample). The third line contains integer *m* — the number of queries (1<=≤<=*m*<=≤<=2·105). Each of the next *m* lines contains the description of one query. The query of the first type is represented as \"1 *p**i* *x**i*\", the query of the second type is represented as \"2 *k**i*\" (1<=≤<=*p**i*<=≤<=*n*, 1<=≤<=*x**i*<=≤<=109, 1<=≤<=*k**i*<=≤<=*n*).\n\nOutput Specification:\nFor each query, print on a single line the number of liters of water in the corresponding vessel.\n\nDemo Input:\n['2\\n5 10\\n6\\n1 1 4\\n2 1\\n1 2 5\\n1 1 4\\n2 1\\n2 2\\n', '3\\n5 10 8\\n6\\n1 1 12\\n2 2\\n1 1 6\\n1 3 2\\n2 2\\n2 3\\n']\n\nDemo Output:\n['4\\n5\\n8\\n', '7\\n10\\n5\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:25.092388",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:25.374463",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:25.704577"
+}

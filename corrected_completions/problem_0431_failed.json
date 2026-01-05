@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0431",
+  "problem_index": 431,
+  "prompt": "Title: Bathroom terminal\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nSmith wakes up at the side of a dirty, disused bathroom, his ankle chained to pipes. Next to him is tape-player with a hand-written message \"Play Me\". He finds a tape in his own back pocket. After putting the tape in the tape-player, he sees a key hanging from a ceiling, chained to some kind of a machine, which is connected to the terminal next to him. After pressing a Play button a rough voice starts playing from the tape:\n\n\"Listen up Smith. As you can see, you are in pretty tough situation and in order to escape, you have to solve a puzzle. \n\nYou are given *N* strings which represent words. Each word is of the maximum length *L* and consists of characters 'a'-'e'. You are also given *M* strings which represent patterns. Pattern is a string of length <=≤<= *L* and consists of characters 'a'-'e' as well as the maximum 3 characters '?'. Character '?' is an unknown character, meaning it can be equal to any character 'a'-'e', or even an empty character. For each pattern find the number of words that matches with the given pattern. After solving it and typing the result in the terminal, the key will drop from the ceiling and you may escape. Let the game begin.\"\n\nHelp Smith escape.\n\nInput Specification:\nThe first line of input contains two integers *N* and *M* (1<=≤<=*N*<=≤<= 100 000, 1<=≤<=*M*<=≤<= 5000), representing the number of words and patterns respectively.\n\nThe next *N* lines represent each word, and after those *N* lines, following *M* lines represent each pattern. Each word and each pattern has a maximum length *L* (1<=≤<=*L*<=≤<=50). Each pattern has no more that three characters '?'. All other characters in words and patters are lowercase English letters from 'a' to 'e'.\n\nOutput Specification:\nOutput contains *M* lines and each line consists of one integer, representing the number of words that match the corresponding pattern.\n\nDemo Input:\n['3 1\\nabc\\naec\\nac\\na?c\\n']\n\nDemo Output:\n['3\\n']\n\nNote:\nIf we switch '?' with 'b', 'e' and with empty character, we get 'abc', 'aec' and 'ac' respectively.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:45.363066",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:45.629212",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:45.897838"
+}

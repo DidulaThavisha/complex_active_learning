@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0606",
+  "problem_index": 606,
+  "prompt": "Title: Tyndex.Brome\n\nTime Limit: 2 seconds\n\nMemory Limit: 256 megabytes\n\nProblem Description:\nTyndex is again well ahead of the rivals! The reaction to the release of Zoozle Chrome browser was the release of a new browser Tyndex.Brome!\n\nThe popularity of the new browser is growing daily. And the secret is not even the Tyndex.Bar installed (the Tyndex.Bar automatically fills the glass with the finest 1664 cognac after you buy Tyndex.Bottles and insert in into a USB port). It is highly popular due to the well-thought interaction with the user.\n\nLet us take, for example, the system of automatic address correction. Have you entered codehorses instead of codeforces? The gloomy Zoozle Chrome will sadly say that the address does not exist. Tyndex.Brome at the same time will automatically find the closest address and sent you there. That's brilliant!\n\nHow does this splendid function work? That's simple! For each potential address a function of the *F* error is calculated by the following rules:\n -  for every letter *c**i* from the potential address *c* the closest position *j* of the letter *c**i* in the address (*s*) entered by the user is found. The absolute difference |*i*<=-<=*j*| of these positions is added to *F*. So for every *i* (1<=≤<=*i*<=≤<=|*c*|) the position *j* is chosen such, that *c**i*<==<=*s**j*, and |*i*<=-<=*j*| is minimal possible. -  if no such letter *c**i* exists in the address entered by the user, then the length of the potential address |*c*| is added to *F*. \nAfter the values of the error function have been calculated for all the potential addresses the most suitable one is found. \n\nTo understand the special features of the above described method better, it is recommended to realize the algorithm of calculating the *F* function for an address given by the user and some set of potential addresses. Good luck!\n\nInput Specification:\nThe first line contains two integers *n* and *k* (1<=≤<=*n*<=≤<=105,<=1<=≤<=*k*<=≤<=105). They are the number of potential addresses and the length of the address entered by the user. The next line contains *k* lowercase Latin letters. They are the address entered by the user (*s*). Each next *i*-th (1<=≤<=*i*<=≤<=*n*) line contains a non-empty sequence of lowercase Latin letters. They are the potential address. It is guaranteed that the total length of all the lines does not exceed 2·105.\n\nOutput Specification:\nOn each *n* line of the output file print a single number: the value of the error function when the current potential address is chosen.\n\nPlease, do not use %lld specificator to read or write 64-bit integers in C++. It is preffered to use cout (also you may use %I64d).\n\nDemo Input:\n['2 10\\ncodeforces\\ncodeforces\\ncodehorses\\n', '9 9\\nvkontakte\\nvcontacte\\nvkontrakte\\nvkollapse\\nvkrokodile\\nvtopke\\nvkapuste\\nvpechke\\nvk\\nvcodeforcese\\n']\n\nDemo Output:\n['0\\n12\\n', '18\\n14\\n36\\n47\\n14\\n29\\n30\\n0\\n84\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:34.456170",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:34.797118",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:35.138693"
+}

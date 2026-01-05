@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0487",
+  "problem_index": 487,
+  "prompt": "Title: Pyramids\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nIT City administration has no rest because of the fame of the Pyramids in Egypt. There is a project of construction of pyramid complex near the city in the place called Emerald Walley. The distinction of the complex is that its pyramids will be not only quadrangular as in Egypt but also triangular and pentagonal. Of course the amount of the city budget funds for the construction depends on the pyramids' volume. Your task is to calculate the volume of the pilot project consisting of three pyramids — one triangular, one quadrangular and one pentagonal.\n\nThe first pyramid has equilateral triangle as its base, and all 6 edges of the pyramid have equal length. The second pyramid has a square as its base and all 8 edges of the pyramid have equal length. The third pyramid has a regular pentagon as its base and all 10 edges of the pyramid have equal length.\n\nInput Specification:\nThe only line of the input contains three integers *l*3,<=*l*4,<=*l*5 (1<=≤<=*l*3,<=*l*4,<=*l*5<=≤<=1000) — the edge lengths of triangular, quadrangular and pentagonal pyramids correspondingly.\n\nOutput Specification:\nOutput one number — the total volume of the pyramids. Absolute or relative error should not be greater than 10<=-<=9.\n\nDemo Input:\n['2 5 3\\n']\n\nDemo Output:\n['38.546168065709']\n\nNote:\nnone",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:19.702205",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:19.970467",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:20.243237"
+}

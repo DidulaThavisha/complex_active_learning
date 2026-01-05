@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0437",
+  "problem_index": 437,
+  "prompt": "Title: Heidi and Library (medium)\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nWhereas humans nowadays read fewer and fewer books on paper, book readership among marmots has surged. Heidi has expanded the library and is now serving longer request sequences.\n\nInput Specification:\nSame as the easy version, but the limits have changed: 1<=≤<=*n*,<=*k*<=≤<=400<=000.\n\nOutput Specification:\nSame as the easy version.\n\nDemo Input:\n['4 100\\n1 2 2 1\\n', '4 1\\n1 2 2 1\\n', '4 2\\n1 2 3 1\\n']\n\nDemo Output:\n['2\\n', '3\\n', '3\\n']\n\nNote:\nnone",
+  "rating": 1800,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:00:48.906993",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:00:49.177765",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 3,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:00:49.525666"
+}

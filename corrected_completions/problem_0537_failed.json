@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0537",
+  "problem_index": 537,
+  "prompt": "Title: Remove Extra One\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nYou are given a permutation *p* of length *n*. Remove one element from permutation to make the number of records the maximum possible.\n\nWe remind that in a sequence of numbers *a*1,<=*a*2,<=...,<=*a**k* the element *a**i* is a record if for every integer *j* (1<=≤<=*j*<=&lt;<=*i*) the following holds: *a**j*<=&lt;<=*a**i*.\n\nInput Specification:\nThe first line contains the only integer *n* (1<=≤<=*n*<=≤<=105) — the length of the permutation.\n\nThe second line contains *n* integers *p*1,<=*p*2,<=...,<=*p**n* (1<=≤<=*p**i*<=≤<=*n*) — the permutation. All the integers are distinct.\n\nOutput Specification:\nPrint the only integer — the element that should be removed to make the number of records the maximum possible. If there are multiple such elements, print the smallest one.\n\nDemo Input:\n['1\\n1\\n', '5\\n5 1 2 3 4\\n']\n\nDemo Output:\n['1\\n', '5\\n']\n\nNote:\nIn the first example the only element can be removed.",
+  "rating": 1700,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:01:52.604075",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:01:52.869431",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:01:53.158237"
+}

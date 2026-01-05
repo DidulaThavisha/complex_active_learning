@@ -1,0 +1,38 @@
+{
+  "entry_id": "problem_0598",
+  "problem_index": 598,
+  "prompt": "Title: Bear and Two Paths\n\nTime Limit: None seconds\n\nMemory Limit: None megabytes\n\nProblem Description:\nBearland has *n* cities, numbered 1 through *n*. Cities are connected via bidirectional roads. Each road connects two distinct cities. No two roads connect the same pair of cities.\n\nBear Limak was once in a city *a* and he wanted to go to a city *b*. There was no direct connection so he decided to take a long walk, visiting each city exactly once. Formally: \n -  There is no road between *a* and *b*. -  There exists a sequence (path) of *n* distinct cities *v*1,<=*v*2,<=...,<=*v**n* that *v*1<==<=*a*, *v**n*<==<=*b* and there is a road between *v**i* and *v**i*<=+<=1 for . \nOn the other day, the similar thing happened. Limak wanted to travel between a city *c* and a city *d*. There is no road between them but there exists a sequence of *n* distinct cities *u*1,<=*u*2,<=...,<=*u**n* that *u*1<==<=*c*, *u**n*<==<=*d* and there is a road between *u**i* and *u**i*<=+<=1 for .\n\nAlso, Limak thinks that there are at most *k* roads in Bearland. He wonders whether he remembers everything correctly.\n\nGiven *n*, *k* and four distinct cities *a*, *b*, *c*, *d*, can you find possible paths (*v*1,<=...,<=*v**n*) and (*u*1,<=...,<=*u**n*) to satisfy all the given conditions? Find any solution or print -1 if it's impossible.\n\nInput Specification:\nThe first line of the input contains two integers *n* and *k* (4<=≤<=*n*<=≤<=1000, *n*<=-<=1<=≤<=*k*<=≤<=2*n*<=-<=2) — the number of cities and the maximum allowed number of roads, respectively.\n\nThe second line contains four distinct integers *a*, *b*, *c* and *d* (1<=≤<=*a*,<=*b*,<=*c*,<=*d*<=≤<=*n*).\n\nOutput Specification:\nPrint -1 if it's impossible to satisfy all the given conditions. Otherwise, print two lines with paths descriptions. The first of these two lines should contain *n* distinct integers *v*1,<=*v*2,<=...,<=*v**n* where *v*1<==<=*a* and *v**n*<==<=*b*. The second line should contain *n* distinct integers *u*1,<=*u*2,<=...,<=*u**n* where *u*1<==<=*c* and *u**n*<==<=*d*.\n\nTwo paths generate at most 2*n*<=-<=2 roads: (*v*1,<=*v*2),<=(*v*2,<=*v*3),<=...,<=(*v**n*<=-<=1,<=*v**n*),<=(*u*1,<=*u*2),<=(*u*2,<=*u*3),<=...,<=(*u**n*<=-<=1,<=*u**n*). Your answer will be considered wrong if contains more than *k* distinct roads or any other condition breaks. Note that (*x*,<=*y*) and (*y*,<=*x*) are the same road.\n\nDemo Input:\n['7 11\\n2 4 7 3\\n', '1000 999\\n10 20 30 40\\n']\n\nDemo Output:\n['2 7 1 3 6 5 4\\n7 1 5 4 6 2 3\\n', '-1\\n']\n\nNote:\nIn the first sample test, there should be 7 cities and at most 11 roads. The provided sample solution generates 10 roads, as in the drawing. You can also see a simple path of length *n* between 2 and 4, and a path between 7 and 3.",
+  "rating": 1600,
+  "final_status": "failed",
+  "all_attempts": [
+    {
+      "attempt_number": 1,
+      "timestamp": "2026-01-05T10:02:29.266631",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    },
+    {
+      "attempt_number": 2,
+      "timestamp": "2026-01-05T10:02:29.531305",
+      "status": "failed",
+      "completion": null,
+      "code": null,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "tests_pass_rate": 0.0,
+      "validation_msg": "API call failed",
+      "error": "API call failed",
+      "error_details": {}
+    }
+  ],
+  "total_attempts": 2,
+  "last_error": "API call failed",
+  "timestamp": "2026-01-05T10:02:29.810417"
+}
