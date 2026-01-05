@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Inference script for HuggingFace model on Ballerina problems.
+Inference script for HuggingFace model on Ballerina problems using Unsloth.
 Generates 5 completions per problem and evaluates them using test cases.
+Optimized for 16GB Nvidia P100 GPU.
 """
 
 import json
@@ -13,7 +14,8 @@ import tempfile
 import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from unsloth import FastLanguageModel
+from unsloth.chat_templates import get_chat_template
 import torch
 
 # Configuration
@@ -29,20 +31,40 @@ print(f"Model: {MODEL_NAME}")
 print(f"Generations per problem: {NUM_GENERATIONS}")
 print(f"Test pass threshold: {THRESHOLD*100}%")
 
-# Load model and tokenizer
-print("\nLoading model and tokenizer...")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
+# Load model and tokenizer using Unsloth (optimized for 16GB P100 GPU)
+print("\nLoading model and tokenizer with Unsloth...")
+print("Optimizing for 16GB Nvidia P100 GPU...")
 
-# Set device
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = model.to(device)
+max_seq_length = 2048
+dtype = None  # Auto-detect best dtype
+load_in_4bit = True  # Use 4-bit quantization for 16GB GPU
+lora_rank = 16
+
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name=MODEL_NAME,
+    max_seq_length=max_seq_length,
+    dtype=dtype,
+    load_in_4bit=load_in_4bit,
+    fast_inference=True,  # Enable fast inference optimizations
+    max_lora_rank=lora_rank,
+)
+
+# Set up chat template (Qwen format)
+tokenizer = get_chat_template(
+    tokenizer,
+    chat_template="qwen-2.5",
+)
+
+# Enable fast inference optimizations
+FastLanguageModel.for_inference(model)  # Enable inference optimizations
+
 if torch.cuda.is_available():
-    print("Using CUDA")
+    print(f"Using CUDA (GPU: {torch.cuda.get_device_name(0)})")
+    print(f"GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.2f} GB")
 else:
     print("Using CPU")
 
-print("Model loaded successfully!")
+print("Model loaded successfully with Unsloth optimizations!")
 
 # System prompt for Ballerina code generation (matching generate_corrections.ipynb)
 SYSTEM_PROMPT = """You are a pragmatic Ballerina programmer who enjoys test driven development. Given the following question, write a Ballerina script to complete the task and then write the the unit tests to validate the functionality. Also implement a main function check with a user input.
@@ -292,8 +314,8 @@ def run_test_cases(code: str, test_cases: List[Dict[str, str]], threshold: float
             return False, passed, total, f"Only passed {passed}/{total} tests ({pass_rate*100:.1f}%), need {threshold*100:.0f}%", error_details
 
 
-def generate_completion(model, tokenizer, prompt: str, device, max_new_tokens: int = 2048) -> str:
-    """Generate a single completion using the model"""
+def generate_completion(model, tokenizer, prompt: str, max_new_tokens: int = 2048) -> str:
+    """Generate a single completion using Unsloth-optimized model"""
     # Format prompt with system prompt
     full_prompt = f"""{SYSTEM_PROMPT}
 
@@ -308,10 +330,12 @@ Please generate Ballerina code that solves the problem above. Make sure to:
 5. Use proper error handling
 """
     
+    # Format messages for chat template
     messages = [
         {"role": "user", "content": full_prompt},
     ]
     
+    # Use Unsloth's optimized generation
     inputs = tokenizer.apply_chat_template(
         messages,
         add_generation_prompt=True,
@@ -320,17 +344,20 @@ Please generate Ballerina code that solves the problem above. Make sure to:
         return_tensors="pt",
     )
     
-    # Move inputs to device
+    # Move inputs to model's device (Unsloth models are already on the correct device)
+    device = next(model.parameters()).device
     inputs = {k: v.to(device) for k, v in inputs.items()}
     
-    with torch.no_grad():
+    # Use Unsloth's optimized generation with torch.inference_mode for better performance
+    with torch.inference_mode():
         outputs = model.generate(
             **inputs,
             max_new_tokens=max_new_tokens,
             do_sample=True,
             temperature=0.7,
             top_p=0.9,
-            pad_token_id=tokenizer.eos_token_id
+            pad_token_id=tokenizer.eos_token_id,
+            use_cache=True,  # Enable KV cache for faster inference
         )
     
     # Decode only the new tokens
@@ -342,7 +369,7 @@ Please generate Ballerina code that solves the problem above. Make sure to:
     return generated_text
 
 
-def process_problem(problem: Dict[str, Any], model, tokenizer, device, problem_idx: int) -> Dict[str, Any]:
+def process_problem(problem: Dict[str, Any], model, tokenizer, problem_idx: int) -> Dict[str, Any]:
     """Process a single problem: generate 5 completions and evaluate each"""
     prompt = problem.get('prompt', '')
     answer = problem.get('answer', '')
@@ -361,7 +388,7 @@ def process_problem(problem: Dict[str, Any], model, tokenizer, device, problem_i
         
         try:
             # Generate completion
-            completion = generate_completion(model, tokenizer, prompt, device=device)
+            completion = generate_completion(model, tokenizer, prompt)
             
             # Extract code
             code = extract_code_from_completion(completion)
@@ -452,7 +479,7 @@ if __name__ == "__main__":
         problem_num = idx + 1
         print(f"\n[{problem_num}/5018] Processing problem {idx} (rating: {problem.get('rating', 'unknown')})...")
         
-        result = process_problem(problem, model, tokenizer, device, idx)
+        result = process_problem(problem, model, tokenizer, idx)
         results.append(result)
         
         # Update stats
